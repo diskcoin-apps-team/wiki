@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc>https://diskcoin.wiki/Mining/</loc>
+     <lastmod>2019-07-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://diskcoin.wiki/Staking/</loc>
+     <lastmod>2019-07-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://diskcoin.wiki/HowtoStake/</loc>
+     <lastmod>2019-07-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://diskcoin.wiki/diskcoin_api/</loc>
+     <lastmod>2019-07-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://diskcoin.wiki/FAQ/</loc>
+     <lastmod>2019-07-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
