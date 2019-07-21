@@ -1,6 +1,6 @@
 # Diskcoin API
 
-The DISC API allows interaction with DISC nodes using HTTP requests to default mainnet port 63333, and default testnet port 63335. We only support POST mode. 
+The DISC API allows interaction with DISC nodes using HTTP requests to default mainnet port 63336. We only support POST mode. 
 
 Each API call is documented below, with definitions given for HTTP request parameters and JSON response fields.
 
