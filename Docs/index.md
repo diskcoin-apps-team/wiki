@@ -38,4 +38,4 @@ Miners need to Stake the corresponding Diskcoins to get the most benefit. And th
 
 
 
-### Get Support: [Reddit](https://www.reddit.com/r/DiskcoinOrg/) 丨 [Twitter](https://twitter.com/Diskcoinorg) 丨 [Bitcointalk](https://bitcointalk.org/index.php?topic=5154264.0) 丨 [Telegram](https://t.me/Diskcoinofficialgroup) 丨  [Discord] (https://discord.gg/gQVEWG)
+#### Get Support: [Reddit](https://www.reddit.com/r/DiskcoinOrg/) 丨 [Twitter](https://twitter.com/Diskcoinorg) 丨 [Bitcointalk](https://bitcointalk.org/index.php?topic=5154264.0) 丨 [Telegram](https://t.me/Diskcoinofficialgroup) 丨  [Discord](https://discord.gg/gQVEWG)

@@ -113,7 +113,7 @@ If you want to check the difficulty cycle of the current block height, you could
 
 #### How the Diskcoin Foundation use the coins?
 
-![alt](image/Foundation.png"title")
+![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Foundation.png?raw=true)
 
 
 

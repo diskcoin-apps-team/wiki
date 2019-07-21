@@ -8,7 +8,7 @@ To check your PID is applicable. If yes, you are no need to replot files to mine
 
 ### Plotting Software
 
-####ENGRAVER
+#### ENGRAVER
 
 Engraver is a plotter that natively generates optimized plot files. It generates PoC2 files and is intended to work on any UNIX system with a sufficiently sane filesystem (able to pre-allocate space),but for now only Linux and MacOS have been tested. 64bit only!
 
@@ -65,6 +65,7 @@ Platform : Windows
 3.A Windows system computer that can run the dcminer.
 
 
+
 ### Deploy Diskcoind wallet
 
 #### Linux system:
@@ -105,6 +106,7 @@ If you have previously installed the Diskcoin wallet, please delete previous dat
 
 
 
+
 ### Start mining
 
 The file name is: dcminer.zip. 
@@ -132,4 +134,5 @@ Others can use the default value.
 
 If the configuration is completed, double-click dcminerAVX2.exe to start mining!
 
-### Download installation package: https://github.com/diskcoin-apps-team/wiki/releases
+
+#### Download installation package: https://github.com/diskcoin-apps-team/wiki/releases
