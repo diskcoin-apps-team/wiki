@@ -2,7 +2,7 @@
 ## Welcome to the Diskcoin Wiki
 ### 1.What is Diskcoin?
 
-Diskcoin is an energy-saving and scalable peer-to-peer crypto currency system that is more energy efficient than Bitcoin, retaining most of the features of Bitcoin, such as peer-to-peer networks, minimal network architecture, and security. Diskcoin uses the Conditioned Proof Of Capacity ( CPoC ) consensus algorithm to reduce the consumption of electricity and lower the entry barriers in the process of crypto currency production, which is more decentralized, without affecting security.
+Diskcoin is a scalable peer-to-peer crypto currency system that is more energy efficient than Bitcoin, retaining most of the features of Bitcoin, such as peer-to-peer networks, minimal network architecture, and security. Diskcoin uses the Conditioned Proof Of Capacity ( CPoC ) consensus algorithm to reduce the consumption of electricity and lower the entry barriers in the process of crypto currency production, which is more decentralized, without affecting security.
 
 
 

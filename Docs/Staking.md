@@ -1,10 +1,10 @@
 ## The DES rules
 
-To understand the Dynamic Equilibrium Staking rules, you need to know what the Difficulty Cycle (DC) is. We creatively define these blocks as continuous Difficulty Cycles, and every 1800 blocks is a Difficulty Cycle. The first Difficulty Cycle is from block 1 to 1800, and the second Difficulty Cycle is from block 1801 to 3600, and so on. There follows a diagram for your reference:
+To understand the Dynamic Equilibrium Staking rules, you need to know what the Difficulty Cycle (DC) is. We creatively define these blocks as continuous Difficulty Cycles, and each 1800 blocks is a Difficulty Cycle. The first Difficulty Cycle is from block 1 to 1800, and the second Difficulty Cycle is from block 1801 to 3600, and so on. There follows a diagram for your reference:
 
 ![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/DC.png?raw=true)
 
-If you want to check the difficulty cycle of the current block height, you could view it in the block explorer of the official website.
+If you want to check the Difficulty Cycle of the rewarded block, you could view it in the block explorer of the official website.
 
 ![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/ViewDC.png?raw=true)
 
@@ -29,7 +29,7 @@ Since x is a Cooperative Factor, there follows a calculation formula:
 
 
 For example: 
-Condition: The rewarded block height is 1977, and you mined 26 blocks during the last 1800 blocks, which is from block 176 to block 1976, and you staked 101 DISCs. Then the Cooperative Factor is as follows: 
+Condition: The rewarded block is 1977, and you mined 26 blocks during the last 1800 blocks, which is from block 176 to block 1976, and you staked 101 DISCs. Then the Cooperative Factor is as follows: 
 
 ![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/CooperativeFactorInExample.png?raw=true)
 

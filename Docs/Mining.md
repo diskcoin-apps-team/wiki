@@ -72,7 +72,7 @@ Platform : Windows
 
 Install the Diskcoind
 
-The file name is: Diskcoind.zip. Please copy it to the prepared Linux server and unzip it.
+Please copy it to the prepared Linux server and unzip it.
 
 Modify the configuration file
 
@@ -86,13 +86,17 @@ cd diskcoin
 
 Start Diskcoind service command
 
+```
 ./diskcoind or ./diskcoin-qt
+```
 
 Wait for the Diskcoind to sync full node data
 
+```
 ./diskcoin-cli getinfo View current block height
 
 ./diskcoin-cli getblockcount View the latest height
+```
 
 If the two values are the same, then the full node data has been synced, indicating that you can start mining.
 
@@ -101,15 +105,13 @@ If the two values are the same, then the full node data has been synced, indicat
 
 Install the Diskcoind
 
-The file name is: Diskcoind.zip. Please copy it to the prepared Windows or MacOS server and unzip it. 
+Please copy it to the prepared Windows or MacOS server and unzip it. 
 If you have previously installed the Diskcoin wallet, please delete previous date before installation.
 
 
 
 
 ### Start mining
-
-The file name is: dcminer.zip. 
 
 The dcminer needs to run in the windows environment.
 
@@ -135,4 +137,4 @@ Others can use the default value.
 If the configuration is completed, double-click dcminerAVX2.exe to start mining!
 
 
-#### Download installation package: https://github.com/diskcoin-apps-team/wiki/releases
+#### Download installation package: https://github.com/diskcoin-apps-team/wiki/releases/latest

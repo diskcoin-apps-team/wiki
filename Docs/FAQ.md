@@ -17,7 +17,7 @@ Diskcoin uses the Conditioned Proof Of Capacity (CPoC) consensus algorithm.
 
 #### What are the advantages of Diskcoin?
 
-Diskcoin uses the Conditioned Proof Of Capacity ( CPoC ) consensus algorithm to reduce the consumption of electricity and lower the entry barriers in the process of crypto currency production,which is more decentralized, without affecting security.
+Diskcoin uses the Conditioned Proof Of Capacity ( CPoC ) consensus algorithm to reduce the consumption of electricity and lower the entry barriers in the process of crypto currency production, which is more decentralized, without affecting security.
 
 
 #### How does one acquire Diskcoins?
@@ -33,7 +33,7 @@ Diskcoin uses the Conditioned Proof Of Capacity ( CPoC ) consensus algorithm to 
 
 #### What is the difference between Diskcoin and burstcoin?
 
-There are many differences between Diskcoin and burstcoin. Diskcoin has No ICO / IPO, No premine, and One of the main differences is that Diskcoin uses CPoC ( Conditioned Proof Of Capacity ), which is based on PoC2 and adds the Staking mechanism. Miners who are involved in mining need Staking the corresponding Diskcoins to get the most benefit. The proportion of coins that need Staking is not simply fixed or decrease progressively.  
+There are many differences between Diskcoin and burstcoin. Diskcoin has No ICO / IPO, No premine, and one of the main differences is that Diskcoin uses CPoC ( Conditioned Proof Of Capacity ), which is based on PoC2 and adds the Staking mechanism. Miners who are involved in mining need Staking the corresponding Diskcoins to get the most benefit. The proportion of coins that need Staking is not simply fixed or decrease progressively.  
 For more details, you could check in our White Paper: 
 https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf
 
@@ -43,7 +43,7 @@ https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf
 
 #### Why do Diskcoin have value?
 
-Bitcoin has value because it is useful as a form of crypto currency. Diskcoin is more energy-saving than bitcoin. So diskcoin is a form of crypto currency with reducing energy consumption. 
+Bitcoin has value because it is useful as a form of crypto currency. Diskcoin is more energy-saving than bitcoin. So Diskcoin is a form of crypto currency with reducing energy consumption. 
 
 
 #### Can I make money with Diskcoin?
@@ -53,7 +53,7 @@ You should never expect to get rich with Diskcoin or any emerging technology. Th
 
 #### How to ensure market circulation?
 
-In Diskcoin mining, the proportion of coins that need Staking is not simply fixed or decrease progressively. Instead, an algorithm named DES( the Dynamic Equilibrium Staking ) algorithm is used. The DES will automatically adjust the staking percentage according to the difficulty of mining, the amount of produced Diskcoins and the percentage of Diskcoin staking to ensure the good operation of the whole system.
+In Diskcoin mining, the proportion of coins that need Staking is not simply fixed or decrease progressively. Instead, an algorithm named DES ( the Dynamic Equilibrium Staking ) is used. The DES will automatically adjust the staking percentage according to the difficulty of mining, the amount of produced Diskcoins and the percentage of Diskcoin staking to ensure the good operation of the whole system.
 
 
 
@@ -66,7 +66,7 @@ We define an electronic coin as a chain of digital signatures. Each owner transf
 
 #### How to ensure transaction safety?
 
-we propose begins with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
+We propose to begin with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
 
 
 
@@ -77,7 +77,7 @@ we propose begins with a timestamp server. A timestamp server works by taking a 
 No. Diskcoin is not premined.
 
 
-#### How does Diskcoin mining work?
+#### How does Diskcoin mining works?
 
 When you mine and process your plot files, you will end up with resulting values called deadlines. The values represent the number of seconds that must elapse since last block was forged before you are allowed to forge a block. If no one else has forged a block within this time, you can forge a block and claim a block reward.
 
@@ -106,9 +106,9 @@ Miners who are involved in mining need Staking the corresponding Diskcoins to ge
 Please click the link: https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf, and you can get more details about Staking mechanism.
 
 
-#### How to find the current block height lays in which difficulty cycle?
+#### How to find the rewarded block lays in which Difficulty Cycle?
 
-If you want to check the difficulty cycle of the current block height, you could view it in the block explorer of the official website.
+If you want to check the Difficulty Cycle of the rewarded block, you could view it in the block explorer of the official website.
 
 
 #### How the Diskcoin Foundation use the coins?
