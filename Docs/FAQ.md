@@ -112,7 +112,7 @@ The file "Uninstall.exe" is in the directory you specified during installation. 
             
 #### Linux: 
 ```
-rm -rf /data (file data)
+rm -rf /data (data directory under the Diskcoin directory)
 ```
 
 
