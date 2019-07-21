@@ -120,17 +120,11 @@ Modify the mining device configuration file: miner.conf
 
 ```
 Server = IP of the Diskcoind server
-
 Port = 63337 #rpcport of Diskcoind server
-
 UpdaterAddr = IP of the Diskcoind server 
-
 UpdaterPort = 63337 #rpcport of Diskcoind server
-
 InfoAddr = IP of the Diskcoind server
-
 InfoPort = 63337 #rpcport for Diskcoind server
-
 MinerName = m1 #can be empty
 ```
 
