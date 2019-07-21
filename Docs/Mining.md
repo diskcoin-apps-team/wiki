@@ -106,7 +106,7 @@ If the two values are the same, then the full node data has been synced, indicat
 Install the Diskcoind
 
 Please copy it to the prepared Windows or MacOS server and unzip it. 
-If you have previously installed the Diskcoin wallet, please delete previous date before installation.
+If you have previously installed the Diskcoin wallet, please delete previous data before installation.
 
 
 
