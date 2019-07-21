@@ -87,7 +87,7 @@ cd diskcoin
 Start Diskcoind service command
 
 ```
-./diskcoind or ./diskcoin-qt
+./diskcoin-qt -rpcbind=127.0.0.1 -rpallowip="127.0.0.1/32"
 ```
 
 Wait for the Diskcoind to sync full node data
