@@ -588,7 +588,7 @@ To check your PID is applicable. If yes, you are no need to replot files to mine
 <p>Enter the Diskcoind directory</p>
 <p>cd diskcoin</p>
 <p>Start Diskcoind service command</p>
-<div class="codehilite"><pre><span></span>./diskcoind or ./diskcoin-qt
+<div class="codehilite"><pre><span></span>./diskcoin-qt -rpcbind=127.0.0.1 -rpallowip=&quot;127.0.0.1/32&quot;
 </pre></div>
 
 <p>Wait for the Diskcoind to sync full node data</p>
@@ -601,16 +601,16 @@ To check your PID is applicable. If yes, you are no need to replot files to mine
 <h4 id="windowsmacos-system">Windows/MacOS system:<a class="headerlink" href="#windowsmacos-system" title="Permanent link">&para;</a></h4>
 <p>Install the Diskcoind</p>
 <p>Please copy it to the prepared Windows or MacOS server and unzip it. 
-If you have previously installed the Diskcoin wallet, please delete previous date before installation.</p>
+If you have previously installed the Diskcoin wallet, please delete previous data before installation.</p>
 <h3 id="start-mining">Start mining<a class="headerlink" href="#start-mining" title="Permanent link">&para;</a></h3>
 <p>The dcminer needs to run in the windows environment.</p>
 <p>Modify the mining device configuration file: miner.conf</p>
 <div class="codehilite"><pre><span></span>Server = IP of the Diskcoind server
-Port = 63337 #rpcport of Diskcoind server
+Port = 63333 #rpcport of Diskcoind server (default testnet port 63335)
 UpdaterAddr = IP of the Diskcoind server 
-UpdaterPort = 63337 #rpcport of Diskcoind server
+UpdaterPort = 63333 #rpcport of Diskcoind server (default testnet port 63335)
 InfoAddr = IP of the Diskcoind server
-InfoPort = 63337 #rpcport for Diskcoind server
+InfoPort = 63333 #rpcport for Diskcoind server (default testnet port 63335)
 MinerName = m1 #can be empty
 </pre></div>
 
