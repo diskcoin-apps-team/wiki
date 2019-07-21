@@ -1,31 +1,26 @@
-###General
+### General
 
-####what is Diskcoin？
+#### what is Diskcoin？
 
 Diskcoin is an energy-saving and scalable peer-to-peer crypto currency system that is more energy efficient than Bitcoin, retaining most of the features of Bitcoin, such as peer-to-peer networks, minimal network architecture, and security.
 
 
-####What algorithm is Diskcoin based on?
+#### What algorithm is Diskcoin based on?
 
 Diskcoin uses the Conditioned Proof Of Capacity (CPoC) consensus algorithm.
 
 
-####What is the total supply of Diskcoin?
+#### What is the total supply of Diskcoin?
 
 21,000,000
 
 
-####What are the advantages of Diskcoin?
+#### What are the advantages of Diskcoin?
 
-Diskcoin uses the Conditioned Proof Of Capacity ( CPoC ) consensus algorithm to reduce the consumption of electricity and lower the entry barriers in the process of crypto currency production, which is more decentralized, without affecting security.
-
-
-####How can I follow development progress and general news about the community?
-
-You could follow our official [twitter](https://twitter.com/Diskcoinorg), and we will also post our develoment progress and general news on [bitcointalk](https://bitcointalk.org/index.php?topic=5154264.0).
+Diskcoin uses the Conditioned Proof Of Capacity ( CPoC ) consensus algorithm to reduce the consumption of electricity and lower the entry barriers in the process of crypto currency production,which is more decentralized, without affecting security.
 
 
-####How does one acquire Diskcoins?
+#### How does one acquire Diskcoins?
 
 1.As payment for services.
 
@@ -36,7 +31,7 @@ You could follow our official [twitter](https://twitter.com/Diskcoinorg), and we
 4.Earn Diskcoin through mining.
 
 
-####What is the difference between Diskcoin and burstcoin?
+#### What is the difference between Diskcoin and burstcoin?
 
 There are many differences between Diskcoin and burstcoin. Diskcoin has No ICO / IPO, No premine, and One of the main differences is that Diskcoin uses CPoC ( Conditioned Proof Of Capacity ), which is based on PoC2 and adds the Staking mechanism. Miners who are involved in mining need Staking the corresponding Diskcoins to get the most benefit. The proportion of coins that need Staking is not simply fixed or decrease progressively.  
 For more details, you could check in our White Paper: 
@@ -44,101 +39,91 @@ https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf
 
 
 
-###Economy
+### Economy
 
-####Why do Diskcoin have value?
+#### Why do Diskcoin have value?
 
 Bitcoin has value because it is useful as a form of crypto currency. Diskcoin is more energy-saving than bitcoin. So diskcoin is a form of crypto currency with reducing energy consumption. 
 
 
-####Can I make money with Diskcoin?
+#### Can I make money with Diskcoin?
 
 You should never expect to get rich with Diskcoin or any emerging technology. There are business opportunities that also include risks. There are various ways to make money with Diskcoin such as mining, speculation or running new businesses. All of these methods are competitive and there is no guarantee of profit. 
 
 
-####As an investment, is Diskcoin a sure thing?
-
-Like other currencies, Diskcoin is worth something partly because people are willing to trade it for goods and services. Its exchange rate fluctuates continuously, and sometimes wildly. Security incidents such as website and account compromise may trigger major sell-offs. Anyone who puts money into Diskcoin should understand the risk they are taking and consider it a high-risk currency. 
-
-
-####How to ensure market circulation?
+#### How to ensure market circulation?
 
 In Diskcoin mining, the proportion of coins that need Staking is not simply fixed or decrease progressively. Instead, an algorithm named DES( the Dynamic Equilibrium Staking ) algorithm is used. The DES will automatically adjust the staking percentage according to the difficulty of mining, the amount of produced Diskcoins and the percentage of Diskcoin staking to ensure the good operation of the whole system.
 
 
 
-###Transactions
+### Transactions
 
-####How to verify the transaction?
+#### How to verify the transaction?
 
 We define an electronic coin as a chain of digital signatures. Each owner transfers the coin to the next by digitally signing a hash of the previous transaction and the public key of the next owner and adding these to the end of the coin. A payee can verify the chain of ownership by verifying the signature.
 
 
-####How to ensure transaction safety?
+#### How to ensure transaction safety?
 
 we propose begins with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
 
 
 
-###Mining
+### Mining
 
-####Will Diskcoin premine?
+#### Will Diskcoin premine?
 
 No. Diskcoin is not premined.
 
 
-####How does Diskcoin mining work?
+#### How does Diskcoin mining work?
 
 When you mine and process your plot files, you will end up with resulting values called deadlines. The values represent the number of seconds that must elapse since last block was forged before you are allowed to forge a block. If no one else has forged a block within this time, you can forge a block and claim a block reward.
 
 
-####What is the hashrate related to?
+#### What is the hashrate related to?
 
 For POC, more hashrate=more capacity. If your hardisk has a larger capacity, you will get more hash values, then you are more likely to get coins.
 
 
-####Why do I need to use Diskcoin PID?
+#### Why do I need to use Diskcoin PID?
 
 At present, the global POC hashrate is around 2000p, and the hashrate less than uint56 occupies 1/256, less than 10P, which means that everyone needs to replot files. Replot will take time, the advantage of this is that there will be no huge hashrate in DISC mining immediately, which can avoid huge hashrate attacks for Diskcoin, such as 51% attacks or miner-activated softfork (MASF), thus ensuring the safety and stability on the chain. And it will be fairer for everyone. With the PID generated by Diskcoin PID generator, you could also mine other POC coins.
 
 
-####How can I generate a Diskcoin PID? 
+#### How can I generate a Diskcoin PID? 
 
 We provide a Diskcoin PID Generator here: https://diskcoin.org/PidGenerator/. You can click this link to generate a PID.
 
 
 
-###Staking
+### Staking
 
-####What is Staking?
+#### What is Staking?
 
 Miners who are involved in mining need Staking the corresponding Diskcoins to get the most benefit. In the absence of Staking, the miner can get 40% of the mining reward; if the staking is sufficient, the miner will receive nearly 100% of the mining reward, and the others will be contributed to the Diskcoin Foundation to cover project development costs, promotion costs, and as a fund to support related ecological projects. 
 Please click the link: https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf, and you can get more details about Staking mechanism.
 
 
-####How to stake?
-
-Please click the link: https://github.com/diskcoin-apps-team/wiki/releases, and you could get detailed information.
-
-
-####How to find the current block height lays in which difficulty cycle?
+#### How to find the current block height lays in which difficulty cycle?
 
 If you want to check the difficulty cycle of the current block height, you could view it in the block explorer of the official website.
 
 
-####How the Diskcoin Foundation use the coins?
+#### How the Diskcoin Foundation use the coins?
 
 ![alt](image/Foundation.png"title")
 
 
 
-###Security
+### Security
 
-####Who controls the Diskcoin network?
+#### Who controls the Diskcoin network?
 
 Nobody owns the Diskcoin network, Diskcoin is controlled by all Diskcoin users around the world. 
 
 
-####Will you release open source?
+#### Will Diskcoin open source?
 
 Yes, we will open source when the mainnet online and runs stably.

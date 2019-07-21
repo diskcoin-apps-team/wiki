@@ -1,9 +1,9 @@
-##How to Stake?
+## How to Stake?
 
 From the block height of 1801, if you want to Stake, you need to do the corresponding operation in your wallet. The more DISCs you Stake, the more reward you will get.
 
 
-###How to Stake:
+### How to Stake:
 ```
 ./diskcoin-cli pledgeto the-wallet-address-you-Stake-to the-Stake-amount  
 ```
@@ -11,7 +11,7 @@ From the block height of 1801, if you want to Stake, you need to do the correspo
 The Staking address needs to be the address that generated blocks.
 
 
-###How to check the default wallet address:
+### How to check the default wallet address:
 ```
 ./diskcoin-cli getaccountaddress ""
 ```
@@ -19,7 +19,7 @@ The Staking address needs to be the address that generated blocks.
 A hash will be returned after the Staking.
 
 
-###Check the Staking records of the address:
+### Check the Staking records of the address:
 ```
 listpledgein (minconf maxconf  ["address",...])
 ```
@@ -29,7 +29,7 @@ Minconf: minimum confirmation
 Maxconf: maximum confirmation
 
 
-###Cancel the Staking:
+### Cancel the Staking:
 ```
 ./diskcoin-cli unpledge txid
 ```
