@@ -1,6 +1,6 @@
 ### General
 
-#### what is Diskcoin？
+#### what is Diskcoin?
 
 Diskcoin is an energy-saving and scalable peer-to-peer crypto currency system that is more energy efficient than Bitcoin, retaining most of the features of Bitcoin, such as peer-to-peer networks, minimal network architecture, and security.
 
@@ -95,6 +95,27 @@ At present, the global POC hashrate is around 2000p, and the hashrate less than 
 #### How can I generate a Diskcoin PID? 
 
 We provide a Diskcoin PID Generator here: https://diskcoin.org/PidGenerator/. You can click this link to generate a PID.
+
+
+#### How to delete the data in Diskcoin-QT wallet?
+
+If you have previously installed the QT wallet, when computer prompt error, please delete previous data before installation. 
+
+#### MacOS:
+```
+rm -fr ~/Library/Application\ Support/diskcoin
+```
+
+
+#### Windows: 
+
+Find the file "Uninstall.exe" under the installation manual and click Uninstall. If there remains some other files, please manually delete.    
+
+                
+#### Linux: 
+```
+rm -rf /data (file data)
+```
 
 
 
