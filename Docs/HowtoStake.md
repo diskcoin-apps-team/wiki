@@ -5,7 +5,7 @@ From the block height of 1801, if you want to Stake, you need to do the correspo
 
 ### How to Stake:
 ```
-./diskcoin-cli pledgeto the-wallet-address-you-Stake-to the-Stake-amount  
+./diskcoin-cli Staketo the-wallet-address-you-Stake-to the-Stake-amount  
 ```
 
 The Staking address needs to be the address that generated blocks.
@@ -31,7 +31,7 @@ Maxconf: maximum confirmation
 
 ### Cancel the Staking:
 ```
-./diskcoin-cli unpledge txid
+./diskcoin-cli unStake txid
 ```
 
 You could use the listStakein command to get the txid that has been Staked.
