@@ -21,7 +21,7 @@ A hash will be returned after the Staking.
 
 ### Check the Staking records of the address:
 ```
-listpledgein (minconf maxconf  ["address",...])
+listStakein (minconf maxconf  ["address",...])
 ```
 
 Minconf: minimum confirmation
@@ -34,5 +34,5 @@ Maxconf: maximum confirmation
 ./diskcoin-cli unpledge txid
 ```
 
-You could use the listpledgein command to get the txid that has been Staked.
+You could use the listStakein command to get the txid that has been Staked.
 After the Staking is successful, it will take effect after 900 blocks.
