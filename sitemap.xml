@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://github.com/diskcoin-apps-team/wiki/Mining/</loc>
+     <loc>https://diskcoin.wiki/Mining/</loc>
      <lastmod>2019-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/diskcoin-apps-team/wiki/Staking/</loc>
+     <loc>https://diskcoin.wiki/Staking/</loc>
      <lastmod>2019-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/diskcoin-apps-team/wiki/HowtoStake/</loc>
+     <loc>https://diskcoin.wiki/HowtoStake/</loc>
      <lastmod>2019-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/diskcoin-apps-team/wiki/diskcoin_api/</loc>
+     <loc>https://diskcoin.wiki/diskcoin_api/</loc>
      <lastmod>2019-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://github.com/diskcoin-apps-team/wiki/FAQ/</loc>
+     <loc>https://diskcoin.wiki/FAQ/</loc>
      <lastmod>2019-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
