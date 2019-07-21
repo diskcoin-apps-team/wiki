@@ -10,7 +10,6 @@ Set `Content-Type=application/json` in `headers`, add the ciphertext generated b
 
 Username, Password is the account password set by rpc.
 
-
 ## Blockchain
 ### getbestblockhash
 Get the current latest block hash.

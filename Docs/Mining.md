@@ -132,5 +132,4 @@ Others can use the default value.
 
 If the configuration is completed, double-click dcminerAVX2.exe to start mining!
 
-
 #### Download installation package: https://github.com/diskcoin-apps-team/wiki/releases/latest
