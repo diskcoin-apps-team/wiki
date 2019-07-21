@@ -108,7 +108,7 @@ rm -fr ~/Library/Application\ Support/diskcoin
 
 #### Windows: 
 
-Find the file "Uninstall.exe" under the installation manual and click Uninstall. If there remains some other files, please manually delete.    
+The file "Uninstall.exe" is in the directory you specified during installation. Click the file to uninstall. If there remains some other files, please manually delete.    
             
 #### Linux: 
 ```
