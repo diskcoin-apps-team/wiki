@@ -375,7 +375,7 @@
                 <h2 id="how-to-stake">How to Stake?<a class="headerlink" href="#how-to-stake" title="Permanent link">&para;</a></h2>
 <p>From the block height of 1801, if you want to Stake, you need to do the corresponding operation in your wallet. The more DISCs you Stake, the more reward you will get.</p>
 <h3 id="how-to-stake_1">How to Stake:<a class="headerlink" href="#how-to-stake_1" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>./diskcoin-cli pledgeto the-wallet-address-you-Stake-to the-Stake-amount  
+<div class="codehilite"><pre><span></span>./diskcoin-cli Staketo the-wallet-address-you-Stake-to the-Stake-amount  
 </pre></div>
 
 <p>The Staking address needs to be the address that generated blocks.</p>
@@ -385,16 +385,16 @@
 
 <p>A hash will be returned after the Staking.</p>
 <h3 id="check-the-staking-records-of-the-address">Check the Staking records of the address:<a class="headerlink" href="#check-the-staking-records-of-the-address" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>listpledgein (minconf maxconf  [&quot;address&quot;,...])
+<div class="codehilite"><pre><span></span>listStakein (minconf maxconf  [&quot;address&quot;,...])
 </pre></div>
 
 <p>Minconf: minimum confirmation</p>
 <p>Maxconf: maximum confirmation</p>
 <h3 id="cancel-the-staking">Cancel the Staking:<a class="headerlink" href="#cancel-the-staking" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>./diskcoin-cli unpledge txid
+<div class="codehilite"><pre><span></span>./diskcoin-cli unStake txid
 </pre></div>
 
-<p>You could use the listpledgein command to get the txid that has been Staked.
+<p>You could use the listStakein command to get the txid that has been Staked.
 After the Staking is successful, it will take effect after 900 blocks.</p>
                 
                   
