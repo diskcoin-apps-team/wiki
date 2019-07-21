@@ -117,20 +117,22 @@ The dcminer needs to run in the windows environment.
 
 Modify the mining device configuration file: miner.conf
 
-*Server = IP of the Diskcoind server*
 
-*Port = 63336 #rpcport of Diskcoind server*
+```
+Server = IP of the Diskcoind server
 
-*UpdaterAddr = IP of the Diskcoind server* 
+Port = 63337 #rpcport of Diskcoind server
 
-*UpdaterPort = 63336 #rpcport of Diskcoind server*
+UpdaterAddr = IP of the Diskcoind server 
 
-*InfoAddr = IP of the Diskcoind server*
+UpdaterPort = 63337 #rpcport of Diskcoind server
 
-*InfoPort = 63336 #rpcport for Diskcoind server*
+InfoAddr = IP of the Diskcoind server
 
-*MinerName = m1 #can be empty*
+InfoPort = 63337 #rpcport for Diskcoind server
 
+MinerName = m1 #can be empty
+```
 
 Others can use the default value.
 
