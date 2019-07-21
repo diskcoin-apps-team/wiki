@@ -106,12 +106,10 @@ If you have previously installed the QT wallet, when computer prompt error, plea
 rm -fr ~/Library/Application\ Support/diskcoin
 ```
 
-
 #### Windows: 
 
 Find the file "Uninstall.exe" under the installation manual and click Uninstall. If there remains some other files, please manually delete.    
-
-                
+            
 #### Linux: 
 ```
 rm -rf /data (file data)
