@@ -14,11 +14,11 @@ Thanks to the Conditioned Proof Of Capacity (CPoC) consensus algorithm , Diskcoi
 
 #### More decentralized
 
-Diskcoin uses Conditioned Proof Of Capacity (CPoC) consensus algorithm, so Diskcoin is mined with low power hard drives instead of energy hungry CPUs, GPUs and ASICs, and Hard drives are cheap and easily accessible. Miners could use unused space on their hard drives to mine Diskcoin.
+Diskcoin uses Conditioned Proof Of Capacity (CPoC) consensus algorithm, so Diskcoin is mined with low power hard drives instead of energy hungry CPUs, GPUs and ASICs, and hard drives are cheap and easily accessible. Miners could use unused space on their hard drives to mine Diskcoin.
 
 #### The Dynamic Equilibrium Staking
 
-Miners need to Stake the corresponding Diskcoins to get the most benefit. And the proportion of coins that need Staking is not simply fixed or decrease progressively. Instead, an algorithm named DES( the Dynamic Equilibrium Staking ) algorithm is used to adjust the staking percentage according to the difficulty of mining.
+Miners need to Stake the corresponding Diskcoins to get the most benefit. And the proportion of coins that need Staking is not simply fixed or decrease progressively. Instead, an algorithm named DES ( the Dynamic Equilibrium Staking ) algorithm is used to adjust the staking percentage according to the difficulty of mining.
 
 
 
