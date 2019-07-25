@@ -132,6 +132,6 @@ Others can use the default value.
 
 Please run dcminer with this order, it is recommended to use dcminerAVX512 first. If it can not be started, then use dcminerAVX2. and then dcminerAVX. If the three mentioned above cannot be started,  you could use the dcminer.exe.
 
-![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/order.png)
+![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/order.png?raw=true)
 
 #### Download installation package: https://github.com/diskcoin-apps-team/wiki/releases/latest
