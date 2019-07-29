@@ -3317,7 +3317,7 @@ List all account information
     }
     ```
 
-### listStake ( inconf maxconf  ["address",...] 
+### liststake ( inconf maxconf  ["address",...] 
 - Request parameter
   - `minconf`:Optional parameter, default is 1
   - `maxconf`:Optional parameter, default is 9999999
@@ -3327,7 +3327,7 @@ List all account information
     {
         "jsonrpc": "1.0",
         "id": "1",
-        "method": "listStake",
+        "method": "liststake",
         "params": [1, 9999, ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy"]]
     }
     ```
@@ -3340,7 +3340,7 @@ List all account information
     }
     ```
 
-### listUnstake ( inconf maxconf  ["address",...] 
+### listunstake ( inconf maxconf  ["address",...] 
 - Request parameter
   - `minconf`:Optional parameter, default is 1
   - `maxconf`:Optional parameter, default is 9999999
@@ -3350,7 +3350,7 @@ List all account information
     {
         "jsonrpc": "1.0",
         "id": "1",
-        "method": "listUnstake",
+        "method": "listunstake",
         "params": [1, 9999, ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy"]]
     }
     ```
@@ -3672,7 +3672,7 @@ Transfer currency between accounts
     }
     ```
 
-### Staketo "Diskcoinaddress" amount
+### staketo "Diskcoinaddress" amount
 Stake to the specified address
 - Request parameter
   - `Diskcoinaddress`:Required, Diskcoin address
@@ -3682,7 +3682,7 @@ Stake to the specified address
     {
         "jsonrpc": "1.0",
         "id": "1",
-        "method": "Staketo",
+        "method": "staketo",
         "params": ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy", 0.1]
     }
     ```
