@@ -39,3 +39,5 @@ reward ratio in example:
 ![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/RewardRatioInExample.png?raw=true)
 
 So the the reward ratio is 45.82%.
+
+![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Staking.png?raw=true)
