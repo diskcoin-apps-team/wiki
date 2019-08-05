@@ -290,6 +290,26 @@
     Windows/MacOS system:
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows:" class="md-nav__link">
+    Windows:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" title="MacOS:" class="md-nav__link">
+    MacOS:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -495,6 +515,26 @@
     Windows/MacOS system:
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows:" class="md-nav__link">
+    Windows:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" title="MacOS:" class="md-nav__link">
+    MacOS:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -600,17 +640,24 @@ To check your PID is applicable. If yes, you are no need to replot files to mine
 <p>If the two values are the same, then the full node data has been synced, indicating that you can start mining.</p>
 <h4 id="windowsmacos-system">Windows/MacOS system:<a class="headerlink" href="#windowsmacos-system" title="Permanent link">&para;</a></h4>
 <p>Install the Diskcoind</p>
-<p>Please copy it to the prepared Windows or MacOS server and unzip it. 
-If you have previously installed the Diskcoin wallet, please delete previous data before installation.</p>
+<p>Please copy it to the prepared Windows or MacOS server and unzip it. If you have previously installed the Diskcoin wallet, please delete previous data before installation.</p>
+<p>Start Diskcoind service command
+First enter the installation directory of Diskcoin and execute the following startup command.</p>
+<h5 id="windows">Windows:<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h5>
+<p><div class="codehilite"><pre><span></span>dickcoin-qt.exe -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
+</pre></div>
+<img alt="alt" src="https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Windows.png?raw=true" /></p>
+<h5 id="macos">MacOS:<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h5>
+<p><div class="codehilite"><pre><span></span>Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1```
+</pre></div>
+<img alt="alt" src="https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/MacOS.png?raw=true" /></p>
+<p>If the wallet can be launched, the operation is successful and the miner file can be configured.</p>
 <h3 id="start-mining">Start mining<a class="headerlink" href="#start-mining" title="Permanent link">&para;</a></h3>
 <p>The dcminer needs to run in the windows environment.</p>
 <p>Modify the mining device configuration file: miner.conf</p>
-<div class="codehilite"><pre><span></span>Server = IP of the Diskcoind server
-Port = 63336 #rpcport of Diskcoind server 
-UpdaterAddr = IP of the Diskcoind server 
-UpdaterPort = 63336 #rpcport of Diskcoind server 
-InfoAddr = IP of the Diskcoind server
-InfoPort = 63336 #rpcport for Diskcoind server 
+<div class="codehilite"><pre><span></span>Server =127.0.0.1
+UpdaterAddr = 127.0.0.1
+InfoAddr =127.0.0.1
 MinerName = m1 #can be empty
 </pre></div>
 

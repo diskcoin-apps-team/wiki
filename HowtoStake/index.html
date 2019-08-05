@@ -227,6 +227,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#linux-system" title="Linux system：" class="md-nav__link">
+    Linux system：
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#how-to-stake_1" title="How to Stake:" class="md-nav__link">
     How to Stake:
   </a>
@@ -251,6 +259,45 @@
   <a href="#cancel-the-staking" title="Cancel the Staking:" class="md-nav__link">
     Cancel the Staking:
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windowsmacos-system-taking-the-macos-system-as-an-example-the-windows-system-is-the-same-operation" title="Windows/MacOS system (Taking the MacOS system as an example, the Windows system is the same operation)" class="md-nav__link">
+    Windows/MacOS system (Taking the MacOS system as an example, the Windows system is the same operation)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-stake_2" title="How to Stake:" class="md-nav__link">
+    How to Stake:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-check-the-records-of-staked" title="How to check the records of Staked:" class="md-nav__link">
+    How to check the records of Staked:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-cancel-the-stake" title="How to cancel the Stake:" class="md-nav__link">
+    How to cancel the Stake:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -321,6 +368,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#linux-system" title="Linux system：" class="md-nav__link">
+    Linux system：
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#how-to-stake_1" title="How to Stake:" class="md-nav__link">
     How to Stake:
   </a>
@@ -352,6 +407,45 @@
     </nav>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#windowsmacos-system-taking-the-macos-system-as-an-example-the-windows-system-is-the-same-operation" title="Windows/MacOS system (Taking the MacOS system as an example, the Windows system is the same operation)" class="md-nav__link">
+    Windows/MacOS system (Taking the MacOS system as an example, the Windows system is the same operation)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-stake_2" title="How to Stake:" class="md-nav__link">
+    How to Stake:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-check-the-records-of-staked" title="How to check the records of Staked:" class="md-nav__link">
+    How to check the records of Staked:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-cancel-the-stake" title="How to cancel the Stake:" class="md-nav__link">
+    How to cancel the Stake:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
       
       
@@ -373,29 +467,39 @@
                   <h1>How to Stake</h1>
                 
                 <h2 id="how-to-stake">How to Stake?<a class="headerlink" href="#how-to-stake" title="Permanent link">&para;</a></h2>
-<p>From the block height of 1801, if you want to Stake, you need to do the corresponding operation in your wallet. The more DISCs you Stake, the more reward you will get.</p>
-<h3 id="how-to-stake_1">How to Stake:<a class="headerlink" href="#how-to-stake_1" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>./diskcoin-cli Staketo the-wallet-address-you-Stake-to the-Stake-amount  
+<p>From the block height of 1801, if you want to Stake, you need to do the corresponding operation in your wallet. The more DISCs you Stake, the more reward you will get. After you Stake, it will take effect in the next block. After you unstake, it will take effect after 900 blocks.</p>
+<h3 id="linux-system">Linux system：<a class="headerlink" href="#linux-system" title="Permanent link">&para;</a></h3>
+<h4 id="how-to-stake_1">How to Stake:<a class="headerlink" href="#how-to-stake_1" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>./diskcoin-cli staketo the-wallet-address-you-stake-to the-stake-amount  
 </pre></div>
 
 <p>The Staking address needs to be the address that generated blocks.</p>
-<h3 id="how-to-check-the-default-wallet-address">How to check the default wallet address:<a class="headerlink" href="#how-to-check-the-default-wallet-address" title="Permanent link">&para;</a></h3>
+<h4 id="how-to-check-the-default-wallet-address">How to check the default wallet address:<a class="headerlink" href="#how-to-check-the-default-wallet-address" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>./diskcoin-cli getaccountaddress &quot;&quot;
 </pre></div>
 
 <p>A hash will be returned after the Staking.</p>
-<h3 id="check-the-staking-records-of-the-address">Check the Staking records of the address:<a class="headerlink" href="#check-the-staking-records-of-the-address" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>listStakein (minconf maxconf  [&quot;address&quot;,...])
+<h4 id="check-the-staking-records-of-the-address">Check the Staking records of the address:<a class="headerlink" href="#check-the-staking-records-of-the-address" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>liststakein (minconf maxconf  [&quot;address&quot;,...])
 </pre></div>
 
 <p>Minconf: minimum confirmation</p>
 <p>Maxconf: maximum confirmation</p>
-<h3 id="cancel-the-staking">Cancel the Staking:<a class="headerlink" href="#cancel-the-staking" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>./diskcoin-cli unStake txid
+<h4 id="cancel-the-staking">Cancel the Staking:<a class="headerlink" href="#cancel-the-staking" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>./diskcoin-cli unstake txid
 </pre></div>
 
-<p>You could use the listStakein command to get the txid that has been Staked.
-After the Staking is successful, it will take effect after 900 blocks.</p>
+<p>You could use the listStakein command to get the txid that has been Staked.</p>
+<h3 id="windowsmacos-system-taking-the-macos-system-as-an-example-the-windows-system-is-the-same-operation">Windows/MacOS system (Taking the MacOS system as an example, the Windows system is the same operation)<a class="headerlink" href="#windowsmacos-system-taking-the-macos-system-as-an-example-the-windows-system-is-the-same-operation" title="Permanent link">&para;</a></h3>
+<h4 id="how-to-stake_2">How to Stake:<a class="headerlink" href="#how-to-stake_2" title="Permanent link">&para;</a></h4>
+<p>Launch the wallet, click on “Send” in the upper navigation bar, fill in the address you want to Stake in the "Stake to" line, and fill in the amount you want to Stake in "Amount". Make sure the bottom left is Stake to, click send.
+<img alt="alt" src="https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Staketo.png?raw=true" /></p>
+<h4 id="how-to-check-the-records-of-staked">How to check the records of Staked:<a class="headerlink" href="#how-to-check-the-records-of-staked" title="Permanent link">&para;</a></h4>
+<p>You can find the record of Staked in "Transactions". As the picture shows.
+<img alt="alt" src="https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Transactions.png?raw=true" /></p>
+<h4 id="how-to-cancel-the-stake">How to cancel the Stake:<a class="headerlink" href="#how-to-cancel-the-stake" title="Permanent link">&para;</a></h4>
+<p>Select the record you want to cancel Stake, click the right mouse button and select unstake.
+<img alt="alt" src="https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/unstake.png?raw=true" /></p>
                 
                   
                 
