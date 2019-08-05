@@ -105,9 +105,25 @@ If the two values are the same, then the full node data has been synced, indicat
 
 Install the Diskcoind
 
-Please copy it to the prepared Windows or MacOS server and unzip it. 
-If you have previously installed the Diskcoin wallet, please delete previous data before installation.
+Please copy it to the prepared Windows or MacOS server and unzip it. If you have previously installed the Diskcoin wallet, please delete previous data before installation.
 
+Start Diskcoind service command
+First enter the installation directory of Diskcoin and execute the following startup command.
+Windows:
+```
+dickcoin-qt.exe -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
+```
+![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/order.png?raw=true)
+
+
+
+MacOS:
+```
+Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1```
+```
+![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/order.png?raw=true)
+
+If the wallet can be launched, the operation is successful and the miner file can be configured.
 
 
 
@@ -119,12 +135,9 @@ Modify the mining device configuration file: miner.conf
 
 
 ```
-Server = IP of the Diskcoind server
-Port = 63336 #rpcport of Diskcoind server 
-UpdaterAddr = IP of the Diskcoind server 
-UpdaterPort = 63336 #rpcport of Diskcoind server 
-InfoAddr = IP of the Diskcoind server
-InfoPort = 63336 #rpcport for Diskcoind server 
+Server =127.0.0.1
+UpdaterAddr = 127.0.0.1
+InfoAddr =127.0.0.1
 MinerName = m1 #can be empty
 ```
 
