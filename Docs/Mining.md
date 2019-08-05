@@ -113,7 +113,7 @@ Windows:
 ```
 dickcoin-qt.exe -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
 ```
-![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/order.png?raw=true)
+![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Windows.png?raw=true)
 
 
 
@@ -121,7 +121,7 @@ MacOS:
 ```
 Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1```
 ```
-![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/order.png?raw=true)
+![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/MacOS.png?raw=true)
 
 If the wallet can be launched, the operation is successful and the miner file can be configured.
 
