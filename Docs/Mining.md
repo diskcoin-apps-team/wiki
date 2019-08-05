@@ -109,7 +109,9 @@ Please copy it to the prepared Windows or MacOS server and unzip it. If you have
 
 Start Diskcoind service command
 First enter the installation directory of Diskcoin and execute the following startup command.
-Windows:
+
+
+##### Windows:
 ```
 dickcoin-qt.exe -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
 ```
@@ -117,7 +119,7 @@ dickcoin-qt.exe -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
 
 
 
-MacOS:
+##### MacOS:
 ```
 Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1```
 ```

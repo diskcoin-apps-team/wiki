@@ -1,6 +1,6 @@
 ## How to Stake?
 
-From the block height of 1801, if you want to Stake, you need to do the corresponding operation in your wallet. The more DISCs you Stake, the more reward you will get.
+From the block height of 1801, if you want to Stake, you need to do the corresponding operation in your wallet. The more DISCs you Stake, the more reward you will get. After you Stake, it will take effect in the next block. After you unstake, it will take effect after 900 blocks.
 
 
 ### Linux system：
@@ -36,7 +36,6 @@ Maxconf: maximum confirmation
 ```
 
 You could use the listStakein command to get the txid that has been Staked.
-After you unstaked, it will take effect after 900 blocks.
 
 
 ### Windows/MacOS system (Taking the MacOS system as an example, the Windows system is the same operation)
