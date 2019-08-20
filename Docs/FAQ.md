@@ -121,7 +121,7 @@ rm -rf /data (data directory under the Diskcoin directory)
 
 #### What is Staking?
 
-Miners who are involved in mining need to Stake the corresponding Diskcoins to get the most benefit. In the absence of Staking, the miner can get 40% of the mining reward; and the others will be contributed to the Diskcoin Foundation to cover project development costs, promotion costs, and as a fund to support related ecological projects. If the Staking is sufficient, the miner will receive nearly 100% of the mining reward. 
+Miners who are involved in mining need to Stake the corresponding Diskcoins to get the most benefits. In the absence of Staking, the miner can get 40% of the mining reward, and the others will be contributed to the Diskcoin Foundation to cover project development costs, promotion costs, and as a fund to support related ecological projects. If the Staking is sufficient, the miner will receive nearly 100% of the mining reward. 
 Please click the link: https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf, and you can get more details about Staking mechanism.
 
 
