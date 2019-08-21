@@ -68,6 +68,12 @@ Platform : Windows
 
 ### Deploy Diskcoind wallet
 
+Please click the link to download the wallet according to your system:
+https://github.com/diskcoin-apps-team/wiki/releases
+
+![alt](image/download.png)
+
+
 #### Linux system:
 
 Install the Diskcoind
@@ -108,26 +114,31 @@ Install the Diskcoind
 Please copy it to the prepared Windows or MacOS server and unzip it. If you have previously installed the Diskcoin wallet, please delete previous data before installation.
 
 Start Diskcoind service command
-First enter the installation directory of Diskcoin and execute the following startup command.
-
+First enter the installation directory of Diskcoin, there is a diskcoin-qt.exe file, as the figure shows:
+![alt](image/directory.png)
 
 ##### Windows:
+
+Press "Windows" and "R" at the same time, there is a search box. Enter "cmd" to go to the Windows console and execute the following startup command. 
 ```
-dickcoin-qt.exe -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
+Your wallet installation path/diskcoin-qt.exe  -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1 
 ```
 ![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Windows.png?raw=true)
 
 
-
 ##### MacOS:
+
+MacOS is the same as Windows, but the command is different.
+MacOS startup command: 
 ```
 Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1```
 ```
-![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/MacOS.png?raw=true)
+![alt](image/MacOS.png)
 
 If the wallet can be launched, the operation is successful and the miner file can be configured.
 
-
+If the wallet can be launched, the operation is successful and the miner file can be configured. As the figure shows:
+![alt](image/wallet.png)
 
 ### Start mining
 
@@ -137,9 +148,12 @@ Modify the mining device configuration file: miner.conf
 
 
 ```
-Server =127.0.0.1
-UpdaterAddr = 127.0.0.1
-InfoAddr =127.0.0.1
+"Server": "127.0.0.1",
+"Port": 63336,
+"UpdaterAddr": "127.0.0.1",
+"UpdaterPort": 63336,
+"InfoAddr": "127.0.0.1",
+"InfoPort": 63336,
 MinerName = m1 #can be empty
 ```
 
@@ -147,6 +161,6 @@ Others can use the default value.
 
 Please run dcminer with this order, it is recommended to use dcminerAVX512 first. If it can not be started, then use dcminerAVX2. and then dcminerAVX. If the three mentioned above cannot be started,  you could use the dcminer.exe.
 
-![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/order.png?raw=true)
+![alt](image/order.png)
 
 #### Download installation package: https://github.com/diskcoin-apps-team/wiki/releases/latest
