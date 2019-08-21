@@ -135,7 +135,6 @@ Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32
 ```
 ![alt](image/MacOS.png)
 
-If the wallet can be launched, the operation is successful and the miner file can be configured.
 
 If the wallet can be launched, the operation is successful and the miner file can be configured. As the figure shows:
 ![alt](image/wallet.png)
