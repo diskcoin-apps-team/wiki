@@ -401,6 +401,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../DiskcoinEcologicalMiningPoolSupportPlan/" title="Pool Support Plan" class="md-nav__link">
+      Pool Support Plan
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -619,6 +631,9 @@ To check your PID is applicable. If yes, you are no need to replot files to mine
 <p>2.A Linux/Windows/MacOS system computer that can install the Diskcoind wallet.</p>
 <p>3.A Windows system computer that can run the dcminer.</p>
 <h3 id="deploy-diskcoind-wallet">Deploy Diskcoind wallet<a class="headerlink" href="#deploy-diskcoind-wallet" title="Permanent link">&para;</a></h3>
+<p>Please click the link to download the wallet according to your system:
+<a href="https://github.com/diskcoin-apps-team/wiki/releases">https://github.com/diskcoin-apps-team/wiki/releases</a></p>
+<p><img alt="alt" src="../image/download.png" /></p>
 <h4 id="linux-system">Linux system:<a class="headerlink" href="#linux-system" title="Permanent link">&para;</a></h4>
 <p>Install the Diskcoind</p>
 <p>Please copy it to the prepared Linux server and unzip it.</p>
@@ -642,28 +657,36 @@ To check your PID is applicable. If yes, you are no need to replot files to mine
 <p>Install the Diskcoind</p>
 <p>Please copy it to the prepared Windows or MacOS server and unzip it. If you have previously installed the Diskcoin wallet, please delete previous data before installation.</p>
 <p>Start Diskcoind service command
-First enter the installation directory of Diskcoin and execute the following startup command.</p>
+First enter the installation directory of Diskcoin, there is a diskcoin-qt.exe file, as the figure shows:
+<img alt="alt" src="../image/directory.png" /></p>
 <h5 id="windows">Windows:<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h5>
-<p><div class="codehilite"><pre><span></span>dickcoin-qt.exe -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
+<p>Press "Windows" and "R" at the same time, there is a search box. Enter "cmd" to go to the Windows console and execute the following startup command. 
+<div class="codehilite"><pre><span></span>Your wallet installation path/diskcoin-qt.exe  -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1 
 </pre></div>
 <img alt="alt" src="https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Windows.png?raw=true" /></p>
 <h5 id="macos">MacOS:<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h5>
-<p><div class="codehilite"><pre><span></span>Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1```
+<p>MacOS is the same as Windows, but the command is different.
+MacOS startup command: 
+<div class="codehilite"><pre><span></span>Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1```
 </pre></div>
-<img alt="alt" src="https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/MacOS.png?raw=true" /></p>
-<p>If the wallet can be launched, the operation is successful and the miner file can be configured.</p>
+<img alt="alt" src="../image/MacOS.png" /></p>
+<p>If the wallet can be launched, the operation is successful and the miner file can be configured. As the figure shows:
+<img alt="alt" src="../image/wallet.png" /></p>
 <h3 id="start-mining">Start mining<a class="headerlink" href="#start-mining" title="Permanent link">&para;</a></h3>
 <p>The dcminer needs to run in the windows environment.</p>
 <p>Modify the mining device configuration file: miner.conf</p>
-<div class="codehilite"><pre><span></span>Server =127.0.0.1
-UpdaterAddr = 127.0.0.1
-InfoAddr =127.0.0.1
+<div class="codehilite"><pre><span></span>&quot;Server&quot;: &quot;127.0.0.1&quot;,
+&quot;Port&quot;: 63336,
+&quot;UpdaterAddr&quot;: &quot;127.0.0.1&quot;,
+&quot;UpdaterPort&quot;: 63336,
+&quot;InfoAddr&quot;: &quot;127.0.0.1&quot;,
+&quot;InfoPort&quot;: 63336,
 MinerName = m1 #can be empty
 </pre></div>
 
 <p>Others can use the default value.</p>
 <p>Please run dcminer with this order, it is recommended to use dcminerAVX512 first. If it can not be started, then use dcminerAVX2. and then dcminerAVX. If the three mentioned above cannot be started,  you could use the dcminer.exe.</p>
-<p><img alt="alt" src="https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/order.png?raw=true" /></p>
+<p><img alt="alt" src="../image/order.png" /></p>
 <h4 id="download-installation-package-httpsgithubcomdiskcoin-apps-teamwikireleaseslatest">Download installation package: <a href="https://github.com/diskcoin-apps-team/wiki/releases/latest">https://github.com/diskcoin-apps-team/wiki/releases/latest</a><a class="headerlink" href="#download-installation-package-httpsgithubcomdiskcoin-apps-teamwikireleaseslatest" title="Permanent link">&para;</a></h4>
                 
                   
