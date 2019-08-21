@@ -41,14 +41,14 @@ You could use the listStakein command to get the txid that has been Staked.
 ### Windows/MacOS system (Taking the MacOS system as an example, the Windows system is the same operation)
 #### How to Stake:
 Launch the wallet, click on “Send” in the upper navigation bar, fill in the address you want to Stake in the "Stake to" line, and fill in the amount you want to Stake in "Amount". Make sure the bottom left is Stake to, click send.
-![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Staketo.png?raw=true)
+![alt](image/Staketo.png)
 
 
 #### How to check the records of Staked:
 You can find the record of Staked in "Transactions". As the picture shows.
-![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Transactions.png?raw=true)
+![alt](image/Transactions.png)
 
 
 #### How to cancel the Stake:
 Select the record you want to cancel Stake, click the right mouse button and select unstake.
-![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/unstake.png?raw=true)
+![alt](image/unstake.png)
