@@ -115,6 +115,7 @@ Please copy it to the prepared Windows or MacOS server and unzip it. If you have
 
 Start Diskcoind service command
 First enter the installation directory of Diskcoin, there is a diskcoin-qt.exe file, as the figure shows:
+
 ![alt](image/directory.png)
 
 ##### Windows:
@@ -123,6 +124,7 @@ Press "Windows" and "R" at the same time, there is a search box. Enter "cmd" to 
 ```
 Your wallet installation path/diskcoin-qt.exe  -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1 
 ```
+
 ![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Windows.png?raw=true)
 
 
@@ -133,10 +135,12 @@ MacOS startup command:
 ```
 Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1```
 ```
+
 ![alt](image/MacOS.png)
 
 
 If the wallet can be launched, the operation is successful and the miner file can be configured. As the figure shows:
+
 ![alt](image/wallet.png)
 
 ### Start mining
