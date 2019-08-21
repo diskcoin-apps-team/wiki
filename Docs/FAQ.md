@@ -57,29 +57,11 @@ In Diskcoin mining, the proportion of coins that need Staking is not simply fixe
 
 
 
-### Transactions
-
-#### How to verify the transaction?
-
-We define an electronic coin as a chain of digital signatures. Each owner transfers the coin to the next by digitally signing a hash of the previous transaction and the public key of the next owner and adding these to the end of the coin. A payee can verify the chain of ownership by verifying the signature.
-
-
-#### How to ensure transaction safety?
-
-We propose to begin with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
-
-
-
 ### Mining
 
 #### Will Diskcoin premine?
 
 No. Diskcoin is not premined.
-
-
-#### How does Diskcoin mining works?
-
-When you mine and process your plot files, you will end up with resulting values called deadlines. The values represent the number of seconds that must elapse since last block was forged before you are allowed to forge a block. If no one else has forged a block within this time, you can forge a block and claim a block reward.
 
 
 #### What is the hashrate related to?
