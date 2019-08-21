@@ -130,7 +130,7 @@ Your wallet installation path/diskcoin-qt.exe  -rpcallowip=127.0.0.1/32 -rpcbind
 
 ##### MacOS:
 
-MacOS is the same as Windows, but the command is different.
+MacOS is the same operation, but the command is different.
 MacOS startup command: 
 ```
 Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1```
