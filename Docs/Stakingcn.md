@@ -4,7 +4,7 @@
 
 ![alt](image/difficultycycle.png)
 
-官网的区块链浏览(https://explorer.diskcoin.org/)可以查看当前爆块的难度区间.
+官网的区块链浏览(https://explorer.diskcoin.org/) 可以查看当前爆块的难度区间.
 
 ![alt](image/ViewDC.jpg)
 
