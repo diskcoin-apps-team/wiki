@@ -13,7 +13,7 @@ Staking公式如下:
 
 收益率公式:
 因为x是一个合作系数,以下是合作系数的公式:
-![alt](image/CooperativeFactorFormula.png)
+![alt](image/CooperativeFactorFormula.jpg)
 
 ####ex1800Minedblock: 前1800个块爆的块(当前高度不包括)
 ####难度区间(DC): 当前区块高度位于哪一难度区间
