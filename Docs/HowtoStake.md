@@ -41,14 +41,14 @@ You could use the listStakein command to get the txid that has been Staked.
 ### Windows/MacOS system (Taking the MacOS system as an example, the Windows system is the same operation)
 #### How to Stake:
 Launch the wallet, click on “Send” in the upper navigation bar, fill in the address you want to Stake in the "Stake to" line, and fill in the amount you want to Stake in "Amount". Make sure the bottom left is Stake to, click send.
-![alt](image/Staketo.png)
+![alt](image/Staketo.jpg)
 
 
 #### How to check the records of Staked:
 You can find the record of Staked in "Transactions". As the picture shows.
-![alt](image/Transactions.png)
+![alt](image/Transactions.jpg)
 
 
 #### How to cancel the Stake:
 Select the record you want to cancel Stake, click the right mouse button and select unstake.
-![alt](image/unstake.png)
+![alt](image/unstake.jpg)
