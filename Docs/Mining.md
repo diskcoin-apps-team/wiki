@@ -125,7 +125,7 @@ Press "Windows" and "R" at the same time, there is a search box. Enter "cmd" to 
 Your wallet installation path/diskcoin-qt.exe  -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1 
 ```
 
-![alt](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/image/Windows.png?raw=true)
+![alt](image/Windows.png)
 
 
 ##### MacOS:
