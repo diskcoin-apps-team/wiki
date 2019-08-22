@@ -17,14 +17,14 @@ Diskcoin采用CPoC(条件容量证明)共识算法,硬盘挖矿比CPUs,GPUs或AS
 矿工为获得最大利益,在挖矿时需要抵押相应数量的Diskcoin.Stake的比例并不固定,也不会突然急剧下降. Diskcoin采用的DES (The Dynamic Equilibrium Staking) 机制会根据挖矿难度自动调节需要Stake的比例.
 
 ###了解DISC
-Getting started
+[Getting started](https://diskcoin.org/started.html) 
 
-Diskcoin Whitepaper
+[Diskcoin Whitepaper](https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf)
 
 ###服务工具
-Wallet Download
+[Wallet Download](https://diskcoin.org/wallet.html) 
 
-Block Explorer
+[Block Explorer](https://explorer.diskcoin.org/)
 
 ###联系资讯
-Reddit 丨 Twitter 丨 Bitcointalk 丨 Telegram 丨 Discord
+[Reddit](https://www.reddit.com/r/DiskcoinOrg/) 丨 [Twitter](https://twitter.com/Diskcoinorg) 丨 [Bitcointalk](https://bitcointalk.org/index.php?topic=5154264.0) 丨 [Telegram](https://t.me/Diskcoinofficialgroup) 丨  [Discord](https://discord.gg/gQVEWG)
