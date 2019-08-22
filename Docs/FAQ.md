@@ -114,7 +114,7 @@ If you want to check the Difficulty Cycle of the rewarded block, you could view 
 
 #### How the Diskcoin Foundation use the coins?
 
-![alt](image/Foundation.png)
+![alt](image/Foundation.jpg)
 
 
 
