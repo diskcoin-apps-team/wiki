@@ -31,12 +31,12 @@ liststakein (minconf maxconf  ["address",...])
 ###Windows/MacOS 系统(以MacOS系统为例,Windows系统操作同理)
 如何Stake:
 启动钱包,单击上方导航栏中的"Send",在"Stake to"中填写要Stake的地址,然后在"Amount"中填写要Stake的金额. 确保左下方是Stake to,单击"Send".
-![alt](image/Staketo.png)
+![alt](image/Staketo.jpg)
 
 如何查看Staked记录:
 在上方导航栏"Transactions"的选项下找到Staked in的记录,如图所示:
-![alt](image/Transactions.png)
+![alt](image/Transactions.jpg)
 
 如何取消Stake:
 选中需要取消的Stake记录,点击右键,选择"Unstake"
-![alt](image/unstake.png)
+![alt](image/unstake.jpg)
