@@ -88,7 +88,7 @@ rm -rf /data (data directory under the Diskcoin directory)
 
 Diskcoin基金会如何使用这些Diskcoin?
 
-![alt](image/Foundationcn.jpg)
+![alt](image/Foundationcn.png)
 
 ##安全问题
 
