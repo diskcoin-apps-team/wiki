@@ -66,15 +66,16 @@ Bitcoin作为一种有使用价值的虚拟货币而产生价值.Diskcoin与Bitc
 
 如果你之前下载安装过QT 钱包,在电脑弹出错误对话框时,请删除之前的钱包数据再安装.
 
-MacOS:
+#####MacOS:
 ```
 rm -fr ~/Library/Application\ Support/diskcoin
 ```
 
-Windows:
+#####Windows:
+
 文件"Uninstall.exe"位于您在安装时指定的目录中.单击"Uninstall.exe"卸载. 如果还有卸载残留文件,请手动删除.
 
-Linux: 
+#####Linux: 
 ```
 rm -rf /data (data directory under the Diskcoin directory)
 ```
