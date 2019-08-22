@@ -80,10 +80,6 @@ Window系统连接到Solo挖矿需要配置钱包.
 ```
 ![alt](image/Windows.jpg)
 
-Windows完整的启动命令应该是:
-```
-你的钱包安装路径/diskcoin-qt.exe  -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
-```
 
 MacOS钱包配置
 MacOS系统与Windows系统同理,但执行命令不同.
@@ -113,8 +109,9 @@ cd diskcoin
 ```
 如果两个值都相同,表示节点数据已经同步,可以开始挖矿了.
 
+
 出现如下图所示,钱包正常启动,就可以配置miner文件开始挖矿了.
-![alt](image/wallet.jpg)
+![alt](image/wallet.png)
 
 ###开始挖矿
 dcminer 要在Windows系统运行.修改挖矿的配置文件: miner.conf
