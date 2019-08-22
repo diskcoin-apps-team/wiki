@@ -130,6 +130,7 @@ MinerName = m1 #can be empty
 ``` 
 
 其它值可以用文本内默认的值.
+
 在启动dcminer时,请按以下顺序,建议先使用dcminerAVX512,如果不能启动,再用dcminerAVX2,然后是dcminerAVX,如果上述三个都无法运行,最后使用dcminer启动.
 
 ![alt](image/order.jpg)
