@@ -5,32 +5,48 @@
 ###P盘软件
 
 ENGRAVER
+
 制造商:PoC-Consortium
+
 下载链接: https://github.com/PoC-Consortium/engraver
+
 适用系统: Linux, MacOS
+
 安装指引: Compile from Source
 
 TurboPlotter 9000
+
 制造商: Blackpawn
+
 下载链接: https://blackpawn.com/tp/
+
 适用系统: Windows, Linux, MacOS
 
 XPlotterGui
+
 制造商: JohnnyFFM
+
 下载链接: https://github.com/JohnnyFFM/XPlotterGui/releases/latest
+
 适用系统: Windows
 
 XPlotter modded
+
 制造商: JohnnyFFM
+
 下载链接: https://github.com/JohnnyFFM/XPlotter/releases/latest 
+
 适用系统: Windows
 
 ##挖矿
 
 ###挖矿准备
 挖矿设备: 一个组装好并且p好盘的硬盘挖矿设备(硬盘容量越大,收益越高).
+
 钱包支持系统: Linux/Windows/MacOS.
+
 挖矿支持系统: Windows系统.
+
 挖矿软件: dcminer或ddProxy
 
 ###安装Diskcoin钱包
