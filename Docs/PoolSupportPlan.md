@@ -5,6 +5,7 @@ The Diskcoin Foundation has launched the Diskcoin Ecological Mining Pool Support
 Specific way: According to the comprehensive situation of the mining pool, the Foundation will stake a certain amount of DISC to it to increase it's reward ratio.
 
 The mining pools which launched DISC can submit an application to the Foundation via the link: https://forms.gle/goomU3fNadnAptwM9 
+
 We will comprehensively consider from the following aspects. Please fill in as much detailed information as possible: 
 
 1. Team information
