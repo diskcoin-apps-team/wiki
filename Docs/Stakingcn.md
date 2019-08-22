@@ -4,7 +4,7 @@
 ![alt](image/difficultycycle.png)
 
 官网的区块链浏览(https://explorer.diskcoin.org/) 可以查看当前爆块的难度区间.
-![alt](image/ViewDC.png)
+![alt](image/ViewDC.jpg)
 
 Staking公式如下:
 ![alt](image/RewardRatioFormula.png)
@@ -21,9 +21,9 @@ Staking公式如下:
 举个例子:
 条件:当前挖到的块高度是1977,在块高度176-1976之间我爆块26个,stake了101个Diskcoin.
 合作系数为:
-![alt](image/CooperativeFactorInExample.png)
+![alt](image/CooperativeFactorInExample.jpg)
 
 因为x不是整数,所以n=INT(0.19423+1)=1.那么收益率如下:
-![alt](image/RewardRatioInExample.png)
+![alt](image/RewardRatioInExample.jpg)
 
 所以收益率为45.82%
