@@ -5,26 +5,22 @@
 ###P盘软件
 
 ENGRAVER
-Engraver是一个P盘软件,可以自动生成PoC2适用的P盘文件,适用于任何完善的文件系统(能够预先分配空间)的UNIX系统,但目前只测试了Linux和MacOS. 仅限64位字节PID!
 制造商:PoC-Consortium
 下载链接: https://github.com/PoC-Consortium/engraver
 适用系统: Linux, MacOS
 安装指引: Compile from Source
 
 TurboPlotter 9000
-TurboPlotter 9000是一款P盘软件,支持CPU和GPU两种P盘模式,适用于PoC1和PoC2两大币种.
 制造商: Blackpawn
 下载链接: https://blackpawn.com/tp/
 适用系统: Windows, Linux, MacOS
 
 XPlotterGui
-XplotterGui是Xplotter的GUI版本,具有SSD缓存,文件合并和POC2转换功能.
 制造商: JohnnyFFM
 下载链接: https://github.com/JohnnyFFM/XPlotterGui/releases/latest
 适用系统: Windows
 
 XPlotter modded
-XPlotter是随QBundle一同产生的P盘软件,支持CPU P盘模式,在AVX支持下适用PoC1币种. XPlotter modded这一版支持PoC2币种.
 制造商: JohnnyFFM
 下载链接: https://github.com/JohnnyFFM/XPlotter/releases/latest 
 适用系统: Windows
