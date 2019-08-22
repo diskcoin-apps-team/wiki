@@ -15,10 +15,12 @@ Diskcoin采用CPoC(条件容量证明)共识算法,硬盘挖矿比CPUs,GPUs或AS
 
 ###了解DISC
 Getting started
+
 Diskcoin Whitepaper
 
 ###服务工具
 Wallet Download
+
 Block Explorer
 
 ###联系资讯
