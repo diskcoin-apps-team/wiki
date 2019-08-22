@@ -66,7 +66,7 @@ Window系统连接到Solo挖矿需要配置钱包.
 ```
 空格 -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
 ```
-![alt](image/Windows.png)
+![alt](image/Windows.jpg)
 
 Windows完整的启动命令应该是:
 ```
@@ -80,7 +80,7 @@ MacOS的执行命令:
 ```
 Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
 ```
-![alt](image/MacOS.png)
+![alt](image/MacOS.jpg)
 
 Linux系统钱包配置
 请下载适合Linux系统版本的钱包,将其复制粘贴到Linux系统并解压.
@@ -102,7 +102,7 @@ cd diskcoin
 如果两个值都相同,表示节点数据已经同步,可以开始挖矿了.
 
 出现如下图所示,钱包正常启动,就可以配置miner文件开始挖矿了.
-![alt](image/wallet.png)
+![alt](image/wallet.jpg)
 
 ###开始挖矿
 dcminer 要在Windows系统运行.修改挖矿的配置文件: miner.conf
@@ -120,6 +120,6 @@ MinerName = m1 #can be empty
 其它值可以用文本内默认的值.
 在启动dcminer时,请按以下顺序,建议先使用dcminerAVX512,如果不能启动,再用dcminerAVX2,然后是dcminerAVX,如果上述三个都无法运行,最后使用dcminer启动.
 
-![alt](image/order.png)
+![alt](image/order.jpg)
 
 Download installation package: https://github.com/diskcoin-apps-team/wiki/releases/latest
