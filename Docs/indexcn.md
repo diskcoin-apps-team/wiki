@@ -5,12 +5,15 @@ Diskcoin介绍 Diskcoin是一种能源节约型的点对点新型加密货币.�
 
 ###DISC 优势
 能源节约型环境友好型CPoC
+
 Diskcoin采用CPoC(条件容量证明)共识算法,比其他虚拟货币更加节能.
 
 更加去中心化
+
 Diskcoin采用CPoC(条件容量证明)共识算法,硬盘挖矿比CPUs,GPUs或ASICs更节能,同时还具有便宜,准入门槛低的优势.矿工可以用硬盘闲置空间挖Diskcoin.
 
 动态抵押机制
+
 矿工为获得最大利益,在挖矿时需要抵押相应数量的Diskcoin.Stake的比例并不固定,也不会突然急剧下降. Diskcoin采用的DES (The Dynamic Equilibrium Staking) 机制会根据挖矿难度自动调节需要Stake的比例.
 
 ###了解DISC
