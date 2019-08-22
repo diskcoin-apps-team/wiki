@@ -141,7 +141,7 @@ Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32
 
 If the wallet can be launched, the operation is successful and the miner file can be configured. As the figure shows:
 
-![alt](image/wallet.jpg)
+![alt](image/wallet.png)
 
 ### Start mining
 
