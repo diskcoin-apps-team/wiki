@@ -19,6 +19,7 @@ Staking完成后会返回一个哈希值.
 liststakein (minconf maxconf  ["address",...])
 ```
 最小确认数: Minconf: minimum confirmation
+
 最大确认数: Maxconf: maximum confirmation
 
 解除抵押:
@@ -26,7 +27,7 @@ liststakein (minconf maxconf  ["address",...])
 ./diskcoin-cli unstake txid
 ```
 用"listStakein"命令去获得已Stake的txid
-通过"diskcoin-cli unstake txid"命令解除Stake
+
 
 ###Windows/MacOS 系统(以MacOS系统为例,Windows系统操作同理)
 如何Stake:
