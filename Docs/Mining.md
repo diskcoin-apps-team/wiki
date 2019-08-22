@@ -125,7 +125,7 @@ Press "Windows" and "R" at the same time, there is a search box. Enter "cmd" to 
 Your wallet installation path/diskcoin-qt.exe  -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1 
 ```
 
-![alt](image/Windows.png)
+![alt](image/Windows.jpg)
 
 
 ##### MacOS:
@@ -136,12 +136,12 @@ MacOS startup command:
 Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1```
 ```
 
-![alt](image/MacOS.png)
+![alt](image/MacOS.jpg)
 
 
 If the wallet can be launched, the operation is successful and the miner file can be configured. As the figure shows:
 
-![alt](image/wallet.png)
+![alt](image/wallet.jpg)
 
 ### Start mining
 
@@ -164,6 +164,6 @@ Others can use the default value.
 
 Please run dcminer with this order, it is recommended to use dcminerAVX512 first. If it can not be started, then use dcminerAVX2. and then dcminerAVX. If the three mentioned above cannot be started,  you could use the dcminer.exe.
 
-![alt](image/order.png)
+![alt](image/order.jpg)
 
 #### Download installation package: https://github.com/diskcoin-apps-team/wiki/releases/latest
