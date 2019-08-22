@@ -1,10 +1,10 @@
 ##综合问答
 
-1.Diskcoin介绍
+###Diskcoin介绍
 
 Diskcoin是一种能源节约型的点对点新型加密货币.它保留了Bitcoin的各项优势,如点对点网络,精简的网络框架,安全性能等,但却比Bitcoin更加的节能环保.
 
-2.Diskcoin的算法基础?
+###Diskcoin的算法基础?
 
 Diskcoin是一种基于CPoC共识算法(条件容量证明)的新型加密货币.
 
@@ -18,10 +18,13 @@ Diskcoin是一种基于CPoC共识算法(条件容量证明)的新型加密货币
 
 5.如何得到Diskcoins?
 
-1.提供服务获得报酬
-2.在交易所购买Diskcoin
-3.场外交易
-4.挖矿获得Diskcoin
+提供服务获得报酬
+
+在交易所购买Diskcoin
+
+场外交易
+
+挖矿获得Diskcoin
 
 6.Diskcoin与Burstcoin的区别?
 
