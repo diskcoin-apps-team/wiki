@@ -71,7 +71,7 @@ rm -rf /data (data directory under the Diskcoin directory)
 官网的区块链浏览(https://explorer.diskcoin.org/)可以查看当前爆块的难度区间.
 
 Diskcoin基金会如何使用这些Diskcoin?
-![alt](image/基金会.png)
+![alt](image/Foundationcn.png)
 
 ##安全问题
 Diskcoin的网络由谁控制?
