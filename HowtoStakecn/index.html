@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Staking - Home</title>
+  <title>如何 Stake - Home</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Staking";
-    var mkdocs_page_input_path = "Staking.md";
-    var mkdocs_page_url = "/Staking/";
+    var mkdocs_page_name = "\u5982\u4f55 Stake";
+    var mkdocs_page_input_path = "HowtoStakecn.md";
+    var mkdocs_page_url = "/HowtoStakecn/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -60,23 +60,9 @@
                     
     <a class="" href="../Mining/">Mining</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Staking</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#the-des-rules">The DES rules</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#ex1800minedblock-mined-blocks-during-the-last-1800-blocks-the-current-block-not-included">ex1800Minedblock: mined blocks during the last 1800 blocks (the current block not included)</a></li>
-        
-            <li><a class="toctree-l4" href="#difficulty-cycle-dc-the-current-block-height-lays-in-which-difficulty-cycle">Difficulty Cycle (DC): the current block height lays in which difficulty cycle</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../Staking/">Staking</a>
                 </li>
                 <li class="">
                     
@@ -113,9 +99,23 @@
                     
     <a class="" href="../Stakingcn/">Staking</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../HowtoStakecn/">如何 Stake</a>
+    <a class="current" href="./">如何 Stake</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#_1">如何抵押?</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#linux">Linux 系统:</a></li>
+        
+            <li><a class="toctree-l4" href="#windowsmacos-macoswindows">Windows/MacOS 系统(以MacOS系统为例,Windows系统操作同理)</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -154,11 +154,11 @@
     
       
         
-          <li>EN &raquo;</li>
+          <li>中文 &raquo;</li>
         
       
     
-    <li>Staking</li>
+    <li>如何 Stake</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -168,26 +168,36 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="the-des-rules">The DES rules<a class="headerlink" href="#the-des-rules" title="Permanent link">&para;</a></h2>
-<p>To understand the Dynamic Equilibrium Staking rules, you need to know what the Difficulty Cycle (DC) is. We creatively define these blocks as continuous Difficulty Cycles, and each 1800 blocks is a Difficulty Cycle. The first Difficulty Cycle is from block 1 to 1800, and the second Difficulty Cycle is from block 1801 to 3600, and so on. There follows a diagram for your reference:</p>
-<p><img alt="alt" src="../image/DC.png" /></p>
-<p>If you want to check the Difficulty Cycle of the rewarded block, you could view it in the block explorer of the official website.</p>
-<p><img alt="alt" src="../image/ViewDC.jpg" /></p>
-<p>Here is the reward ratio formula: </p>
-<p><img alt="alt" src="../image/RewardRatioFormula.png" /></p>
-<p>If x is an integer, then n=x; if x is not an integer, the n=INT(x+1).  (Range: n-1&lt;x&lt;=n)</p>
-<p>Since x is a Cooperative Factor, there follows a calculation formula:</p>
-<p><img alt="alt" src="../image/CooperativeFactorFormula.jpg" /></p>
-<h4 id="ex1800minedblock-mined-blocks-during-the-last-1800-blocks-the-current-block-not-included">ex1800Minedblock: mined blocks during the last 1800 blocks (the current block not included)<a class="headerlink" href="#ex1800minedblock-mined-blocks-during-the-last-1800-blocks-the-current-block-not-included" title="Permanent link">&para;</a></h4>
-<h4 id="difficulty-cycle-dc-the-current-block-height-lays-in-which-difficulty-cycle">Difficulty Cycle (DC): the current block height lays in which difficulty cycle<a class="headerlink" href="#difficulty-cycle-dc-the-current-block-height-lays-in-which-difficulty-cycle" title="Permanent link">&para;</a></h4>
-<p>For example: 
-Condition: The rewarded block is 1977, and you mined 26 blocks during the last 1800 blocks, which is from block 176 to block 1976, and you staked 101 DISCs. Then the Cooperative Factor is as follows: </p>
-<p><img alt="alt" src="../image/CooperativeFactorInExample.jpg" /></p>
-<p>Since x is not an integer, so n=INT(0.19423+1)=1
-reward ratio in example:</p>
-<p><img alt="alt" src="../image/RewardRatioInExample.jpg" /></p>
-<p>So the the reward ratio is 45.82%.</p>
-<p><img alt="alt" src="../image/Staking.jpg" /></p>
+                <h2 id="_1">如何抵押?<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>从块高度1801开始,矿工需要在钱包作出相应的操作来进行Stake.Stake的Diskcoin越多,则收益越多.Stake要在下一个爆块后生效,unstake要在900个块确认后生效.</p>
+<h3 id="linux">Linux 系统:<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
+<p>如何Stake:
+<div class="codehilite"><pre><span></span>./diskcoin-cli staketo the-wallet-address-you-stake-to the-stake-amount  
+</pre></div>
+以上地址必须是爆块地址.</p>
+<p>如何检查默认的钱包地址:
+<div class="codehilite"><pre><span></span>./diskcoin-cli getaccountaddress &quot;&quot;
+</pre></div>
+Staking完成后会返回一个哈希值.</p>
+<p>检查Staking数据的地址:
+<div class="codehilite"><pre><span></span>liststakein (minconf maxconf  [&quot;address&quot;,...])
+</pre></div>
+最小确认数: Minconf: minimum confirmation</p>
+<p>最大确认数: Maxconf: maximum confirmation</p>
+<p>解除抵押:
+<div class="codehilite"><pre><span></span>./diskcoin-cli unstake txid
+</pre></div>
+用"listStakein"命令去获得已Stake的txid</p>
+<h3 id="windowsmacos-macoswindows">Windows/MacOS 系统(以MacOS系统为例,Windows系统操作同理)<a class="headerlink" href="#windowsmacos-macoswindows" title="Permanent link">&para;</a></h3>
+<p>如何Stake:
+启动钱包,单击上方导航栏中的"Send",在"Stake to"中填写要Stake的地址,然后在"Amount"中填写要Stake的金额. 确保左下方是Stake to,单击"Send".
+<img alt="alt" src="../image/Staketo.jpg" /></p>
+<p>如何查看Staked记录:
+在上方导航栏"Transactions"的选项下找到Staked in的记录,如图所示:
+<img alt="alt" src="../image/Transactions.jpg" /></p>
+<p>如何取消Stake:
+选中需要取消的Stake记录,点击右键,选择"Unstake"
+<img alt="alt" src="../image/unstake.jpg" /></p>
               
             </div>
           </div>
@@ -195,10 +205,10 @@ reward ratio in example:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../HowtoStake/" class="btn btn-neutral float-right" title="How to Stake">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../diskcoin_apicn/" class="btn btn-neutral float-right" title="Diskcoin API">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Mining/" class="btn btn-neutral" title="Mining"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Stakingcn/" class="btn btn-neutral" title="Staking"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -224,10 +234,10 @@ reward ratio in example:</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../Mining/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../Stakingcn/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../HowtoStake/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../diskcoin_apicn/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
