@@ -1,0 +1,6214 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="The Diskcoin Wiki">
+      
+      
+        <link rel="canonical" href="https://diskcoin.wiki/cn/diskcoin_apicn/">
+      
+      
+        <meta name="author" content="The Diskcoin Team">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Diskcoin API - Diskcoin Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#diskcoin-api" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://diskcoin.wiki/" title="Diskcoin Wiki" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Diskcoin Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Diskcoin API
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/diskcoin-apps-team/wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Diskcoin-Wiki
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../en/" title="English" class="md-tabs__link">
+          English
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="中文维基百科" class="md-tabs__link md-tabs__link--active">
+          中文维基百科
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://diskcoin.wiki/" title="Diskcoin Wiki" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Diskcoin Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/diskcoin-apps-team/wiki/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Diskcoin-Wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      English
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        English
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../en/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../en/Mining/" title="Mining" class="md-nav__link">
+      Mining
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../en/Staking/" title="Staking" class="md-nav__link">
+      Staking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../en/HowtoStake/" title="How to Stake" class="md-nav__link">
+      How to Stake
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../en/diskcoin_api/" title="Diskcoin API" class="md-nav__link">
+      Diskcoin API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../en/FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../en/PoolSupportPlan/" title="Pool Support Plan" class="md-nav__link">
+      Pool Support Plan
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      中文维基百科
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        中文维基百科
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="主页" class="md-nav__link">
+      主页
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Miningcn/" title="挖矿" class="md-nav__link">
+      挖矿
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Stakingcn/" title="Staking" class="md-nav__link">
+      Staking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../HowtoStakecn/" title="如何 Stake" class="md-nav__link">
+      如何 Stake
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Diskcoin API
+      </label>
+    
+    <a href="./" title="Diskcoin API" class="md-nav__link md-nav__link--active">
+      Diskcoin API
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#blockchain" title="Blockchain" class="md-nav__link">
+    Blockchain
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getbestblockhash" title="getbestblockhash" class="md-nav__link">
+    getbestblockhash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblock-hash-verbose-listtransactions" title="getblock "hash" (verbose) (listtransactions)" class="md-nav__link">
+    getblock "hash" (verbose) (listtransactions)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockchaininfo" title="getblockchaininfo" class="md-nav__link">
+    getblockchaininfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockcount" title="getblockcount" class="md-nav__link">
+    getblockcount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockhash-index" title="getblockhash index" class="md-nav__link">
+    getblockhash index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockheader-hash-verbose" title="getblockheader "hash" (verbose)" class="md-nav__link">
+    getblockheader "hash" (verbose)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getchaintips" title="getchaintips" class="md-nav__link">
+    getchaintips
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmempoolancestors-txid-verbose" title="getmempoolancestors txid (verbose)" class="md-nav__link">
+    getmempoolancestors txid (verbose)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmempooldescendants-txid-verbose" title="getmempooldescendants txid (verbose)" class="md-nav__link">
+    getmempooldescendants txid (verbose)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmempoolentry-txid" title="getmempoolentry txid" class="md-nav__link">
+    getmempoolentry txid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmempoolinfo" title="getmempoolinfo" class="md-nav__link">
+    getmempoolinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getorphanpoolinfo" title="getorphanpoolinfo" class="md-nav__link">
+    getorphanpoolinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrawmempool-verbose" title="getrawmempool (verbose)" class="md-nav__link">
+    getrawmempool (verbose)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getraworphanpool" title="getraworphanpool" class="md-nav__link">
+    getraworphanpool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettxout-txid-n-includemempool" title="gettxout "txid" n (includemempool)" class="md-nav__link">
+    gettxout "txid" n (includemempool)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettxoutproof-txid-blockhash" title="gettxoutproof ["txid",...] (blockhash)" class="md-nav__link">
+    gettxoutproof ["txid",...] (blockhash)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettxoutproofs-txid-blockhash" title="gettxoutproofs ["txid",...] (blockhash)" class="md-nav__link">
+    gettxoutproofs ["txid",...] (blockhash)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettxoutsetinfo" title="gettxoutsetinfo" class="md-nav__link">
+    gettxoutsetinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifychain-checklevel-numblocks" title="verifychain (checklevel numblocks)" class="md-nav__link">
+    verifychain (checklevel numblocks)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifytxoutproof-proof" title="verifytxoutproof "proof"" class="md-nav__link">
+    verifytxoutproof "proof"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control" title="Control" class="md-nav__link">
+    Control
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getinfo" title="getinfo" class="md-nav__link">
+    getinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#help-command" title="help ("command")" class="md-nav__link">
+    help ("command")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop" title="stop" class="md-nav__link">
+    stop
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electrum" title="Electrum" class="md-nav__link">
+    Electrum
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getelectruminfo" title="getelectruminfo" class="md-nav__link">
+    getelectruminfo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generating" title="Generating" class="md-nav__link">
+    Generating
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getgenerate" title="getgenerate" class="md-nav__link">
+    getgenerate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setgenerate-generate-genproclimit" title="setgenerate generate (genproclimit)" class="md-nav__link">
+    setgenerate generate (genproclimit)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mining" title="Mining" class="md-nav__link">
+    Mining
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addblackplotterid-plotterid" title="addblackplotterid plotterId" class="md-nav__link">
+    addblackplotterid plotterId
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmininginfo" title="getMiningInfo" class="md-nav__link">
+    getMiningInfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblocktemplate-jsonrequestobject" title="getblocktemplate ("jsonrequestobject")" class="md-nav__link">
+    getblocktemplate ("jsonrequestobject")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockversion" title="getblockversion" class="md-nav__link">
+    getblockversion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getminercomment" title="getminercomment" class="md-nav__link">
+    getminercomment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmininginfo_1" title="getmininginfo" class="md-nav__link">
+    getmininginfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getminingmaxblock" title="getminingmaxblock" class="md-nav__link">
+    getminingmaxblock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnetworkhashps-blocks-height" title="getnetworkhashps (blocks height)" class="md-nav__link">
+    getnetworkhashps (blocks height)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioritisetransaction" title="prioritisetransaction   " class="md-nav__link">
+    prioritisetransaction   
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setblockversion-blockversionnumber" title="setblockversion blockVersionNumber" class="md-nav__link">
+    setblockversion blockVersionNumber
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setminercomment" title="setminercomment" class="md-nav__link">
+    setminercomment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setminingmaxblock-blocksize" title="setminingmaxblock blocksize" class="md-nav__link">
+    setminingmaxblock blocksize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitnonce-nonce-plotterid-height" title="submitNonce nonce plotterId (height)" class="md-nav__link">
+    submitNonce nonce plotterId (height)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitblock-hexdata-jsonparametersobject" title="submitblock "hexdata" ("jsonparametersobject")" class="md-nav__link">
+    submitblock "hexdata" ("jsonparametersobject")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitminingsolution-mining-candidate-data-jsonparametersobject" title="submitminingsolution "Mining-Candidate data" ("jsonparametersobject")" class="md-nav__link">
+    submitminingsolution "Mining-Candidate data" ("jsonparametersobject")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validateblocktemplate-hexdata" title="validateblocktemplate "hexdata"" class="md-nav__link">
+    validateblocktemplate "hexdata"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network" title="Network" class="md-nav__link">
+    Network
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addnode-node-addremoveonetry" title="addnode "node" "add|remove|onetry"" class="md-nav__link">
+    addnode "node" "add|remove|onetry"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clearbanned" title="clearbanned" class="md-nav__link">
+    clearbanned
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listbanned" title="listbanned" class="md-nav__link">
+    listbanned
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clearblockstats" title="clearblockstats" class="md-nav__link">
+    clearblockstats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disconnectnode-node" title="disconnectnode "node"" class="md-nav__link">
+    disconnectnode "node"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expedited-blocktx-node-ip-addr-onoff" title="expedited block|tx "node IP addr" on|off" class="md-nav__link">
+    expedited block|tx "node IP addr" on|off
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getconnectioncount" title="getconnectioncount" class="md-nav__link">
+    getconnectioncount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getexcessiveblock" title="getexcessiveblock" class="md-nav__link">
+    getexcessiveblock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnettotals" title="getnettotals" class="md-nav__link">
+    getnettotals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnetworkinfo" title="getnetworkinfo" class="md-nav__link">
+    getnetworkinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpeerinfo-peer-ip-address" title="getpeerinfo [peer IP address]" class="md-nav__link">
+    getpeerinfo [peer IP address]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettrafficshaping" title="gettrafficshaping" class="md-nav__link">
+    gettrafficshaping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ping" title="ping" class="md-nav__link">
+    ping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pushtx-node" title="pushtx "node"" class="md-nav__link">
+    pushtx "node"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setban-ipnetmask-addremove-bantime-absolute" title="setban "ip(/netmask)" "add|remove" (bantime) (absolute)" class="md-nav__link">
+    setban "ip(/netmask)" "add|remove" (bantime) (absolute)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setexcessiveblock-blocksize-acceptdepth" title="setexcessiveblock blockSize acceptDepth" class="md-nav__link">
+    setexcessiveblock blockSize acceptDepth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settrafficshaping-sendreceive-burstkb-averagekb" title="settrafficshaping "send|receive" "burstKB" "averageKB"" class="md-nav__link">
+    settrafficshaping "send|receive" "burstKB" "averageKB"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rawtransactions" title="Rawtransactions" class="md-nav__link">
+    Rawtransactions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#createrawtransaction-txididvoutn-addressamountdatahex-locktime" title="createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} (locktime)" class="md-nav__link">
+    createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} (locktime)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoderawtransaction-hexstring" title="decoderawtransaction "hexstring"" class="md-nav__link">
+    decoderawtransaction "hexstring"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decodescript-hex" title="decodescript "hex"" class="md-nav__link">
+    decodescript "hex"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enqueuerawtransaction-hexstring-options" title="enqueuerawtransaction "hexstring" (options)" class="md-nav__link">
+    enqueuerawtransaction "hexstring" (options)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fundrawtransaction-hexstring-includewatching" title="fundrawtransaction "hexstring" includeWatching" class="md-nav__link">
+    fundrawtransaction "hexstring" includeWatching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrawblocktransactions" title="getrawblocktransactions" class="md-nav__link">
+    getrawblocktransactions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrawtransaction-txid-verbose-blockhash" title="getrawtransaction "txid" (verbose "blockhash")" class="md-nav__link">
+    getrawtransaction "txid" (verbose "blockhash")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrawtransactionssince" title="getrawtransactionssince" class="md-nav__link">
+    getrawtransactionssince
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendrawtransaction-hexstring-allowhighfees-allownonstandard" title="sendrawtransaction "hexstring" (allowhighfees, allownonstandard)" class="md-nav__link">
+    sendrawtransaction "hexstring" (allowhighfees, allownonstandard)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signrawtransaction-hexstring-txididvoutnscriptpubkeyhexredeemscripthex-privatekey1-sighashtype" title="signrawtransaction "hexstring" ([{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype)" class="md-nav__link">
+    signrawtransaction "hexstring" ([{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#util" title="Util" class="md-nav__link">
+    Util
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#createmultisig-nrequired-key" title="createmultisig nrequired ["key",...]" class="md-nav__link">
+    createmultisig nrequired ["key",...]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimatefee-nblocks" title="estimatefee nblocks" class="md-nav__link">
+    estimatefee nblocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get" title="get" class="md-nav__link">
+    get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getaddressforms-address" title="getaddressforms "address"" class="md-nav__link">
+    getaddressforms "address"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstat" title="getstat" class="md-nav__link">
+    getstat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstatlist" title="getstatlist" class="md-nav__link">
+    getstatlist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-categoryall-onoff" title="log "category|all" "on|off"" class="md-nav__link">
+    log "category|all" "on|off"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logline-string" title="logline 'string'" class="md-nav__link">
+    logline 'string'
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set" title="set" class="md-nav__link">
+    set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validateaddress-diskcoinaddress" title="validateaddress "diskcoinaddress"" class="md-nav__link">
+    validateaddress "diskcoinaddress"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatechainhistory-hash" title="validatechainhistory [hash]" class="md-nav__link">
+    validatechainhistory [hash]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifymessage-diskcoinaddress-signature-message" title="verifymessage "diskcoinaddress" "signature" "message"" class="md-nav__link">
+    verifymessage "diskcoinaddress" "signature" "message"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wallet" title="Wallet" class="md-nav__link">
+    Wallet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abandontransaction-txid" title="abandontransaction "txid"" class="md-nav__link">
+    abandontransaction "txid"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addmultisigaddress-nrequired-key-account" title="addmultisigaddress nrequired ["key",...] ("account")" class="md-nav__link">
+    addmultisigaddress nrequired ["key",...] ("account")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backupwallet-destination" title="backupwallet "destination"" class="md-nav__link">
+    backupwallet "destination"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dumpprivkey-diskcoinaddress" title="dumpprivkey "diskcoinaddress"" class="md-nav__link">
+    dumpprivkey "diskcoinaddress"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dumpwallet-filename" title="dumpwallet "filename"" class="md-nav__link">
+    dumpwallet "filename"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encryptwallet-passphrase" title="encryptwallet "passphrase"" class="md-nav__link">
+    encryptwallet "passphrase"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getaccount-diskcoinaddress" title="getaccount "diskcoinaddress"" class="md-nav__link">
+    getaccount "diskcoinaddress"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getaccountaddress-account" title="getaccountaddress "account"" class="md-nav__link">
+    getaccountaddress "account"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getaddressesbyaccount-account" title="getaddressesbyaccount "account"" class="md-nav__link">
+    getaddressesbyaccount "account"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbalance-account-minconf-includewatchonly" title="getbalance ("account" minconf includeWatchonly)" class="md-nav__link">
+    getbalance ("account" minconf includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnewaddress-account" title="getnewaddress ("account")" class="md-nav__link">
+    getnewaddress ("account")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrawchangeaddress" title="getrawchangeaddress" class="md-nav__link">
+    getrawchangeaddress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getreceivedbyaccount-account-minconf" title="getreceivedbyaccount "account" (minconf)" class="md-nav__link">
+    getreceivedbyaccount "account" (minconf)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getreceivedbyaddress-diskcoinaddress-minconf" title="getreceivedbyaddress "diskcoinaddress" (minconf)" class="md-nav__link">
+    getreceivedbyaddress "diskcoinaddress" (minconf)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettransaction-txid-includewatchonly" title="gettransaction "txid" (includeWatchonly)" class="md-nav__link">
+    gettransaction "txid" (includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getunconfirmedbalance" title="getunconfirmedbalance" class="md-nav__link">
+    getunconfirmedbalance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getwalletinfo" title="getwalletinfo" class="md-nav__link">
+    getwalletinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importaddress-address-label-rescan-p2sh" title="importaddress "address" ("label" rescan p2sh)" class="md-nav__link">
+    importaddress "address" ("label" rescan p2sh)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importaddresses-rescan-no-rescan-address" title="importaddresses [rescan | no-rescan] "address"..." class="md-nav__link">
+    importaddresses [rescan | no-rescan] "address"...
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importprivatekeys-rescan-no-rescan-diskcoinprivatekey" title="importprivatekeys [rescan | no-rescan] "diskcoinprivatekey"..." class="md-nav__link">
+    importprivatekeys [rescan | no-rescan] "diskcoinprivatekey"...
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importprivkey-diskcoinprivkey-label-rescan" title="importprivkey "diskcoinprivkey" ("label" rescan)" class="md-nav__link">
+    importprivkey "diskcoinprivkey" ("label" rescan)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importpubkey-pubkey-label-rescan" title="importpubkey "pubkey" ("label" rescan)" class="md-nav__link">
+    importpubkey "pubkey" ("label" rescan)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importwallet-filename" title="importwallet "filename"" class="md-nav__link">
+    importwallet "filename"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keypoolrefill-newsize" title="keypoolrefill (newsize)" class="md-nav__link">
+    keypoolrefill (newsize)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listaccounts-minconf-includewatchonly" title="listaccounts (minconf includeWatchonly)" class="md-nav__link">
+    listaccounts (minconf includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listaddressgroupings" title="listaddressgroupings" class="md-nav__link">
+    listaddressgroupings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatechainhistory" title="validatechainhistory" class="md-nav__link">
+    validatechainhistory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listlockunspent" title="listlockunspent" class="md-nav__link">
+    listlockunspent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listminedblock-minconf-maxconf-address" title="listminedblock (minconf maxconf ["address",...])" class="md-nav__link">
+    listminedblock (minconf maxconf ["address",...])
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liststakein-inconf-maxconf-address" title="liststakein ( inconf maxconf  ["address",...]" class="md-nav__link">
+    liststakein ( inconf maxconf  ["address",...]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liststakeout-inconf-maxconf-address" title="liststakeout ( inconf maxconf  ["address",...]" class="md-nav__link">
+    liststakeout ( inconf maxconf  ["address",...]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listreceivedbyaccount-minconf-includeempty-includewatchonly" title="listreceivedbyaccount (minconf includeempty includeWatchonly)" class="md-nav__link">
+    listreceivedbyaccount (minconf includeempty includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listreceivedbyaddress-minconf-includeempty-includewatchonly" title="listreceivedbyaddress (minconf includeempty includeWatchonly)" class="md-nav__link">
+    listreceivedbyaddress (minconf includeempty includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listsinceblock-blockhash-target-confirmations-includewatchonly" title="listsinceblock ("blockhash" target-confirmations includeWatchonly)" class="md-nav__link">
+    listsinceblock ("blockhash" target-confirmations includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listtransactions-account-count-from-includewatchonly" title="listtransactions ("account" count from includeWatchonly)" class="md-nav__link">
+    listtransactions ("account" count from includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listtransactionsfrom-account-count-from-includewatchonly" title="listtransactionsfrom ("account" count from includeWatchonly)" class="md-nav__link">
+    listtransactionsfrom ("account" count from includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listunspent-minconf-maxconf-address" title="listunspent (minconf maxconf ["address",...])" class="md-nav__link">
+    listunspent (minconf maxconf ["address",...])
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lockunspent-unlock-txidtxidvoutn" title="lockunspent unlock [{"txid":"txid","vout":n},...]" class="md-nav__link">
+    lockunspent unlock [{"txid":"txid","vout":n},...]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-fromaccount-toaccount-amount-minconf-comment" title="move "fromaccount" "toaccount" amount (minconf "comment")" class="md-nav__link">
+    move "fromaccount" "toaccount" amount (minconf "comment")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staketo-diskcoinaddress-amount" title="staketo "diskcoinaddress" amount" class="md-nav__link">
+    staketo "diskcoinaddress" amount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removeprunedfunds-txid" title="removeprunedfunds "txid"" class="md-nav__link">
+    removeprunedfunds "txid"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendfrom-fromaccount-todiskcoinaddress-amount-minconf-comment-comment-to" title="sendfrom "fromaccount" "todiskcoinaddress" amount (minconf "comment" "comment-to")" class="md-nav__link">
+    sendfrom "fromaccount" "todiskcoinaddress" amount (minconf "comment" "comment-to")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendmany-fromaccount-addressamount-minconf-comment-address" title="sendmany "fromaccount" {"address":amount,...} (minconf "comment" ["address",...])" class="md-nav__link">
+    sendmany "fromaccount" {"address":amount,...} (minconf "comment" ["address",...])
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendtoaddress-diskcoinaddress-amount-comment-comment-to-subtractfeefromamount" title="sendtoaddress "diskcoinaddress" amount ("comment" "comment-to" subtractfeefromamount)" class="md-nav__link">
+    sendtoaddress "diskcoinaddress" amount ("comment" "comment-to" subtractfeefromamount)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setaccount-diskcoinaddress-account" title="setaccount "diskcoinaddress" "account"" class="md-nav__link">
+    setaccount "diskcoinaddress" "account"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settxfee-amount" title="settxfee amount" class="md-nav__link">
+    settxfee amount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signdata-diskcoinaddress-msgformat-message" title="signdata "diskcoinaddress" "msgFormat" "message"" class="md-nav__link">
+    signdata "diskcoinaddress" "msgFormat" "message"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signmessage-diskcoinaddress-message" title="signmessage "diskcoinaddress" "message"" class="md-nav__link">
+    signmessage "diskcoinaddress" "message"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unstakee-txid" title="unstakee txid" class="md-nav__link">
+    unstakee txid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walletlock" title="walletlock" class="md-nav__link">
+    walletlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walletpassphrase-passphrase-timeout" title="walletpassphrase "passphrase" timeout" class="md-nav__link">
+    walletpassphrase "passphrase" timeout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walletpassphrasechange-oldpassphrase-newpassphrase" title="walletpassphrasechange "oldpassphrase" "newpassphrase"" class="md-nav__link">
+    walletpassphrasechange "oldpassphrase" "newpassphrase"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FAQcn/" title="常见问答" class="md-nav__link">
+      常见问答
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PoolSupportPlancn/" title="矿池扶持计划" class="md-nav__link">
+      矿池扶持计划
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#blockchain" title="Blockchain" class="md-nav__link">
+    Blockchain
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getbestblockhash" title="getbestblockhash" class="md-nav__link">
+    getbestblockhash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblock-hash-verbose-listtransactions" title="getblock "hash" (verbose) (listtransactions)" class="md-nav__link">
+    getblock "hash" (verbose) (listtransactions)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockchaininfo" title="getblockchaininfo" class="md-nav__link">
+    getblockchaininfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockcount" title="getblockcount" class="md-nav__link">
+    getblockcount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockhash-index" title="getblockhash index" class="md-nav__link">
+    getblockhash index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockheader-hash-verbose" title="getblockheader "hash" (verbose)" class="md-nav__link">
+    getblockheader "hash" (verbose)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getchaintips" title="getchaintips" class="md-nav__link">
+    getchaintips
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmempoolancestors-txid-verbose" title="getmempoolancestors txid (verbose)" class="md-nav__link">
+    getmempoolancestors txid (verbose)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmempooldescendants-txid-verbose" title="getmempooldescendants txid (verbose)" class="md-nav__link">
+    getmempooldescendants txid (verbose)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmempoolentry-txid" title="getmempoolentry txid" class="md-nav__link">
+    getmempoolentry txid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmempoolinfo" title="getmempoolinfo" class="md-nav__link">
+    getmempoolinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getorphanpoolinfo" title="getorphanpoolinfo" class="md-nav__link">
+    getorphanpoolinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrawmempool-verbose" title="getrawmempool (verbose)" class="md-nav__link">
+    getrawmempool (verbose)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getraworphanpool" title="getraworphanpool" class="md-nav__link">
+    getraworphanpool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettxout-txid-n-includemempool" title="gettxout "txid" n (includemempool)" class="md-nav__link">
+    gettxout "txid" n (includemempool)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettxoutproof-txid-blockhash" title="gettxoutproof ["txid",...] (blockhash)" class="md-nav__link">
+    gettxoutproof ["txid",...] (blockhash)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettxoutproofs-txid-blockhash" title="gettxoutproofs ["txid",...] (blockhash)" class="md-nav__link">
+    gettxoutproofs ["txid",...] (blockhash)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettxoutsetinfo" title="gettxoutsetinfo" class="md-nav__link">
+    gettxoutsetinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifychain-checklevel-numblocks" title="verifychain (checklevel numblocks)" class="md-nav__link">
+    verifychain (checklevel numblocks)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifytxoutproof-proof" title="verifytxoutproof "proof"" class="md-nav__link">
+    verifytxoutproof "proof"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control" title="Control" class="md-nav__link">
+    Control
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getinfo" title="getinfo" class="md-nav__link">
+    getinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#help-command" title="help ("command")" class="md-nav__link">
+    help ("command")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop" title="stop" class="md-nav__link">
+    stop
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electrum" title="Electrum" class="md-nav__link">
+    Electrum
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getelectruminfo" title="getelectruminfo" class="md-nav__link">
+    getelectruminfo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generating" title="Generating" class="md-nav__link">
+    Generating
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getgenerate" title="getgenerate" class="md-nav__link">
+    getgenerate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setgenerate-generate-genproclimit" title="setgenerate generate (genproclimit)" class="md-nav__link">
+    setgenerate generate (genproclimit)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mining" title="Mining" class="md-nav__link">
+    Mining
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addblackplotterid-plotterid" title="addblackplotterid plotterId" class="md-nav__link">
+    addblackplotterid plotterId
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmininginfo" title="getMiningInfo" class="md-nav__link">
+    getMiningInfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblocktemplate-jsonrequestobject" title="getblocktemplate ("jsonrequestobject")" class="md-nav__link">
+    getblocktemplate ("jsonrequestobject")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getblockversion" title="getblockversion" class="md-nav__link">
+    getblockversion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getminercomment" title="getminercomment" class="md-nav__link">
+    getminercomment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmininginfo_1" title="getmininginfo" class="md-nav__link">
+    getmininginfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getminingmaxblock" title="getminingmaxblock" class="md-nav__link">
+    getminingmaxblock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnetworkhashps-blocks-height" title="getnetworkhashps (blocks height)" class="md-nav__link">
+    getnetworkhashps (blocks height)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prioritisetransaction" title="prioritisetransaction   " class="md-nav__link">
+    prioritisetransaction   
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setblockversion-blockversionnumber" title="setblockversion blockVersionNumber" class="md-nav__link">
+    setblockversion blockVersionNumber
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setminercomment" title="setminercomment" class="md-nav__link">
+    setminercomment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setminingmaxblock-blocksize" title="setminingmaxblock blocksize" class="md-nav__link">
+    setminingmaxblock blocksize
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitnonce-nonce-plotterid-height" title="submitNonce nonce plotterId (height)" class="md-nav__link">
+    submitNonce nonce plotterId (height)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitblock-hexdata-jsonparametersobject" title="submitblock "hexdata" ("jsonparametersobject")" class="md-nav__link">
+    submitblock "hexdata" ("jsonparametersobject")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#submitminingsolution-mining-candidate-data-jsonparametersobject" title="submitminingsolution "Mining-Candidate data" ("jsonparametersobject")" class="md-nav__link">
+    submitminingsolution "Mining-Candidate data" ("jsonparametersobject")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validateblocktemplate-hexdata" title="validateblocktemplate "hexdata"" class="md-nav__link">
+    validateblocktemplate "hexdata"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network" title="Network" class="md-nav__link">
+    Network
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addnode-node-addremoveonetry" title="addnode "node" "add|remove|onetry"" class="md-nav__link">
+    addnode "node" "add|remove|onetry"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clearbanned" title="clearbanned" class="md-nav__link">
+    clearbanned
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listbanned" title="listbanned" class="md-nav__link">
+    listbanned
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clearblockstats" title="clearblockstats" class="md-nav__link">
+    clearblockstats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disconnectnode-node" title="disconnectnode "node"" class="md-nav__link">
+    disconnectnode "node"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expedited-blocktx-node-ip-addr-onoff" title="expedited block|tx "node IP addr" on|off" class="md-nav__link">
+    expedited block|tx "node IP addr" on|off
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getconnectioncount" title="getconnectioncount" class="md-nav__link">
+    getconnectioncount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getexcessiveblock" title="getexcessiveblock" class="md-nav__link">
+    getexcessiveblock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnettotals" title="getnettotals" class="md-nav__link">
+    getnettotals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnetworkinfo" title="getnetworkinfo" class="md-nav__link">
+    getnetworkinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpeerinfo-peer-ip-address" title="getpeerinfo [peer IP address]" class="md-nav__link">
+    getpeerinfo [peer IP address]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettrafficshaping" title="gettrafficshaping" class="md-nav__link">
+    gettrafficshaping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ping" title="ping" class="md-nav__link">
+    ping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pushtx-node" title="pushtx "node"" class="md-nav__link">
+    pushtx "node"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setban-ipnetmask-addremove-bantime-absolute" title="setban "ip(/netmask)" "add|remove" (bantime) (absolute)" class="md-nav__link">
+    setban "ip(/netmask)" "add|remove" (bantime) (absolute)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setexcessiveblock-blocksize-acceptdepth" title="setexcessiveblock blockSize acceptDepth" class="md-nav__link">
+    setexcessiveblock blockSize acceptDepth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settrafficshaping-sendreceive-burstkb-averagekb" title="settrafficshaping "send|receive" "burstKB" "averageKB"" class="md-nav__link">
+    settrafficshaping "send|receive" "burstKB" "averageKB"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rawtransactions" title="Rawtransactions" class="md-nav__link">
+    Rawtransactions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#createrawtransaction-txididvoutn-addressamountdatahex-locktime" title="createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} (locktime)" class="md-nav__link">
+    createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} (locktime)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoderawtransaction-hexstring" title="decoderawtransaction "hexstring"" class="md-nav__link">
+    decoderawtransaction "hexstring"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decodescript-hex" title="decodescript "hex"" class="md-nav__link">
+    decodescript "hex"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enqueuerawtransaction-hexstring-options" title="enqueuerawtransaction "hexstring" (options)" class="md-nav__link">
+    enqueuerawtransaction "hexstring" (options)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fundrawtransaction-hexstring-includewatching" title="fundrawtransaction "hexstring" includeWatching" class="md-nav__link">
+    fundrawtransaction "hexstring" includeWatching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrawblocktransactions" title="getrawblocktransactions" class="md-nav__link">
+    getrawblocktransactions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrawtransaction-txid-verbose-blockhash" title="getrawtransaction "txid" (verbose "blockhash")" class="md-nav__link">
+    getrawtransaction "txid" (verbose "blockhash")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrawtransactionssince" title="getrawtransactionssince" class="md-nav__link">
+    getrawtransactionssince
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendrawtransaction-hexstring-allowhighfees-allownonstandard" title="sendrawtransaction "hexstring" (allowhighfees, allownonstandard)" class="md-nav__link">
+    sendrawtransaction "hexstring" (allowhighfees, allownonstandard)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signrawtransaction-hexstring-txididvoutnscriptpubkeyhexredeemscripthex-privatekey1-sighashtype" title="signrawtransaction "hexstring" ([{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype)" class="md-nav__link">
+    signrawtransaction "hexstring" ([{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#util" title="Util" class="md-nav__link">
+    Util
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#createmultisig-nrequired-key" title="createmultisig nrequired ["key",...]" class="md-nav__link">
+    createmultisig nrequired ["key",...]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimatefee-nblocks" title="estimatefee nblocks" class="md-nav__link">
+    estimatefee nblocks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get" title="get" class="md-nav__link">
+    get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getaddressforms-address" title="getaddressforms "address"" class="md-nav__link">
+    getaddressforms "address"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstat" title="getstat" class="md-nav__link">
+    getstat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getstatlist" title="getstatlist" class="md-nav__link">
+    getstatlist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-categoryall-onoff" title="log "category|all" "on|off"" class="md-nav__link">
+    log "category|all" "on|off"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logline-string" title="logline 'string'" class="md-nav__link">
+    logline 'string'
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set" title="set" class="md-nav__link">
+    set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validateaddress-diskcoinaddress" title="validateaddress "diskcoinaddress"" class="md-nav__link">
+    validateaddress "diskcoinaddress"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatechainhistory-hash" title="validatechainhistory [hash]" class="md-nav__link">
+    validatechainhistory [hash]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifymessage-diskcoinaddress-signature-message" title="verifymessage "diskcoinaddress" "signature" "message"" class="md-nav__link">
+    verifymessage "diskcoinaddress" "signature" "message"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wallet" title="Wallet" class="md-nav__link">
+    Wallet
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abandontransaction-txid" title="abandontransaction "txid"" class="md-nav__link">
+    abandontransaction "txid"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addmultisigaddress-nrequired-key-account" title="addmultisigaddress nrequired ["key",...] ("account")" class="md-nav__link">
+    addmultisigaddress nrequired ["key",...] ("account")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backupwallet-destination" title="backupwallet "destination"" class="md-nav__link">
+    backupwallet "destination"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dumpprivkey-diskcoinaddress" title="dumpprivkey "diskcoinaddress"" class="md-nav__link">
+    dumpprivkey "diskcoinaddress"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dumpwallet-filename" title="dumpwallet "filename"" class="md-nav__link">
+    dumpwallet "filename"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encryptwallet-passphrase" title="encryptwallet "passphrase"" class="md-nav__link">
+    encryptwallet "passphrase"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getaccount-diskcoinaddress" title="getaccount "diskcoinaddress"" class="md-nav__link">
+    getaccount "diskcoinaddress"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getaccountaddress-account" title="getaccountaddress "account"" class="md-nav__link">
+    getaccountaddress "account"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getaddressesbyaccount-account" title="getaddressesbyaccount "account"" class="md-nav__link">
+    getaddressesbyaccount "account"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbalance-account-minconf-includewatchonly" title="getbalance ("account" minconf includeWatchonly)" class="md-nav__link">
+    getbalance ("account" minconf includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnewaddress-account" title="getnewaddress ("account")" class="md-nav__link">
+    getnewaddress ("account")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrawchangeaddress" title="getrawchangeaddress" class="md-nav__link">
+    getrawchangeaddress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getreceivedbyaccount-account-minconf" title="getreceivedbyaccount "account" (minconf)" class="md-nav__link">
+    getreceivedbyaccount "account" (minconf)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getreceivedbyaddress-diskcoinaddress-minconf" title="getreceivedbyaddress "diskcoinaddress" (minconf)" class="md-nav__link">
+    getreceivedbyaddress "diskcoinaddress" (minconf)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettransaction-txid-includewatchonly" title="gettransaction "txid" (includeWatchonly)" class="md-nav__link">
+    gettransaction "txid" (includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getunconfirmedbalance" title="getunconfirmedbalance" class="md-nav__link">
+    getunconfirmedbalance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getwalletinfo" title="getwalletinfo" class="md-nav__link">
+    getwalletinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importaddress-address-label-rescan-p2sh" title="importaddress "address" ("label" rescan p2sh)" class="md-nav__link">
+    importaddress "address" ("label" rescan p2sh)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importaddresses-rescan-no-rescan-address" title="importaddresses [rescan | no-rescan] "address"..." class="md-nav__link">
+    importaddresses [rescan | no-rescan] "address"...
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importprivatekeys-rescan-no-rescan-diskcoinprivatekey" title="importprivatekeys [rescan | no-rescan] "diskcoinprivatekey"..." class="md-nav__link">
+    importprivatekeys [rescan | no-rescan] "diskcoinprivatekey"...
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importprivkey-diskcoinprivkey-label-rescan" title="importprivkey "diskcoinprivkey" ("label" rescan)" class="md-nav__link">
+    importprivkey "diskcoinprivkey" ("label" rescan)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importpubkey-pubkey-label-rescan" title="importpubkey "pubkey" ("label" rescan)" class="md-nav__link">
+    importpubkey "pubkey" ("label" rescan)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importwallet-filename" title="importwallet "filename"" class="md-nav__link">
+    importwallet "filename"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keypoolrefill-newsize" title="keypoolrefill (newsize)" class="md-nav__link">
+    keypoolrefill (newsize)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listaccounts-minconf-includewatchonly" title="listaccounts (minconf includeWatchonly)" class="md-nav__link">
+    listaccounts (minconf includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listaddressgroupings" title="listaddressgroupings" class="md-nav__link">
+    listaddressgroupings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validatechainhistory" title="validatechainhistory" class="md-nav__link">
+    validatechainhistory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listlockunspent" title="listlockunspent" class="md-nav__link">
+    listlockunspent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listminedblock-minconf-maxconf-address" title="listminedblock (minconf maxconf ["address",...])" class="md-nav__link">
+    listminedblock (minconf maxconf ["address",...])
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liststakein-inconf-maxconf-address" title="liststakein ( inconf maxconf  ["address",...]" class="md-nav__link">
+    liststakein ( inconf maxconf  ["address",...]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#liststakeout-inconf-maxconf-address" title="liststakeout ( inconf maxconf  ["address",...]" class="md-nav__link">
+    liststakeout ( inconf maxconf  ["address",...]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listreceivedbyaccount-minconf-includeempty-includewatchonly" title="listreceivedbyaccount (minconf includeempty includeWatchonly)" class="md-nav__link">
+    listreceivedbyaccount (minconf includeempty includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listreceivedbyaddress-minconf-includeempty-includewatchonly" title="listreceivedbyaddress (minconf includeempty includeWatchonly)" class="md-nav__link">
+    listreceivedbyaddress (minconf includeempty includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listsinceblock-blockhash-target-confirmations-includewatchonly" title="listsinceblock ("blockhash" target-confirmations includeWatchonly)" class="md-nav__link">
+    listsinceblock ("blockhash" target-confirmations includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listtransactions-account-count-from-includewatchonly" title="listtransactions ("account" count from includeWatchonly)" class="md-nav__link">
+    listtransactions ("account" count from includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listtransactionsfrom-account-count-from-includewatchonly" title="listtransactionsfrom ("account" count from includeWatchonly)" class="md-nav__link">
+    listtransactionsfrom ("account" count from includeWatchonly)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listunspent-minconf-maxconf-address" title="listunspent (minconf maxconf ["address",...])" class="md-nav__link">
+    listunspent (minconf maxconf ["address",...])
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lockunspent-unlock-txidtxidvoutn" title="lockunspent unlock [{"txid":"txid","vout":n},...]" class="md-nav__link">
+    lockunspent unlock [{"txid":"txid","vout":n},...]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-fromaccount-toaccount-amount-minconf-comment" title="move "fromaccount" "toaccount" amount (minconf "comment")" class="md-nav__link">
+    move "fromaccount" "toaccount" amount (minconf "comment")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staketo-diskcoinaddress-amount" title="staketo "diskcoinaddress" amount" class="md-nav__link">
+    staketo "diskcoinaddress" amount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removeprunedfunds-txid" title="removeprunedfunds "txid"" class="md-nav__link">
+    removeprunedfunds "txid"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendfrom-fromaccount-todiskcoinaddress-amount-minconf-comment-comment-to" title="sendfrom "fromaccount" "todiskcoinaddress" amount (minconf "comment" "comment-to")" class="md-nav__link">
+    sendfrom "fromaccount" "todiskcoinaddress" amount (minconf "comment" "comment-to")
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendmany-fromaccount-addressamount-minconf-comment-address" title="sendmany "fromaccount" {"address":amount,...} (minconf "comment" ["address",...])" class="md-nav__link">
+    sendmany "fromaccount" {"address":amount,...} (minconf "comment" ["address",...])
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendtoaddress-diskcoinaddress-amount-comment-comment-to-subtractfeefromamount" title="sendtoaddress "diskcoinaddress" amount ("comment" "comment-to" subtractfeefromamount)" class="md-nav__link">
+    sendtoaddress "diskcoinaddress" amount ("comment" "comment-to" subtractfeefromamount)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setaccount-diskcoinaddress-account" title="setaccount "diskcoinaddress" "account"" class="md-nav__link">
+    setaccount "diskcoinaddress" "account"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settxfee-amount" title="settxfee amount" class="md-nav__link">
+    settxfee amount
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signdata-diskcoinaddress-msgformat-message" title="signdata "diskcoinaddress" "msgFormat" "message"" class="md-nav__link">
+    signdata "diskcoinaddress" "msgFormat" "message"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signmessage-diskcoinaddress-message" title="signmessage "diskcoinaddress" "message"" class="md-nav__link">
+    signmessage "diskcoinaddress" "message"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unstakee-txid" title="unstakee txid" class="md-nav__link">
+    unstakee txid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walletlock" title="walletlock" class="md-nav__link">
+    walletlock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walletpassphrase-passphrase-timeout" title="walletpassphrase "passphrase" timeout" class="md-nav__link">
+    walletpassphrase "passphrase" timeout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#walletpassphrasechange-oldpassphrase-newpassphrase" title="walletpassphrasechange "oldpassphrase" "newpassphrase"" class="md-nav__link">
+    walletpassphrasechange "oldpassphrase" "newpassphrase"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/diskcoin-apps-team/wiki/edit/master/docs/cn/diskcoin_apicn.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="diskcoin-api">Diskcoin API</h1>
+<p><code>headers</code>设置<code>Content-Type=application/json</code>，采用Basic Auth
+Username, Password 是rpc 设置的账户密码 
+所有接口都是post方式  </p>
+<h2 id="blockchain">Blockchain</h2>
+<h3 id="getbestblockhash">getbestblockhash</h3>
+<p>获取当前最新区块的<code>hash</code>值
+- 请求：
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getbestblockhash",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": "6c8bc8835df00bc0e961960f984904d5b5a537e3f388860aef2da4567c486ce2",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getblock-hash-verbose-listtransactions">getblock "hash" (verbose) (listtransactions)</h3>
+<p>根据区块的<code>hash</code>或者高度获取区块的相关信息
+- 参数:
+  - <code>hash</code>：区块的hash值或者高度 
+  - <code>verbose</code>：可选参数，默认为<code>true</code>，表示json对象，<code>false</code>则是十六进制编码数据 
+  - <code>listtransactions</code>：可选参数，默认为<code>true</code>，会列举所有的交易ID，<code>false</code>则只统计数量 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getblock",
+        "params": ["6e46a54a4ddcb2640796787570f97210daf1f896a38693ecd6c67d49bfb61619", true, true]
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "hash": "6e46a54a4ddcb2640796787570f97210daf1f896a38693ecd6c67d49bfb61619",
+            "confirmations": 408,
+            "size": 291,
+            "height": 975,
+            "version": 536870912,
+            "versionHex": "20000000",
+            "merkleroot": "0325ca3c4a8fd25d4224b38bbdfb6ca0c15fd63feeac0a051acbaef6e69f5308",
+            "tx": [
+                "0325ca3c4a8fd25d4224b38bbdfb6ca0c15fd63feeac0a051acbaef6e69f5308"
+            ],
+            "time": 1563185010,
+            "mediantime": 1563184690,
+            "nonce": 2190714007139005,
+            "bits": "1d0fffff",
+            "difficulty": 0.06249910592947572,
+            "chainwork": "00000000000000000000000000000000000000000000000000000000000163fe",
+            "basetarget": 39608397,
+            "ploterid": 10924919180736888,
+            "deadline": 92,
+            "generatesignature": "385a13e649ae45161ae8f7c1f6ebd42eb16a74cb42957c35e0c9bde20983e771",
+            "previousblockhash": "c1b84132c7dee0abe58dbacc44067f81bc12a85b4d24b6834df00f4417d6ccba",
+            "nextblockhash": "874094a541eef686f640de285fd823981f8171f3bfd8636bfdaad8d018ae6870"
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getblockchaininfo">getblockchaininfo</h3>
+<p>获取当前区块链的状态信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getblockchaininfo",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "chain": "test",
+            "blocks": 975,
+            "headers": 975,
+            "bestblockhash": "6e46a54a4ddcb2640796787570f97210daf1f896a38693ecd6c67d49bfb61619",
+            "difficulty": 0.06249910592947572,
+            "mediantime": 1563184690,
+            "verificationprogress": 1,
+            "initialblockdownload": false,
+            "chainwork": "00000000000000000000000000000000000000000000000000000000000163fe",
+            "pruned": false,
+            "netbasetarget": 0,
+            "netcooperation": 0
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getblockcount">getblockcount</h3>
+<p>获取当前区块的最新高度
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getblockcount",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": 1359,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getblockhash-index">getblockhash index</h3>
+<p>根据区块的高度获取区块的<code>hash</code>
+- 请求参数:
+  - index：必须，区块高度
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getblockhash",
+        "params": [975]
+    }</code>
+- 响应:
+    <code>{
+        "result": "6e46a54a4ddcb2640796787570f97210daf1f896a38693ecd6c67d49bfb61619",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getblockheader-hash-verbose">getblockheader "hash" (verbose)</h3>
+<p>根据区块的<code>hash</code>获取区块的相关信息
+- 参数:
+  - <code>hash</code>：区块的hash值 
+  - <code>verbose</code>：可选参数，默认为<code>true</code>，表示json对象，<code>false</code>则是十六进制编码数据 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getblockheader",
+        "params": ["6e46a54a4ddcb2640796787570f97210daf1f896a38693ecd6c67d49bfb61619"]
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "hash": "6e46a54a4ddcb2640796787570f97210daf1f896a38693ecd6c67d49bfb61619",
+            "confirmations": 394,
+            "height": 975,
+            "version": 536870912,
+            "versionHex": "20000000",
+            "merkleroot": "0325ca3c4a8fd25d4224b38bbdfb6ca0c15fd63feeac0a051acbaef6e69f5308",
+            "time": 1563185010,
+            "mediantime": 1563184690,
+            "nonce": 2190714007139005,
+            "bits": "1d0fffff",
+            "difficulty": 0.06249910592947572,
+            "chainwork": "00000000000000000000000000000000000000000000000000000000000163fe",
+            "previousblockhash": "c1b84132c7dee0abe58dbacc44067f81bc12a85b4d24b6834df00f4417d6ccba",
+            "nextblockhash": "874094a541eef686f640de285fd823981f8171f3bfd8636bfdaad8d018ae6870"
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getchaintips">getchaintips</h3>
+<p>返回当前区块链的头部信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getchaintips",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": [
+            {
+                "height": 2125,
+                "chainwork": "00000000000000000000000000000000000000000000000000000000000ecaab",
+                "hash": "545df67716580a55342cd62af44c287b48d0cac0b07c87f22048c709b8b5b9ee",
+                "branchlen": 0,
+                "status": "active"
+            },
+            {
+                "height": 1851,
+                "chainwork": "00000000000000000000000000000000000000000000000000000000000ab89f",
+                "hash": "6fc247f32d6c381cb81f26301955775e475e945b060631868693cf8e019ebe59",
+                "branchlen": 1,
+                "status": "valid-fork"
+            },
+            {
+                "height": 1610,
+                "chainwork": "000000000000000000000000000000000000000000000000000000000007d88f",
+                "hash": "89e0b2597fbc790e1565a4f91408a5907865465ecc21273e8aae26ad16cabec1",
+                "branchlen": 1,
+                "status": "valid-fork"
+            }
+        ],
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getmempoolancestors-txid-verbose">getmempoolancestors txid (verbose)</h3>
+<p>如果<code>txid</code>在<code>mempool</code>中，则返回所有<code>in-mempool</code>祖先
+- 请求参数:
+  - <code>txid</code> (string, required) The transaction id (must be in mempool) 
+  - <code>verbose</code> (boolean, optional, default=false) True for a json object, false for array of transaction ids
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getmempoolancestors",
+        "params": ["7b100c6083f8e6250f9dbc3585653b903cbae81dd7d0012b0be30bc8b3912570"]
+    }</code>
+- 响应:
+    <code>{
+        "result": [],
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getmempooldescendants-txid-verbose">getmempooldescendants txid (verbose)</h3>
+<p>如果<code>txid</code>在<code>mempool</code>中，则返回所有<code>in-mempool</code>后代。
+- 请求参数:
+  - <code>txid</code> (string, required) The transaction id (must be in mempool) 
+  - <code>verbose</code> (boolean, optional, default=false) True for a json object, false for array of transaction ids
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getmempooldescendants",
+        "params": ["7b100c6083f8e6250f9dbc3585653b903cbae81dd7d0012b0be30bc8b3912570"]
+    }</code>
+- 响应:
+    <code>{
+        "result": [],
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getmempoolentry-txid">getmempoolentry txid</h3>
+<p>返回内存池中的交易详情
+- 请求参数:
+   - <code>txid</code> (string, required) The transaction id (must be in mempool)
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getmempoolentry",
+        "params": ["7b100c6083f8e6250f9dbc3585653b903cbae81dd7d0012b0be30bc8b3912570"]
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "size": 1431,
+            "fee": 0.0002864,
+            "modifiedfee": 0.0002864,
+            "time": 1563346805,
+            "height": 2125,
+            "startingpriority": 11508630237.67279,
+            "currentpriority": 11508630237.67279,
+            "descendantcount": 1,
+            "descendantsize": 1431,
+            "descendantfees": 28640,
+            "ancestorcount": 1,
+            "ancestorsize": 1431,
+            "ancestorfees": 28640,
+            "depends": [],
+            "spentby": []
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getmempoolinfo">getmempoolinfo</h3>
+<p>获取状态为<code>active</code>的<code>TX memory pool</code>的详细信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getmempoolinfo",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "size": 2,
+            "bytes": 1622,
+            "usage": 4352,
+            "maxmempool": 300000000,
+            "mempoolminfee": 0,
+            "tps": 0.02
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getorphanpoolinfo">getorphanpoolinfo</h3>
+<p>获取状态为<code>active</code>的<code>TX orphan pool</code>的详细信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getorphanpoolinfo",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "size": 0,
+            "bytes": 0
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getrawmempool-verbose">getrawmempool (verbose)</h3>
+<p>返回所有在<code>memory pool</code>的交易ID
+- 请求参数:
+  - <code>verbose</code>：可选参数，默认为<code>false</code>，返回交易ID的数组形式，否则为json格式 Optional parameter, default is <code>false</code>, returns an array of transaction IDs, otherwise in json format
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getrawmempool",
+        "params": [true]
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "53fac9b470e646c472948721552214b27bc75e9a0e19265acb5b53d8c7d51c0f": {
+                "size": 191,
+                "fee": 0.0000382,
+                "modifiedfee": 0.0000382,
+                "time": 1563346822,
+                "height": 2125,
+                "startingpriority": 1739081549.897436,
+                "currentpriority": 1739081549.897436,
+                "descendantcount": 1,
+                "descendantsize": 191,
+                "descendantfees": 3820,
+                "ancestorcount": 1,
+                "ancestorsize": 191,
+                "ancestorfees": 3820,
+                "depends": [],
+                "spentby": []
+            },
+            "7b100c6083f8e6250f9dbc3585653b903cbae81dd7d0012b0be30bc8b3912570": {
+                "size": 1431,
+                "fee": 0.0002864,
+                "modifiedfee": 0.0002864,
+                "time": 1563346805,
+                "height": 2125,
+                "startingpriority": 11508630237.67279,
+                "currentpriority": 11508630237.67279,
+                "descendantcount": 1,
+                "descendantsize": 1431,
+                "descendantfees": 28640,
+                "ancestorcount": 1,
+                "ancestorsize": 1431,
+                "ancestorfees": 28640,
+                "depends": [],
+                "spentby": []
+            }
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getraworphanpool">getraworphanpool</h3>
+<p>返回所有在<code>orphan pool</code>的交易ID
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getraworphanpool",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": [],
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="gettxout-txid-n-includemempool">gettxout "txid" n (includemempool)</h3>
+<p>返回交易的输出信息
+- 请求参数:
+  - <code>txid</code> (string, required) The transaction id 
+  - <code>n</code> (numeric, required) vout number 
+  - <code>include_mempool</code> (boolean, optional) Whether to include the mempool
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "gettxout",
+        "params": ["0325ca3c4a8fd25d4224b38bbdfb6ca0c15fd63feeac0a051acbaef6e69f5308", 1]
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "bestblock": "0dd6ce2f9aeae64e0f30b723664724a09706fb31c58d254485e2b7f34a9a7454",
+            "confirmations": 409,
+            "value": 8,
+            "scriptPubKey": {
+                "asm": "0347542a5f9a5f70f0c0b3e19139079ed24111ffd5d690e8e44a140bc9e493684d OP_CHECKSIG",
+                "hex": "210347542a5f9a5f70f0c0b3e19139079ed24111ffd5d690e8e44a140bc9e493684dac",
+                "reqSigs": 1,
+                "type": "pubkey",
+                "addresses": [
+                    "1JZYyGKe8THWpXE93vMGwjuvRcYgQd2ZAH"
+                ]
+            },
+            "coinbase": true
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="gettxoutproof-txid-blockhash">gettxoutproof ["txid",...] (blockhash)</h3>
+<p>根据交易ID返回十六进制的证据
+- 请求参数:
+  - <code>txids</code> (string) A json array of txids to filter 
+  - <code>blockhash</code> (string, optional) If specified, looks for txid in the block with this hash
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "gettxoutproof",
+        "params": [["0325ca3c4a8fd25d4224b38bbdfb6ca0c15fd63feeac0a051acbaef6e69f5308"], "6e46a54a4ddcb2640796787570f97210daf1f896a38693ecd6c67d49bfb61619"]
+    }</code>
+- 响应:
+    <code>{
+        "result": "00000020baccd617440ff04d83b6244d5ba812bc817f0644ccba8de5abe0dec73241b8c108539fe6f6aecb1a050aacee3fd65fc1a06cfbbd8bb324425dd28f4a3cca2503724f2c5dffff0f1dbd32335a71c807004d605c020000000078b9f7f627d026005c00000000000000385a13e649ae45161ae8f7c1f6ebd42eb16a74cb42957c35e0c9bde20983e771010000000108539fe6f6aecb1a050aacee3fd65fc1a06cfbbd8bb324425dd28f4a3cca25030101",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="gettxoutproofs-txid-blockhash">gettxoutproofs ["txid",...] (blockhash)</h3>
+<p>根据交易ID返回十六进制的证据，交易ID和证据一一对应
+- 请求参数:
+  - <code>txids</code> (string) A json array of txids to filter 
+  - <code>blockhash</code> (string, optional) If specified, looks for txid in the block with this hash
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "gettxoutproofs",
+        "params": [["0325ca3c4a8fd25d4224b38bbdfb6ca0c15fd63feeac0a051acbaef6e69f5308"], "6e46a54a4ddcb2640796787570f97210daf1f896a38693ecd6c67d49bfb61619"]
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "0325ca3c4a8fd25d4224b38bbdfb6ca0c15fd63feeac0a051acbaef6e69f5308": "00000020baccd617440ff04d83b6244d5ba812bc817f0644ccba8de5abe0dec73241b8c108539fe6f6aecb1a050aacee3fd65fc1a06cfbbd8bb324425dd28f4a3cca2503724f2c5dffff0f1dbd32335a71c807004d605c020000000078b9f7f627d026005c00000000000000385a13e649ae45161ae8f7c1f6ebd42eb16a74cb42957c35e0c9bde20983e771010000000108539fe6f6aecb1a050aacee3fd65fc1a06cfbbd8bb324425dd28f4a3cca25030101"
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="gettxoutsetinfo">gettxoutsetinfo</h3>
+<p>返回当前所有未花费的输出统计信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "gettxoutsetinfo",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "height": 1386,
+            "bestblock": "787462676f41dbd1aced66d6292904a9b662b42df6a16c7faeff1de2e2d4b764",
+            "transactions": 1404,
+            "txouts": 2770,
+            "hash_serialized_2": "bf48323c671476821ec28408f0a5a1778aa38fd296feb7de4d1451290200c42e",
+            "disk_size": 0,
+            "total_amount": 27720
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="verifychain-checklevel-numblocks">verifychain (checklevel numblocks)</h3>
+<p>验证区块链数据库
+- 请求参数:
+  - <code>checklevel</code>：可选参数，范围0-4，默认为3 
+  - <code>numblocks</code>：可选参数，需要check的区块数目，默认为6个，如果设置为0则代表所有
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "verifychain",
+        "params": []
+    }</code>
+- 响应:
+返回值为<code>true|false</code> 
+    <code>{
+        "result": true,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="verifytxoutproof-proof">verifytxoutproof "proof"</h3>
+<p>验证区块中交易的证据
+- 请求参数:
+  - <code>proof</code>：十六进制的证据（<code>gettxoutproof</code>产生）
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "verifytxoutproof",
+        "params": ["00000020baccd617440ff04d83b6244d5ba812bc817f0644ccba8de5abe0dec73241b8c108539fe6f6aecb1a050aacee3fd65fc1a06cfbbd8bb324425dd28f4a3cca2503724f2c5dffff0f1dbd32335a71c807004d605c020000000078b9f7f627d026005c00000000000000385a13e649ae45161ae8f7c1f6ebd42eb16a74cb42957c35e0c9bde20983e771010000000108539fe6f6aecb1a050aacee3fd65fc1a06cfbbd8bb324425dd28f4a3cca25030101"]
+    }</code>
+- 响应:
+返回值为对应的交易ID，或者为空
+    <code>{
+        "result": [
+            "0325ca3c4a8fd25d4224b38bbdfb6ca0c15fd63feeac0a051acbaef6e69f5308"
+        ],
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h2 id="control">Control</h2>
+<h3 id="getinfo">getinfo</h3>
+<p>获取钱包信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getinfo",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "version": 1060000,
+            "protocolversion": 80003,
+            "walletversion": 60000,
+            "balance": 0.5,
+            "blocks": 2133,
+            "timeoffset": 0,
+            "connections": 5,
+            "proxy": "",
+            "difficulty": 0.06249910592947572,
+            "testnet": false,
+            "keypoololdest": 1563271172,
+            "keypoolsize": 10001,
+            "unlocked_until": 0,
+            "paytxfee": 0,
+            "relayfee": 0.00001,
+            "status": "ready",
+            "errors": "",
+            "fork": "diskcoin"
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="help-command">help ("command")</h3>
+<p>查看某个命令的帮助信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "help",
+        "params": ["createrawtransaction"]
+    }</code>
+- 响应:
+    <code>{
+        "result": "createrawtransaction [{\"txid\":\"id\",\"vout\":n},...] {\"address\":amount,\"data\":\"hex\",...} ( locktime )\n\nCreate a transaction spending the given inputs and creating new outputs.\nOutputs can be addresses or data.\nReturns hex-encoded raw transaction.\nNote that the transaction's inputs are not signed, and\nit is not stored in the wallet or transmitted to the network.\n\nArguments:\n1. \"transactions\"        (string, required) A json array of json objects\n     [\n       {\n         \"txid\":\"id\",    (string, required) The transaction id\n         \"vout\":n        (numeric, required) The output number\n         \"vout\":n,         (numeric, required) The output number\n         \"sequence\":n    (numeric, optional) The sequence number\n       }\n       ,...\n     ]\n2. \"outputs\"             (string, required) a json object with outputs\n    {\n      \"address\": x.xxx   (numeric or string, required) The key is the diskcoin address, the numeric value (can be string) is the BCH amount\n      \"data\": \"hex\",     (string, required) The key is \"data\", the value is hex encoded data\n      ...\n    }\n3. locktime                (numeric, optional, default=0) Raw locktime. Non-0 value also locktime-activates inputs\n\nResult:\n\"transaction\"            (string) hex string of the transaction\n\nExamples\n&gt; diskcoin-cli createrawtransaction \"[{\\\"txid\\\":\\\"myid\\\",\\\"vout\\\":0}]\" \"{\\\"address\\\":0.01}\"\n&gt; diskcoin-cli createrawtransaction \"[{\\\"txid\\\":\\\"myid\\\",\\\"vout\\\":0}]\" \"{\\\"data\\\":\\\"00010203\\\"}\"\n&gt; curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"createrawtransaction\", \"params\": [\"[{\\\"txid\\\":\\\"myid\\\",\\\"vout\\\":0}]\", \"{\\\"address\\\":0.01}\"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/\n&gt; curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", \"method\": \"createrawtransaction\", \"params\": [\"[{\\\"txid\\\":\\\"myid\\\",\\\"vout\\\":0}]\", \"{\\\"data\\\":\\\"00010203\\\"}\"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/\n",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="stop">stop</h3>
+<p>停止<code>diskcoin</code>服务
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "stop",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": "diskcoin server stopping",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h2 id="electrum">Electrum</h2>
+<h3 id="getelectruminfo">getelectruminfo</h3>
+<p>获取<code>electrum</code>服务器的状态
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getelectruminfo",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": {
+            "code": -1,
+            "message": "Electrum server is disabled"
+        },
+        "id": "1"
+    }</code></p>
+<h2 id="generating">Generating</h2>
+<h3 id="getgenerate">getgenerate</h3>
+<p>查询服务器是否设置为挖矿模式
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getgenerate",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": true,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="setgenerate-generate-genproclimit">setgenerate generate (genproclimit)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>generate</code>：必须，<code>true</code>表示打开，<code>false</code>表示关闭 </li>
+<li><code>genproclimit</code>：可选参数，设置处理器的限制数，-1表示无限制 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "setgenerate",
+        "params": [true, 10]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h2 id="mining">Mining</h2>
+<h3 id="addblackplotterid-plotterid">addblackplotterid plotterId</h3>
+<p>将某个<code>plotter id</code>加入黑名单
+- 请求参数:
+  - <code>plotterId</code>：必须，<code>Plotter ID</code><br />
+- 请求:</p>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="getmininginfo">getMiningInfo</h3>
+<p>获取目前的挖矿信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getMiningInfo",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "height": 1524,
+            "baseTarget": "43806524",
+            "generationSignature": "5205f3dc6741413c3a555380a581479886cf94afe4d81a1ff1a3842fc6e1af36",
+            "targetDeadline": 4294967295
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getblocktemplate-jsonrequestobject">getblocktemplate ("jsonrequestobject")</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>jsonrequestobject</code>：可选参数 </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="getblockversion">getblockversion</h3>
+<p>获取挖矿时的区块版本
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getblockversion",
+        "params": []
+    }</code>
+- 响应:
+返回值为版本号
+    <code>{
+        "result": 536870912,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getminercomment">getminercomment</h3>
+<ul>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getminercomment",
+        "params": []
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": "",
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="getmininginfo_1">getmininginfo</h3>
+<p>获取挖矿的相关信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getmininginfo",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "blocks": 1528,
+            "currentblocksize": 1145,
+            "currentblocktx": 0,
+            "difficulty": 0.06249910592947572,
+            "errors": "",
+            "genproclimit": 10,
+            "networkhashps": 4.29681593952207,
+            "pooledtx": 0,
+            "testnet": false,
+            "chain": "test",
+            "generate": true
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getminingmaxblock">getminingmaxblock</h3>
+<p>获取挖矿区块的最大字节数
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getminingmaxblock",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": 8000000,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getnetworkhashps-blocks-height">getnetworkhashps (blocks height)</h3>
+<p>基于最近的n个区块来估算每秒的<code>network hashes</code>
+- 请求参数:
+  - <code>blocks</code>：可选参数，默认为120，表示区块的数目，-1则表示取自上次难度改变以来的区块 
+  - <code>height</code>：可选参数，默认为-1，表示在指定高度的时间点进行计算 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getnetworkhashps",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": 4.262611464968153,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="prioritisetransaction">prioritisetransaction <txid> <priority delta> <fee delta></h3>
+<p>增加或减少交易的优先级 
+- 请求参数:
+  - <code>txid</code>：必须，交易ID 
+  - <code>priority delta</code>：必须，需要增加或者减少的优先级
+  - <code>height</code>：必须，<code>fee value</code>
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "prioritisetransaction",
+        "params": ["0325ca3c4a8fd25d4224b38bbdfb6ca0c15fd63feeac0a051acbaef6e69f5308", 0.0, 10000]
+    }</code>
+- 响应:
+    <code>{
+        "result": true,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="setblockversion-blockversionnumber">setblockversion blockVersionNumber</h3>
+<p>设置区块的版本号
+- 请求参数:
+  - <code>blockVersionNumber</code>：必须，版本号（integer, hex integer, 'BIP109', 'BASE' or 'default'）
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "setblockversion",
+        "params": ["BASE"]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="setminercomment">setminercomment</h3>
+<p>与<code>getminercomment</code>对应 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "setminercomment",
+        "params": ["diskcoin is fundamentally emergent consensus"]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="setminingmaxblock-blocksize">setminingmaxblock blocksize</h3>
+<p>设置可生产的最大区块值
+- 请求参数:
+  - <code>blocksize</code>：必须，区块的最大字节数 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "setminingmaxblock",
+        "params": [8000000]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="submitnonce-nonce-plotterid-height">submitNonce nonce plotterId (height)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>nonce</code>：必须 </li>
+<li><code>plotterId</code>：必须，<code>Plotter ID</code> </li>
+<li><code>height</code>：可选，目标高度，默认为当前挖矿高度 </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="submitblock-hexdata-jsonparametersobject">submitblock "hexdata" ("jsonparametersobject")</h3>
+<p>Attempts to submit new block to network. The ‘jsonparametersobject’ parameter is currently ignored. 
+- 请求参数:
+  - “hexdata” (string, required) the hex-encoded block data to submit 
+  -  “parameters” (string, optional) object of optional parameters 
+- 请求:</p>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="submitminingsolution-mining-candidate-data-jsonparametersobject">submitminingsolution "Mining-Candidate data" ("jsonparametersobject")</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>Mining-Candidate data</code>：必须，需要提交的挖矿答案 </li>
+<li><code>jsonparametersobject</code>：可选 </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="validateblocktemplate-hexdata">validateblocktemplate "hexdata"</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>hexdata</code>：必须，待验证的十六进制区块数据 </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h2 id="network">Network</h2>
+<h3 id="addnode-node-addremoveonetry">addnode "node" "add|remove|onetry"</h3>
+<p>添加或者删除节点到<code>addnode</code>列表 
+- 请求参数:
+  - <code>node</code> (string, required) The node (see getpeerinfo for nodes) 
+  - <code>command</code> (string, required) ‘add’ to add a node to the list, ‘remove’ to remove a node from the list, ‘onetry’ to try a connection to the node once
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "addnode",
+        "params": ["121.28.160.158:63335", "add"]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="clearbanned">clearbanned</h3>
+<p>清除所有被禁的IP 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "clearbanned",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="listbanned">listbanned</h3>
+<p>列举所有被禁的IP/子网 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listbanned",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": [
+            {
+                "address": "124.236.118.112/32",
+                "banned_until": 1563394173,
+                "ban_created": 1563307773,
+                "ban_reason": "node misbehaving"
+            },
+            {
+                "address": "205.185.120.91/32",
+                "banned_until": 1563377778,
+                "ban_created": 1563291378,
+                "ban_reason": "node misbehaving"
+            }
+        ],
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="clearblockstats">clearblockstats</h3>
+<ul>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "clearblockstats",
+        "params": []
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="disconnectnode-node">disconnectnode "node"</h3>
+<p>断开某个节点的连接
+- 请求参数:
+  - <code>node</code>：必须，节点信息 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "disconnectnode",
+        "params": ["121.28.160.158:63335"]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="expedited-blocktx-node-ip-addr-onoff">expedited block|tx "node IP addr" on|off</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>block | tx</code>：必须，需要加速的区块或者交易</li>
+<li><code>node ip addr</code>：必须，节点信息 </li>
+<li><code>on | off</code>：必须，打开或者关闭加速服务 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "expedited",
+        "params": ["block", "121.28.160.158:63335", "on"]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="getconnectioncount">getconnectioncount</h3>
+<p>获取与其他节点的连接数 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getconnectioncount",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": 6,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getexcessiveblock">getexcessiveblock</h3>
+<p>与<code>setexcessiveblock</code>对应 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getexcessiveblock",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "excessiveBlockSize": 32000000,
+            "excessiveAcceptDepth": 12
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getnettotals">getnettotals</h3>
+<p>返回网络流量统计信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getnettotals",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "totalbytesrecv": 6421953,
+            "totalbytessent": 138173,
+            "timemillis": 1563266107979,
+            "uploadtarget": {
+                "timeframe": 86400,
+                "target": 0,
+                "target_reached": false,
+                "serve_historical_blocks": true,
+                "bytes_left_in_cycle": 0,
+                "time_left_in_cycle": 0
+            }
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getnetworkinfo">getnetworkinfo</h3>
+<p>返回节点的网络连接信息 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getnetworkinfo",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "version": 1060000,
+            "subversion": "/BUCash:1.6.0(EB32; AD12)/",
+            "protocolversion": 80003,
+            "localservices": "0000000000000075",
+            "timeoffset": 0,
+            "connections": 6,
+            "networks": [
+                {
+                    "name": "ipv4",
+                    "limited": false,
+                    "reachable": true,
+                    "proxy": "",
+                    "proxy_randomize_credentials": false
+                },
+                {
+                    "name": "ipv6",
+                    "limited": false,
+                    "reachable": true,
+                    "proxy": "",
+                    "proxy_randomize_credentials": false
+                },
+                {
+                    "name": "onion",
+                    "limited": true,
+                    "reachable": false,
+                    "proxy": "",
+                    "proxy_randomize_credentials": false
+                }
+            ],
+            "relayfee": 0.00001,
+            "minlimitertxfee": "1.0000",
+            "maxlimitertxfee": "1.0000",
+            "localaddresses": [],
+            "thinblockstats": {
+                "enabled": true,
+                "summary": "0 inbound and 0 outbound thin blocks have saved 0.00B of bandwidth",
+                "mempool_limiter": "Thinblock mempool limiting has saved 0.00B of bandwidth",
+                "inbound_percent": "Compression for 0 Inbound  thinblocks (last 24hrs): 0.0%",
+                "outbound_percent": "Compression for 0 Outbound thinblocks (last 24hrs): 0.0%",
+                "response_time": "Response time   (last 24hrs) AVG:0.00, 95th pcntl:0.00",
+                "validation_time": "Validation time (last 24hrs) AVG:0.00, 95th pcntl:0.00",
+                "outbound_bloom_filters": "Outbound bloom filter size (last 24hrs) AVG: 0.00B",
+                "inbound_bloom_filters": "Inbound bloom filter size (last 24hrs) AVG: 0.00B",
+                "thin_block_size": "Thinblock size (last 24hrs) AVG: 0.00B",
+                "thin_full_tx": "Thinblock full transactions size (last 24hrs) AVG: 0.00B",
+                "rerequested": "Tx re-request rate (last 24hrs): 0.0% Total re-requests:0"
+            },
+            "compactblockstats": {
+                "enabled": true,
+                "summary": "0 inbound and 0 outbound compactblocks have saved 0.00B of bandwidth",
+                "mempool_limiter": "CompactBlock mempool limiting has saved 0.00B of bandwidth",
+                "inbound_percent": "Compression for 0 Inbound  compactblocks (last 24hrs): 0.0%",
+                "outbound_percent": "Compression for 0 Outbound compactblocks (last 24hrs): 0.0%",
+                "response_time": "Response time   (last 24hrs) AVG:0.00, 95th pcntl:0.00",
+                "validation_time": "Validation time (last 24hrs) AVG:0.00, 95th pcntl:0.00",
+                "compact_block_size": "CompactBlock size (last 24hrs) AVG: 0.00B",
+                "compact_full_tx": "compactblock full transactions size (last 24hrs) AVG: 0.00B",
+                "rerequested": "Tx re-request rate (last 24hrs): 0.0% Total re-requests:0"
+            },
+            "grapheneblockstats": {
+                "enabled": true,
+                "summary": "0 inbound and 0 outbound graphene blocks have saved 0.00B of bandwidth with 0 local decode failures",
+                "inbound_percent": "Compression for 0 Inbound graphene blocks (last 24hrs): 0.0%",
+                "outbound_percent": "Compression for 0 Outbound graphene blocks (last 24hrs): 0.0%",
+                "response_time": "Response time   (last 24hrs) AVG:0.11, 95th pcntl:0.19",
+                "validation_time": "Validation time (last 24hrs) AVG:0.00, 95th pcntl:0.00",
+                "filter": "Bloom filter size (last 24hrs) AVG: 0.00B",
+                "iblt": "IBLT size (last 24hrs) AVG: 0.00B",
+                "rank": "Rank size (last 24hrs) AVG: 0.00B",
+                "graphene_block_size": "Graphene block size (last 24hrs) AVG: 0.00B",
+                "graphene_additional_tx_size": "Graphene size additional txs (last 24hrs) AVG: 0.00B",
+                "rerequested": "Tx re-request rate (last 24hrs): 0.0% Total re-requests:0"
+            },
+            "warnings": ""
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getpeerinfo-peer-ip-address">getpeerinfo [peer IP address]</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>peer IP address</code>：可选，没有指定则返回所有连接的网络节点信息</li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getpeerinfo",
+        "params": []
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": [
+            {
+                "id": 10,
+                "addr": "194.33.38.214:63335",
+                "addrlocal": "218.77.106.151:37951",
+                "services": "0000000000000075",
+                "relaytxes": true,
+                "lastsend": 1563266273,
+                "lastrecv": 1563266273,
+                "bytessent": 11059,
+                "bytesrecv": 8935,
+                "conntime": 1563260353,
+                "timeoffset": 0,
+                "pingtime": 0.292815,
+                "minping": 0.177829,
+                "version": 80003,
+                "subver": "/BUCash:1.6.0(EB32; AD12)/",
+                "inbound": false,
+                "startingheight": 1514,
+                "banscore": 0,
+                "synced_headers": 1554,
+                "synced_blocks": 1553,
+                "inflight": [],
+                "whitelisted": false,
+                "xversion_map": {
+                    "0000000000020001": "04",
+                    "0000000000020002": "01",
+                    "0000000000020000": "fd67f7",
+                    "0000000000020005": "00",
+                    "0000000000020003": "02",
+                    "0000000000020004": "00"
+                }
+            },
+            {
+                "id": 13,
+                "addr": "121.28.160.158:63335",
+                "addrlocal": "218.77.106.151:21360",
+                "services": "0000000000000075",
+                "relaytxes": true,
+                "lastsend": 1563266225,
+                "lastrecv": 1563266273,
+                "bytessent": 8259,
+                "bytesrecv": 12048,
+                "conntime": 1563260360,
+                "timeoffset": 0,
+                "pingtime": 0.039879,
+                "minping": 0.036661,
+                "version": 80003,
+                "subver": "/BUCash:1.6.0(EB32; AD12)/",
+                "inbound": false,
+                "startingheight": 1514,
+                "banscore": 0,
+                "synced_headers": 1554,
+                "synced_blocks": 1553,
+                "inflight": [],
+                "whitelisted": false,
+                "xversion_map": {
+                    "0000000000020002": "01",
+                    "0000000000020001": "04",
+                    "0000000000020005": "00",
+                    "0000000000020000": "fd67f7",
+                    "0000000000020004": "00",
+                    "0000000000020003": "02"
+                }
+            },
+            {
+                "id": 14,
+                "addr": "205.185.120.91:63335",
+                "addrlocal": "218.77.106.151:38220",
+                "services": "0000000000000075",
+                "relaytxes": true,
+                "lastsend": 1563266273,
+                "lastrecv": 1563266273,
+                "bytessent": 10564,
+                "bytesrecv": 10712,
+                "conntime": 1563260379,
+                "timeoffset": 0,
+                "pingtime": 0.191049,
+                "minping": 0.182475,
+                "version": 80003,
+                "subver": "/BUCash:1.6.0(EB32; AD12)/",
+                "inbound": false,
+                "startingheight": 1514,
+                "banscore": 0,
+                "synced_headers": 1554,
+                "synced_blocks": 1552,
+                "inflight": [],
+                "whitelisted": false,
+                "xversion_map": {
+                    "0000000000020000": "fd67f7",
+                    "0000000000020002": "01",
+                    "0000000000020001": "04",
+                    "0000000000020004": "00",
+                    "0000000000020003": "02",
+                    "0000000000020005": "00"
+                }
+            },
+            {
+                "id": 15,
+                "addr": "124.236.118.112:63335",
+                "addrlocal": "218.77.106.151:21148",
+                "services": "0000000000000075",
+                "relaytxes": true,
+                "lastsend": 1563266202,
+                "lastrecv": 1563266273,
+                "bytessent": 9153,
+                "bytesrecv": 9889,
+                "conntime": 1563260381,
+                "timeoffset": 0,
+                "pingtime": 0.042974,
+                "minping": 0.040235,
+                "version": 80003,
+                "subver": "/BUCash:1.6.0(EB32; AD12)/",
+                "inbound": false,
+                "startingheight": 1514,
+                "banscore": 0,
+                "synced_headers": 1554,
+                "synced_blocks": 1553,
+                "inflight": [],
+                "whitelisted": false,
+                "xversion_map": {
+                    "0000000000020001": "04",
+                    "0000000000020000": "fd67f7",
+                    "0000000000020005": "00",
+                    "0000000000020004": "00",
+                    "0000000000020002": "01",
+                    "0000000000020003": "02"
+                }
+            },
+            {
+                "id": 16,
+                "addr": "47.91.209.206:63335",
+                "addrlocal": "218.77.106.151:21130",
+                "services": "0000000000000075",
+                "relaytxes": true,
+                "lastsend": 1563266264,
+                "lastrecv": 1563266273,
+                "bytessent": 5845,
+                "bytesrecv": 14727,
+                "conntime": 1563260383,
+                "timeoffset": 0,
+                "pingtime": 0.039151,
+                "minping": 0.038024,
+                "version": 80003,
+                "subver": "/BUCash:1.6.0(EB32; AD12)/",
+                "inbound": false,
+                "startingheight": 1514,
+                "banscore": 0,
+                "synced_headers": 1554,
+                "synced_blocks": 1553,
+                "inflight": [],
+                "whitelisted": false,
+                "xversion_map": {
+                    "0000000000020000": "fd67f7",
+                    "0000000000020002": "01",
+                    "0000000000020001": "04",
+                    "0000000000020005": "00",
+                    "0000000000020003": "02",
+                    "0000000000020004": "00"
+                }
+            },
+            {
+                "id": 27,
+                "addr": "27.102.134.181:63335",
+                "addrlocal": "218.77.106.151:26893",
+                "services": "0000000000000075",
+                "relaytxes": true,
+                "lastsend": 1563266273,
+                "lastrecv": 1563266273,
+                "bytessent": 3987,
+                "bytesrecv": 8615,
+                "conntime": 1563263917,
+                "timeoffset": 0,
+                "pingtime": 0.068714,
+                "minping": 0.067235,
+                "version": 80003,
+                "subver": "/BUCash:1.6.0(EB32; AD12)/",
+                "inbound": false,
+                "startingheight": 1536,
+                "banscore": 0,
+                "synced_headers": 1554,
+                "synced_blocks": 1553,
+                "inflight": [],
+                "whitelisted": false,
+                "xversion_map": {
+                    "0000000000020000": "fd67f7",
+                    "0000000000020001": "04",
+                    "0000000000020003": "02",
+                    "0000000000020002": "01",
+                    "0000000000020005": "00",
+                    "0000000000020004": "00"
+                }
+            }
+        ],
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="gettrafficshaping">gettrafficshaping</h3>
+<p>获取网络发送和接收的带宽设置信息，单位为<code>kb/s</code> 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "gettrafficshaping",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "recvBurst": 10000,
+            "recvAve": 1024
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="ping">ping</h3>
+<p>发送<code>ping</code>到所有其他节点来测试时间 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "ping",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="pushtx-node">pushtx "node"</h3>
+<p>推送未确认的交易到某个节点 
+- 请求参数:
+  - <code>node</code>：必须，节点信息 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "pushtx",
+        "params": ["124.236.118.112:63335"]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="setban-ipnetmask-addremove-bantime-absolute">setban "ip(/netmask)" "add|remove" (bantime) (absolute)</h3>
+<p>从禁止列表添加或者删除节点 
+- 请求参数:
+  - <code>ip(/netmask)</code>：必须，IP信息 
+  - <code>command</code>：必须，<code>add|remove</code>表示添加或删除 
+  - <code>bantime</code>：可选参数，禁止的时间（秒为单位）
+  - <code>absolute</code>：可选参数，<code>true|false</code>，如果设置了，则<code>bantime</code>必须是个绝对时间戳 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "setban",
+        "params": ["192.168.0.6", "add", 86400]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="setexcessiveblock-blocksize-acceptdepth">setexcessiveblock blockSize acceptDepth</h3>
+<p>与<code>getexcessiveblock</code>对应 
+- 请求参数:
+  - <code>blockSize</code>：必须，待验证的十六进制区块数据 
+  - <code>acceptDepth</code>：必须，待验证的十六进制区块数据 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "setexcessiveblock",
+        "params": [320000000, 10]
+    }</code>
+- 响应:
+    <code>{
+        "result": "Excessive Block set to 320000000 bytes.  Accept Depth set to 10 blocks.",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="settrafficshaping-sendreceive-burstkb-averagekb">settrafficshaping "send|receive" "burstKB" "averageKB"</h3>
+<p>与<code>gettrafficshaping</code>对应，设置网络发送和接收的带宽设置信息，单位为<code>kb/s</code><br />
+- 请求参数:
+  - <code>send|receive</code>：必须，发送还是接收带宽 
+  - <code>burst</code>：burst size
+  - <code>average</code>： 平均吞吐量 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "settrafficshaping",
+        "params": ["receive", 10000, 1024]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h2 id="rawtransactions">Rawtransactions</h2>
+<h3 id="createrawtransaction-txididvoutn-addressamountdatahex-locktime">createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} (locktime)</h3>
+<p>创建待发送交易 
+- 请求参数:
+  - <code>transactions</code>：必须，交易信息，结构如下：
+    <code>[
+        "txid": "id",
+        "vout": n,
+        "sequence": n
+    ]</code>
+  - <code>outputs</code>：必须，输入结构：
+    <code>{
+        "address": x.xxx,
+        "data": "hex",
+        ...
+    }</code>
+- 请求:</p>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="decoderawtransaction-hexstring">decoderawtransaction "hexstring"</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>hexstring</code>：必须，交易的十六进制数据</li>
+<li>请求</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="decodescript-hex">decodescript "hex"</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>hex</code>：必须，十六进制的加密<code>script</code> </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="enqueuerawtransaction-hexstring-options">enqueuerawtransaction "hexstring" (options)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>hexstring</code>：必须，交易的十六进制数据 </li>
+<li><code>options</code>：可选参数 </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="fundrawtransaction-hexstring-includewatching">fundrawtransaction "hexstring" includeWatching</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>hexstring</code>：必须，交易的十六进制数据 </li>
+<li><code>includeWatching</code>：可选参数，默认为<code>false</code></li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="getrawblocktransactions">getrawblocktransactions</h3>
+<ul>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="getrawtransaction-txid-verbose-blockhash">getrawtransaction "txid" (verbose "blockhash")</h3>
+<p>获取交易的具体信息 
+- 请求参数:
+  - <code>txid</code>：必须，交易ID 
+  - <code>verbose</code>：可选参数，默认为<code>false</code>，返回为<code>string</code>，否认则是<code>json</code>对象 
+  - <code>blockhash</code>：可选参数，指定查找的区块 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getrawtransaction",
+        "params": ["7b100c6083f8e6250f9dbc3585653b903cbae81dd7d0012b0be30bc8b3912570", true]
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "txid": "7b100c6083f8e6250f9dbc3585653b903cbae81dd7d0012b0be30bc8b3912570",
+            "size": 1431,
+            "version": 1,
+            "locktime": 2125,
+            "vin": [
+                {
+                    "txid": "22431db4891113f329ba9220198a939a15ff6e75a07dfeba7a0f9ee26626b27f",
+                    "vout": 1,
+                    "scriptSig": {
+                        "asm": "30440220108ff7250b765dc3dd7468b3f4c9a42b86eb5c75fbc0c6eb1e4679bef7d64b590220686efd5868ded0e6ac24a712d86f09e4af9d8be0f82fe8f8a4032ae2d7e70f57[ALL|FORKID]",
+                        "hex": "4730440220108ff7250b765dc3dd7468b3f4c9a42b86eb5c75fbc0c6eb1e4679bef7d64b590220686efd5868ded0e6ac24a712d86f09e4af9d8be0f82fe8f8a4032ae2d7e70f5741"
+                    },
+                    "sequence": 4294967294
+                },
+                {
+                    "txid": "46dab0ef38ff8b8f8a075a7c18bd038ec55676b7b50bdb6e95eb9cdb3af80cb0",
+                    "vout": 2,
+                    "scriptSig": {
+                        "asm": "3044022051dae81547873cb1876d15a5d66ccd60ab84c90fd88c31ff9e0edb09b5aa7be302202ee792428449d5840030174ea129e0e59b8b24e56d2a3f79843f690d8e0a18e9[ALL|FORKID] 02811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae69",
+                        "hex": "473044022051dae81547873cb1876d15a5d66ccd60ab84c90fd88c31ff9e0edb09b5aa7be302202ee792428449d5840030174ea129e0e59b8b24e56d2a3f79843f690d8e0a18e9412102811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae69"
+                    },
+                    "sequence": 4294967294
+                },
+                {
+                    "txid": "82f042d7f3c92a2430e3f32571984124c0422de9842d1c58c0ca6402fe51579e",
+                    "vout": 0,
+                    "scriptSig": {
+                        "asm": "3045022100b9bc48c74b076e143d25b2d364a47a07f7171a60cfe442162fd85b89ccb138b602203e2ac4e9bce5f0bb73fdf7ce8138b6b5e953e97cc2b0ca40a0330f9a9bacd3e2[ALL|FORKID] 02811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae69",
+                        "hex": "483045022100b9bc48c74b076e143d25b2d364a47a07f7171a60cfe442162fd85b89ccb138b602203e2ac4e9bce5f0bb73fdf7ce8138b6b5e953e97cc2b0ca40a0330f9a9bacd3e2412102811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae69"
+                    },
+                    "sequence": 4294967294
+                },
+                {
+                    "txid": "82f042d7f3c92a2430e3f32571984124c0422de9842d1c58c0ca6402fe51579e",
+                    "vout": 1,
+                    "scriptSig": {
+                        "asm": "0 30440220768d5388432dd32f047a66778636621dab1da754b2a5ec186356395147f8787f02206682ee90b13362ba4aa5ca37d4aed98f9475093e52318f681b2a804bc81da015[ALL|FORKID] 30440220526ba2d31d9a7f2aaa6a4f989c756301a16d05bfd755457b9de9b31cca5ba6710220169447a3b46c440eb264a3d685caa1b26ccbfc12975685b93d6909969f2cfa0a[ALL|FORKID] 52210210efa95a1cf54fa8719fd9bed4038ecfbd93890bd2b078475ef312dd0c66965821034bcc067f778129a9140a12c9d17c72b733dc3577e9e99a821746972c9b481ed82102811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae6953ae",
+                        "hex": "004730440220768d5388432dd32f047a66778636621dab1da754b2a5ec186356395147f8787f02206682ee90b13362ba4aa5ca37d4aed98f9475093e52318f681b2a804bc81da015414730440220526ba2d31d9a7f2aaa6a4f989c756301a16d05bfd755457b9de9b31cca5ba6710220169447a3b46c440eb264a3d685caa1b26ccbfc12975685b93d6909969f2cfa0a414c6952210210efa95a1cf54fa8719fd9bed4038ecfbd93890bd2b078475ef312dd0c66965821034bcc067f778129a9140a12c9d17c72b733dc3577e9e99a821746972c9b481ed82102811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae6953ae"
+                    },
+                    "sequence": 4294967294
+                },
+                {
+                    "txid": "2009b1f8c23da950b0a9e57641046ce7902f9bf81a7c9fdf0f00f84d43b2904d",
+                    "vout": 0,
+                    "scriptSig": {
+                        "asm": "304402207306ea279c3ddd7c772fdbb59ac347be022d17a44969ea6b232004ec5d8c130602201515e418716103d533833b9d60845fd25ea98ebb6bbde8fa55e3e89d19d8befb[ALL|FORKID] 0348e7a0d3ca54077fc46df4642a03153d6677231fbd01fb5f6543b678cbd16c6c",
+                        "hex": "47304402207306ea279c3ddd7c772fdbb59ac347be022d17a44969ea6b232004ec5d8c130602201515e418716103d533833b9d60845fd25ea98ebb6bbde8fa55e3e89d19d8befb41210348e7a0d3ca54077fc46df4642a03153d6677231fbd01fb5f6543b678cbd16c6c"
+                    },
+                    "sequence": 4294967294
+                },
+                {
+                    "txid": "be099aa6f0f5f1d5e01832d58db1c2a6b612acb0d5e64cf51072b0f0e7c4fc69",
+                    "vout": 1,
+                    "scriptSig": {
+                        "asm": "304402207f84d16e1786e0a8b38ebd08276653f37de1c1fdfdeb53c45346db59482b1b7e02203e4a757313d7dd18e65be28d32ff94cc135c2cda450f141e2b45a97904f230c8[ALL|FORKID]",
+                        "hex": "47304402207f84d16e1786e0a8b38ebd08276653f37de1c1fdfdeb53c45346db59482b1b7e02203e4a757313d7dd18e65be28d32ff94cc135c2cda450f141e2b45a97904f230c841"
+                    },
+                    "sequence": 4294967294
+                },
+                {
+                    "txid": "274ba89adb21f06fec21f44e946979f439f74a53e59f9aed96172efd67a9ab47",
+                    "vout": 1,
+                    "scriptSig": {
+                        "asm": "3045022100cf4c90d9596acdf88c4f3a0c4cefc7d1ab95da780f00616286203ebcc59552bc02201b6f95d3d41d9a85e1873940a3cd7e105df5428cbc7fab505d8889ef505da1a7[ALL|FORKID]",
+                        "hex": "483045022100cf4c90d9596acdf88c4f3a0c4cefc7d1ab95da780f00616286203ebcc59552bc02201b6f95d3d41d9a85e1873940a3cd7e105df5428cbc7fab505d8889ef505da1a741"
+                    },
+                    "sequence": 4294967294
+                },
+                {
+                    "txid": "f45a7538fc071c84c70d4a7e0d220a3e4b62fcdf4fe8822e5c5ca7ed0a8b4700",
+                    "vout": 1,
+                    "scriptSig": {
+                        "asm": "3044022058748083d042e8eba80002e0eba186934db13748eb5a79d42090c8075e06dad502202d02807c6f1d617be4255cf98fda98375e0f11826d0fc4559700058949944e3a[ALL|FORKID]",
+                        "hex": "473044022058748083d042e8eba80002e0eba186934db13748eb5a79d42090c8075e06dad502202d02807c6f1d617be4255cf98fda98375e0f11826d0fc4559700058949944e3a41"
+                    },
+                    "sequence": 4294967294
+                },
+                {
+                    "txid": "d1f6185e2793abf916ad86cd4b16fc4d1f0b961a1f70b18cfbca2af21aeb5d48",
+                    "vout": 1,
+                    "scriptSig": {
+                        "asm": "3044022014b5e094560582787b4304b97d530bae895a0a1e7f52692097bae09be4b4a33802202edc06060221a8f7b4e93865329d0acee35e6bbb1175b428024480e2468981ed[ALL|FORKID]",
+                        "hex": "473044022014b5e094560582787b4304b97d530bae895a0a1e7f52692097bae09be4b4a33802202edc06060221a8f7b4e93865329d0acee35e6bbb1175b428024480e2468981ed41"
+                    },
+                    "sequence": 4294967294
+                }
+            ],
+            "vout": [
+                {
+                    "value": 50,
+                    "n": 0,
+                    "scriptPubKey": {
+                        "asm": "OP_DUP OP_HASH160 e156d8f45865a44cc689b4ac5b63d0534be15f21 OP_EQUALVERIFY OP_CHECKSIG",
+                        "hex": "76a914e156d8f45865a44cc689b4ac5b63d0534be15f2188ac",
+                        "reqSigs": 1,
+                        "type": "pubkeyhash",
+                        "addresses": [
+                            "1MYV5RxyXiPDR7vtdVhUKBXcVzwx5sFoMP"
+                        ]
+                    }
+                },
+                {
+                    "value": 0.00000546,
+                    "n": 1,
+                    "scriptPubKey": {
+                        "asm": "OP_DUP OP_HASH160 e156d8f45865a44cc689b4ac5b63d0534be15f21 OP_EQUALVERIFY OP_CHECKSIG",
+                        "hex": "76a914e156d8f45865a44cc689b4ac5b63d0534be15f2188ac",
+                        "reqSigs": 1,
+                        "type": "pubkeyhash",
+                        "addresses": [
+                            "1MYV5RxyXiPDR7vtdVhUKBXcVzwx5sFoMP"
+                        ]
+                    }
+                },
+                {
+                    "value": 0.17420841,
+                    "n": 2,
+                    "scriptPubKey": {
+                        "asm": "OP_DUP OP_HASH160 e156d8f45865a44cc689b4ac5b63d0534be15f21 OP_EQUALVERIFY OP_CHECKSIG",
+                        "hex": "76a914e156d8f45865a44cc689b4ac5b63d0534be15f2188ac",
+                        "reqSigs": 1,
+                        "type": "pubkeyhash",
+                        "addresses": [
+                            "1MYV5RxyXiPDR7vtdVhUKBXcVzwx5sFoMP"
+                        ]
+                    }
+                },
+                {
+                    "value": 0,
+                    "n": 3,
+                    "scriptPubKey": {
+                        "asm": "OP_RETURN 64636f70010001",
+                        "hex": "6a0764636f70010001",
+                        "type": "nulldata"
+                    }
+                }
+            ],
+            "blockhash": "5c46d6c84f11fa3730ae82497ae1e26a230f99e561b231a0b3ee4ef0921599f2",
+            "confirmations": 31,
+            "time": 1563347295,
+            "blocktime": 1563347295,
+            "hex": "01000000097fb22666e29e0f7abafe7da0756eff159a938a192092ba29f3131189b41d432201000000484730440220108ff7250b765dc3dd7468b3f4c9a42b86eb5c75fbc0c6eb1e4679bef7d64b590220686efd5868ded0e6ac24a712d86f09e4af9d8be0f82fe8f8a4032ae2d7e70f5741feffffffb00cf83adb9ceb956edb0bb5b77656c58e03bd187c5a078a8f8bff38efb0da46020000006a473044022051dae81547873cb1876d15a5d66ccd60ab84c90fd88c31ff9e0edb09b5aa7be302202ee792428449d5840030174ea129e0e59b8b24e56d2a3f79843f690d8e0a18e9412102811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae69feffffff9e5751fe0264cac0581c2d84e92d42c02441987125f3e330242ac9f3d742f082000000006b483045022100b9bc48c74b076e143d25b2d364a47a07f7171a60cfe442162fd85b89ccb138b602203e2ac4e9bce5f0bb73fdf7ce8138b6b5e953e97cc2b0ca40a0330f9a9bacd3e2412102811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae69feffffff9e5751fe0264cac0581c2d84e92d42c02441987125f3e330242ac9f3d742f08201000000fc004730440220768d5388432dd32f047a66778636621dab1da754b2a5ec186356395147f8787f02206682ee90b13362ba4aa5ca37d4aed98f9475093e52318f681b2a804bc81da015414730440220526ba2d31d9a7f2aaa6a4f989c756301a16d05bfd755457b9de9b31cca5ba6710220169447a3b46c440eb264a3d685caa1b26ccbfc12975685b93d6909969f2cfa0a414c6952210210efa95a1cf54fa8719fd9bed4038ecfbd93890bd2b078475ef312dd0c66965821034bcc067f778129a9140a12c9d17c72b733dc3577e9e99a821746972c9b481ed82102811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae6953aefeffffff4d90b2434df8000fdf9f7c1af89b2f90e76c044176e5a9b050a93dc2f8b10920000000006a47304402207306ea279c3ddd7c772fdbb59ac347be022d17a44969ea6b232004ec5d8c130602201515e418716103d533833b9d60845fd25ea98ebb6bbde8fa55e3e89d19d8befb41210348e7a0d3ca54077fc46df4642a03153d6677231fbd01fb5f6543b678cbd16c6cfeffffff69fcc4e7f0b07210f54ce6d5b0ac12b6a6c2b18dd53218e0d5f1f5f0a69a09be010000004847304402207f84d16e1786e0a8b38ebd08276653f37de1c1fdfdeb53c45346db59482b1b7e02203e4a757313d7dd18e65be28d32ff94cc135c2cda450f141e2b45a97904f230c841feffffff47aba967fd2e1796ed9a9fe5534af739f47969944ef421ec6ff021db9aa84b270100000049483045022100cf4c90d9596acdf88c4f3a0c4cefc7d1ab95da780f00616286203ebcc59552bc02201b6f95d3d41d9a85e1873940a3cd7e105df5428cbc7fab505d8889ef505da1a741feffffff00478b0aeda75c5c2e82e84fdffc624b3e0a220d7e4a0dc7841c07fc38755af40100000048473044022058748083d042e8eba80002e0eba186934db13748eb5a79d42090c8075e06dad502202d02807c6f1d617be4255cf98fda98375e0f11826d0fc4559700058949944e3a41feffffff485deb1af22acafb8cb1701f1a960b1f4dfc164bcd86ad16f9ab93275e18f6d10100000048473044022014b5e094560582787b4304b97d530bae895a0a1e7f52692097bae09be4b4a33802202edc06060221a8f7b4e93865329d0acee35e6bbb1175b428024480e2468981ed41feffffff0400f2052a010000001976a914e156d8f45865a44cc689b4ac5b63d0534be15f2188ac22020000000000001976a914e156d8f45865a44cc689b4ac5b63d0534be15f2188ac29d20901000000001976a914e156d8f45865a44cc689b4ac5b63d0534be15f2188ac0000000000000000096a0764636f700100014d080000"
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getrawtransactionssince">getrawtransactionssince</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>-v|--verbose</code>：可选参数，默认为<code>false</code> </li>
+<li><code>hashblock</code>：必须，区块的<code>hash</code> </li>
+<li><code>count</code>：可选参数，默认为1 </li>
+<li><code>protocol_id</code>：可选参数 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getrawtransactionssince",
+        "params": ["-v", "79973d51e6004582cc27f34f2ca8354bd5236f8c8322cfad65a760ace04dbc51", 10]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": {
+            "79973d51e6004582cc27f34f2ca8354bd5236f8c8322cfad65a760ace04dbc51": {
+                "d1f9f973d501e0cbe7cc6c5f1a1ca948403bd7f7688678010696f8f15578568e": {
+                    "hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1402710804f0edb8300b2f454233322f414431322fffffffff02008c86470000000017a914ae6b7287280d25f76c43dab1350b94b6163b63ee870008af2f00000000232103937c40db665c816e18cb5e18d151fa7f1ddbbcea511c8bfb7b37b399417ededaac00000000",
+                    "txid": "d1f9f973d501e0cbe7cc6c5f1a1ca948403bd7f7688678010696f8f15578568e",
+                    "size": 147,
+                    "version": 1,
+                    "locktime": 0,
+                    "vin": [
+                        {
+                            "coinbase": "02710804f0edb8300b2f454233322f414431322f",
+                            "sequence": 4294967295
+                        }
+                    ],
+                    "vout": [
+                        {
+                            "value": 12,
+                            "n": 0,
+                            "scriptPubKey": {
+                                "asm": "OP_HASH160 ae6b7287280d25f76c43dab1350b94b6163b63ee OP_EQUAL",
+                                "hex": "a914ae6b7287280d25f76c43dab1350b94b6163b63ee87",
+                                "reqSigs": 1,
+                                "type": "scripthash",
+                                "addresses": [
+                                    "3HbGDVmFcxCQJGUVQH46fbrwJEk8VBDBU3"
+                                ]
+                            }
+                        },
+                        {
+                            "value": 8,
+                            "n": 1,
+                            "scriptPubKey": {
+                                "asm": "03937c40db665c816e18cb5e18d151fa7f1ddbbcea511c8bfb7b37b399417ededa OP_CHECKSIG",
+                                "hex": "2103937c40db665c816e18cb5e18d151fa7f1ddbbcea511c8bfb7b37b399417ededaac",
+                                "reqSigs": 1,
+                                "type": "pubkey",
+                                "addresses": [
+                                    "125iwSheqz1JUmpUVcb53oPD6sjcMkYWVG"
+                                ]
+                            }
+                        }
+                    ],
+                    "blockhash": "79973d51e6004582cc27f34f2ca8354bd5236f8c8322cfad65a760ace04dbc51",
+                    "confirmations": 3,
+                    "time": 1563351698,
+                    "blocktime": 1563351698
+                }
+            },
+            "164eb4fd56acbe411e1ea1208e4b64f5717c012313e451b1496f8d51356de9c8": {
+                "8b3745c5625b1158ddb2dfa3db20451e1be6dcbbacca17b84f706df9b8d09770": {
+                    "hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff15027208058a26b9f7170b2f454233322f414431322fffffffff02008c86470000000017a914ae6b7287280d25f76c43dab1350b94b6163b63ee870008af2f000000002321037ab83fe7aa473dbeefe2eeb26509cdbb84b5022156956c28a5bab9162160e038ac00000000",
+                    "txid": "8b3745c5625b1158ddb2dfa3db20451e1be6dcbbacca17b84f706df9b8d09770",
+                    "size": 148,
+                    "version": 1,
+                    "locktime": 0,
+                    "vin": [
+                        {
+                            "coinbase": "027208058a26b9f7170b2f454233322f414431322f",
+                            "sequence": 4294967295
+                        }
+                    ],
+                    "vout": [
+                        {
+                            "value": 12,
+                            "n": 0,
+                            "scriptPubKey": {
+                                "asm": "OP_HASH160 ae6b7287280d25f76c43dab1350b94b6163b63ee OP_EQUAL",
+                                "hex": "a914ae6b7287280d25f76c43dab1350b94b6163b63ee87",
+                                "reqSigs": 1,
+                                "type": "scripthash",
+                                "addresses": [
+                                    "3HbGDVmFcxCQJGUVQH46fbrwJEk8VBDBU3"
+                                ]
+                            }
+                        },
+                        {
+                            "value": 8,
+                            "n": 1,
+                            "scriptPubKey": {
+                                "asm": "037ab83fe7aa473dbeefe2eeb26509cdbb84b5022156956c28a5bab9162160e038 OP_CHECKSIG",
+                                "hex": "21037ab83fe7aa473dbeefe2eeb26509cdbb84b5022156956c28a5bab9162160e038ac",
+                                "reqSigs": 1,
+                                "type": "pubkey",
+                                "addresses": [
+                                    "13xYunxKZcKjtyCsWazm7Z29zL5VmVz2fZ"
+                                ]
+                            }
+                        }
+                    ],
+                    "blockhash": "164eb4fd56acbe411e1ea1208e4b64f5717c012313e451b1496f8d51356de9c8",
+                    "confirmations": 2,
+                    "time": 1563351788,
+                    "blocktime": 1563351788
+                }
+            },
+            "17ee4f522c7d9f0029bb6f5fd770c349861220d310d2af2c7d6683f58ee934b7": {
+                "0e76389c0e16a8c0fdf5ec74e275cd782dbc7b5e5d61552e0c53e8f1bb6054e9": {
+                    "hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1802730808a1aec8fe4da5e0f90b2f454233322f414431322fffffffff02008c86470000000017a914ae6b7287280d25f76c43dab1350b94b6163b63ee870008af2f00000000232103d06612bab362b6ba3d1d891c1a58425fb38d77397a749489fc53d72d9cd8d0f6ac00000000",
+                    "txid": "0e76389c0e16a8c0fdf5ec74e275cd782dbc7b5e5d61552e0c53e8f1bb6054e9",
+                    "size": 151,
+                    "version": 1,
+                    "locktime": 0,
+                    "vin": [
+                        {
+                            "coinbase": "02730808a1aec8fe4da5e0f90b2f454233322f414431322f",
+                            "sequence": 4294967295
+                        }
+                    ],
+                    "vout": [
+                        {
+                            "value": 12,
+                            "n": 0,
+                            "scriptPubKey": {
+                                "asm": "OP_HASH160 ae6b7287280d25f76c43dab1350b94b6163b63ee OP_EQUAL",
+                                "hex": "a914ae6b7287280d25f76c43dab1350b94b6163b63ee87",
+                                "reqSigs": 1,
+                                "type": "scripthash",
+                                "addresses": [
+                                    "3HbGDVmFcxCQJGUVQH46fbrwJEk8VBDBU3"
+                                ]
+                            }
+                        },
+                        {
+                            "value": 8,
+                            "n": 1,
+                            "scriptPubKey": {
+                                "asm": "03d06612bab362b6ba3d1d891c1a58425fb38d77397a749489fc53d72d9cd8d0f6 OP_CHECKSIG",
+                                "hex": "2103d06612bab362b6ba3d1d891c1a58425fb38d77397a749489fc53d72d9cd8d0f6ac",
+                                "reqSigs": 1,
+                                "type": "pubkey",
+                                "addresses": [
+                                    "1LJ9EiaopwLVcvXMzV7DddeJQ7FyarDrFg"
+                                ]
+                            }
+                        }
+                    ],
+                    "blockhash": "17ee4f522c7d9f0029bb6f5fd770c349861220d310d2af2c7d6683f58ee934b7",
+                    "confirmations": 1,
+                    "time": 1563351840,
+                    "blocktime": 1563351840
+                }
+            }
+        },
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="sendrawtransaction-hexstring-allowhighfees-allownonstandard">sendrawtransaction "hexstring" (allowhighfees, allownonstandard)</h3>
+<p>将交易提交给本地节点和网络。
+- 请求参数:
+  - <code>hexstring</code> (string, required) The hex string of the raw transaction) 
+  - <code>allowhighfees</code> (boolean, optional, default=false) Allow high fees
+  - <code>allownonstandard</code>：可选参数，默认为<code>default</code> ('standard', 'nonstandard', 'default') 
+- 请求:</p>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="signrawtransaction-hexstring-txididvoutnscriptpubkeyhexredeemscripthex-privatekey1-sighashtype">signrawtransaction "hexstring" ([{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype)</h3>
+<p>Sign inputs for raw transaction (serialized, hex-encoded). 
+The second optional argument (may be null) is an array of previous transaction outputs that 
+this transaction depends on but may not yet be in the block chain. 
+The third optional argument (may be null) is an array of base58-encoded private 
+keys that, if given, will be the only keys used to sign the transaction.
+- 请求参数:
+  - <code>hexstring</code> (string, required) The transaction hex string 
+  - <code>prevtxs</code> (string, optional) An json array of previous dependent transaction outputs 
+    <code>[
+        {
+            "txid": "id",
+            "vout": n,
+            "scriptPubKey": "hex",
+            "redeemScript": "hex",
+            "amount": value
+        },
+        ...
+    ]</code>
+  - <code>privkeys</code> (string, optional) A json array of base58-encoded private keys for signing 
+    <code>[ 
+        “privatekey” (string) private key in base58-encoding 
+        ,… 
+    ]</code>
+  - <code>sighashtype</code> (string, optional, default=ALL) The signature hash type. Must be one of:
+    <code>“ALL” 
+    “NONE” 
+    “SINGLE” 
+    “ALL|ANYONECANPAY” 
+    “NONE|ANYONECANPAY” 
+    “SINGLE|ANYONECANPAY”</code></p>
+<ul>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h2 id="util">Util</h2>
+<h3 id="createmultisig-nrequired-key">createmultisig nrequired ["key",...]</h3>
+<p>创建一个需要m个密钥的n个签名的多签名地址
+它返回一个具有地址和<code>redeemScript</code>的json对象
+- 请求参数:
+  - <code>nrequired</code> (numeric, required) The number of required signatures out of the n keys or addresses. 
+  - <code>keys</code> (string, required) A json array of keys which are qtum addresses or hex-encoded public keys 
+- 请求:
+    <code>{
+        "jsonrpc":"1.0",
+        "id":"1",
+        "method":"createmultisig",
+        "params":[3,["0210efa95a1cf54fa8719fd9bed4038ecfbd93890bd2b078475ef312dd0c669658","034bcc067f778129a9140a12c9d17c72b733dc3577e9e99a821746972c9b481ed8","02811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae69"]]
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "address": "3LBb4FzY4UosrKkhcbbY2bVbvcbaKN9pGs",
+            "redeemScript": "53210210efa95a1cf54fa8719fd9bed4038ecfbd93890bd2b078475ef312dd0c66965821034bcc067f778129a9140a12c9d17c72b733dc3577e9e99a821746972c9b481ed82102811486c03f3a99c5820b43039f72f9e1b728b45c611b860cd994de3c9100ae6953ae"
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="estimatefee-nblocks">estimatefee nblocks</h3>
+<p>交易费用的估算，单位为每<code>KB</code> 
+  - <code>nblocks</code> (numeric, required)
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "estimatefee",
+        "params": [6]
+    }</code>
+- 响应:
+    <code>{
+        "result": -1,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="get">get</h3>
+<p>获取配置信息，默认获取所有，也可指定具体配置 configuration
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "get",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "blockchain.checkScriptDays": 30,
+            "consensus.enableCanonicalTxOrder": false,
+            "consensus.forkMay2019Time": 0,
+            "consensus.maxScriptOps": 201,
+            "consensus.svForkNov2018Time": 0,
+            "maxlimitertxfee": 1,
+            "mining.blockSize": 8000000,
+            "mining.coinbaseReserve": 1000,
+            "mining.comment": "diskcoin is fundamentally emergent consensus",
+            "mining.dataCarrierSize": 223,
+            "mining.excessiveSigopsPerMb": 20000,
+            "mining.unsafeGetBlockTemplate": false,
+            "mining.vote": "",
+            "minlimitertxfee": 1,
+            "net.blockDownloadWindow": 0,
+            "net.blockRetryInterval": 5000000,
+            "net.dustThreshold": 546,
+            "net.excessiveAcceptDepth": 12,
+            "net.excessiveBlock": 32000000,
+            "net.excessiveSigopsPerMb": 20000,
+            "net.excessiveTx": 1000000,
+            "net.grapheneFastFilterCompatibility": 0,
+            "net.grapheneMaxVersionSupported": 4,
+            "net.grapheneMinVersionSupported": 0,
+            "net.ignoreTimeouts": false,
+            "net.magic": 0,
+            "net.maxBlocksInTransitPerPeer": 0,
+            "net.maxConnections": 125,
+            "net.maxOutboundConnections": 16,
+            "net.minXthinNodes": 8,
+            "net.msgHandlerThreads": 2,
+            "net.subversionOverride": "",
+            "net.txAdmissionThreads": 2,
+            "net.txRetryInterval": 5000000,
+            "prune.pruneInterval": 100,
+            "reindex.typicalBlockSize": 200000,
+            "wallet.maxTxFee": 10000000
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getaddressforms-address">getaddressforms "address"</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>address</code>：必须，地址信息 </li>
+<li>请求 :
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getaddressforms",
+        "params": ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy"]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": {
+            "legacy": "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+            "diskcoin": "disc:qpejezvuxwer2j7cy36cudalegqv4ea7vuxysq5gtj",
+            "bitpay": "CSxsddAJd2sTMT6iADUNjt31G8yXEnNK3k"
+        },
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="getstat">getstat</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>statistic</code>：必须，需要获取的某个具体统计信息（用<code>getstatlist</code>命令获取）</li>
+<li><code>-v|--verbose</code>：可选参数，是否全部详细信息 </li>
+<li><code>series</code>：可选参数（"total", "now","all", "sec10", "min5", "hourly", "daily","monthly"）</li>
+<li><code>count</code>：可选参数，返回的个数</li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getstat",
+        "params": ["memPool/size"]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": [
+            {
+                "total": 1272
+            }
+        ],
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="getstatlist">getstatlist</h3>
+<p>返回该节点上所有可用的统计信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getstatlist",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": [
+            "blockValidationTime",
+            "memPool/size",
+            "memPool/txAdded",
+            "net/recv/msg/Xb",
+            "net/recv/msg/Xt",
+            "net/recv/msg/addr",
+            "net/recv/msg/blacklist",
+            "net/recv/msg/block",
+            "net/recv/msg/blocktxn",
+            "net/recv/msg/buverack",
+            "net/recv/msg/buversion",
+            "net/recv/msg/cmpctblock",
+            "net/recv/msg/filteradd",
+            "net/recv/msg/filterclear",
+            "net/recv/msg/filterload",
+            "net/recv/msg/filtersizext",
+            "net/recv/msg/get_grblk",
+            "net/recv/msg/get_grblktx",
+            "net/recv/msg/get_thin",
+            "net/recv/msg/get_xblocktx",
+            "net/recv/msg/get_xthin",
+            "net/recv/msg/getaddr",
+            "net/recv/msg/getblocks",
+            "net/recv/msg/getblocktxn",
+            "net/recv/msg/getdata",
+            "net/recv/msg/getheaders",
+            "net/recv/msg/grblk",
+            "net/recv/msg/grblktx",
+            "net/recv/msg/headers",
+            "net/recv/msg/inv",
+            "net/recv/msg/mempool",
+            "net/recv/msg/merkleblock",
+            "net/recv/msg/notfound",
+            "net/recv/msg/ping",
+            "net/recv/msg/pong",
+            "net/recv/msg/reject",
+            "net/recv/msg/req_xpedited",
+            "net/recv/msg/sendcmpct",
+            "net/recv/msg/sendheaders",
+            "net/recv/msg/thinblock",
+            "net/recv/msg/tx",
+            "net/recv/msg/verack",
+            "net/recv/msg/version",
+            "net/recv/msg/xblocktx",
+            "net/recv/msg/xthinblock",
+            "net/recv/msg/xupdate",
+            "net/recv/msg/xverack",
+            "net/recv/msg/xversion",
+            "net/recv/total",
+            "net/send/msg/Xb",
+            "net/send/msg/Xt",
+            "net/send/msg/addr",
+            "net/send/msg/blacklist",
+            "net/send/msg/block",
+            "net/send/msg/blocktxn",
+            "net/send/msg/buverack",
+            "net/send/msg/buversion",
+            "net/send/msg/cmpctblock",
+            "net/send/msg/filteradd",
+            "net/send/msg/filterclear",
+            "net/send/msg/filterload",
+            "net/send/msg/filtersizext",
+            "net/send/msg/get_grblk",
+            "net/send/msg/get_grblktx",
+            "net/send/msg/get_thin",
+            "net/send/msg/get_xblocktx",
+            "net/send/msg/get_xthin",
+            "net/send/msg/getaddr",
+            "net/send/msg/getblocks",
+            "net/send/msg/getblocktxn",
+            "net/send/msg/getdata",
+            "net/send/msg/getheaders",
+            "net/send/msg/grblk",
+            "net/send/msg/grblktx",
+            "net/send/msg/headers",
+            "net/send/msg/inv",
+            "net/send/msg/mempool",
+            "net/send/msg/merkleblock",
+            "net/send/msg/notfound",
+            "net/send/msg/ping",
+            "net/send/msg/pong",
+            "net/send/msg/reject",
+            "net/send/msg/req_xpedited",
+            "net/send/msg/sendcmpct",
+            "net/send/msg/sendheaders",
+            "net/send/msg/thinblock",
+            "net/send/msg/tx",
+            "net/send/msg/verack",
+            "net/send/msg/version",
+            "net/send/msg/xblocktx",
+            "net/send/msg/xthinblock",
+            "net/send/msg/xupdate",
+            "net/send/msg/xverack",
+            "net/send/msg/xversion",
+            "net/send/total",
+            "node/ip121.28.160.158p63335/blocksSent",
+            "node/ip121.28.160.158p63335/bytesReceived",
+            "node/ip121.28.160.158p63335/bytesSent",
+            "node/ip121.28.160.158p63335/firstBlock",
+            "node/ip121.28.160.158p63335/firstTx",
+            "node/ip121.28.160.158p63335/recvGap",
+            "node/ip121.28.160.158p63335/sendGap",
+            "node/ip121.28.160.158p63335/txLatency",
+            "node/ip121.28.160.158p63335/txsSent",
+            "node/ip124.236.118.112p63335/blocksSent",
+            "node/ip124.236.118.112p63335/bytesReceived",
+            "node/ip124.236.118.112p63335/bytesSent",
+            "node/ip124.236.118.112p63335/firstBlock",
+            "node/ip124.236.118.112p63335/firstTx",
+            "node/ip124.236.118.112p63335/recvGap",
+            "node/ip124.236.118.112p63335/sendGap",
+            "node/ip124.236.118.112p63335/txLatency",
+            "node/ip124.236.118.112p63335/txsSent",
+            "node/ip127.0.0.1p0/blocksSent",
+            "node/ip127.0.0.1p0/bytesReceived",
+            "node/ip127.0.0.1p0/bytesSent",
+            "node/ip127.0.0.1p0/firstBlock",
+            "node/ip127.0.0.1p0/firstTx",
+            "node/ip127.0.0.1p0/recvGap",
+            "node/ip127.0.0.1p0/sendGap",
+            "node/ip127.0.0.1p0/txLatency",
+            "node/ip127.0.0.1p0/txsSent",
+            "node/ip194.33.38.214p63335/blocksSent",
+            "node/ip194.33.38.214p63335/bytesReceived",
+            "node/ip194.33.38.214p63335/bytesSent",
+            "node/ip194.33.38.214p63335/firstBlock",
+            "node/ip194.33.38.214p63335/firstTx",
+            "node/ip194.33.38.214p63335/recvGap",
+            "node/ip194.33.38.214p63335/sendGap",
+            "node/ip194.33.38.214p63335/txLatency",
+            "node/ip194.33.38.214p63335/txsSent",
+            "node/ip205.185.120.91p63335/blocksSent",
+            "node/ip205.185.120.91p63335/bytesReceived",
+            "node/ip205.185.120.91p63335/bytesSent",
+            "node/ip205.185.120.91p63335/firstBlock",
+            "node/ip205.185.120.91p63335/firstTx",
+            "node/ip205.185.120.91p63335/recvGap",
+            "node/ip205.185.120.91p63335/sendGap",
+            "node/ip205.185.120.91p63335/txLatency",
+            "node/ip205.185.120.91p63335/txsSent",
+            "node/ip27.102.134.180p63335/blocksSent",
+            "node/ip27.102.134.180p63335/bytesReceived",
+            "node/ip27.102.134.180p63335/bytesSent",
+            "node/ip27.102.134.180p63335/firstBlock",
+            "node/ip27.102.134.180p63335/firstTx",
+            "node/ip27.102.134.180p63335/recvGap",
+            "node/ip27.102.134.180p63335/sendGap",
+            "node/ip27.102.134.180p63335/txLatency",
+            "node/ip27.102.134.180p63335/txsSent",
+            "node/ip27.102.134.181p63335/blocksSent",
+            "node/ip27.102.134.181p63335/bytesReceived",
+            "node/ip27.102.134.181p63335/bytesSent",
+            "node/ip27.102.134.181p63335/firstBlock",
+            "node/ip27.102.134.181p63335/firstTx",
+            "node/ip27.102.134.181p63335/recvGap",
+            "node/ip27.102.134.181p63335/sendGap",
+            "node/ip27.102.134.181p63335/txLatency",
+            "node/ip27.102.134.181p63335/txsSent",
+            "node/ip47.91.209.206p63335/blocksSent",
+            "node/ip47.91.209.206p63335/bytesReceived",
+            "node/ip47.91.209.206p63335/bytesSent",
+            "node/ip47.91.209.206p63335/firstBlock",
+            "node/ip47.91.209.206p63335/firstTx",
+            "node/ip47.91.209.206p63335/recvGap",
+            "node/ip47.91.209.206p63335/sendGap",
+            "node/ip47.91.209.206p63335/txLatency",
+            "node/ip47.91.209.206p63335/txsSent",
+            "reqMgr/dropped",
+            "reqMgr/inFlight",
+            "reqMgr/pending",
+            "reqMgr/received",
+            "reqMgr/rejected",
+            "txValidationTime"
+        ],
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="log-categoryall-onoff">log "category|all" "on|off"</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>category|all</code>：所有或者某个<code>category</code> </li>
+<li><code>on|off</code></li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "log",
+        "params": ["NET", "off"]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": "",
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="logline-string">logline 'string'</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>string</code>：必须，日志信息 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "logline",
+        "params": ["this is a test"]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="set">set</h3>
+<p>与<code>get</code>方法对应，设置配置信息 
+- 请求参数:
+  - <code>&lt;configuration setting name&gt;=&lt;value&gt;</code>：必须，配置和值的键值对 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "set",
+        "params": ["blockchain.checkScriptDays=20", "consensus.maxScriptOps=202"]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="validateaddress-diskcoinaddress">validateaddress "diskcoinaddress"</h3>
+<p>返回diskcoin地址相应的信息 
+- 请求参数:
+  - <code>diskcoinaddress</code>：必须，待验证的diskcoin地址 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "validateaddress",
+        "params": ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy"]
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "isvalid": true,
+            "address": "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+            "scriptPubKey": "76a914732c899c33b2354bd824758e37bfca00cae7be6788ac",
+            "ismine": true,
+            "iswatchonly": false,
+            "isscript": false,
+            "pubkey": "03bbcab6f50f0010db37e2d1a74ef6807f722b59c8e62736df1d47b06b5f30393c",
+            "iscompressed": true,
+            "account": ""
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="validatechainhistory-hash">validatechainhistory [hash]</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>hash</code>：必须，区块的hash值 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "validatechainhistory",
+        "params": ["6e46a54a4ddcb2640796787570f97210daf1f896a38693ecd6c67d49bfb61619"]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": "Chain is ok",
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="verifymessage-diskcoinaddress-signature-message">verifymessage "diskcoinaddress" "signature" "message"</h3>
+<p>验证一个已签名的信息，由<code>signmessage</code>生成 
+- 请求参数:
+  - <code>diskcoinaddress</code>：必须，Diskcoin地址 
+  - <code>signature</code>：必须，签名 
+  - <code>message</code>：必须，待签名的信息 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "verifymessage",
+        "params": ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy", "IOMuqLnoFIVWUF94WaAKexX7lj6y09TxmJ09AMgKCsumYJiCK4psvegPIHZJWDKhPAzSTCoj/FkhdA0PN7GptJ8=", "my message"]
+    }</code>
+- 响应:
+    <code>{
+        "result": true,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h2 id="wallet">Wallet</h2>
+<h3 id="abandontransaction-txid">abandontransaction "txid"</h3>
+<p>将钱包中的交易标记为<code>abandoned</code>，怎么查找符合条件的交易
+- 请求参数:
+  - <code>txid</code>：必须，交易ID 
+- 请求:</p>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="addmultisigaddress-nrequired-key-account">addmultisigaddress nrequired ["key",...] ("account")</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>nrequired</code>：必须，签名个数 </li>
+<li><code>keysboject</code>：必须，diskcoin地址或者公钥
+    <code>[
+        "address",
+        ...
+    ]</code></li>
+<li><code>account</code>：可选参数</li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="backupwallet-destination">backupwallet "destination"</h3>
+<p>备份钱包 
+- 请求参数:
+  - <code>destination</code>：必须，目的文件夹或者文件 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "backupwallet",
+        "params": ["backup.dat"]
+    }</code>
+- 响应:
+会在对应的路径下生成<code>backup.data</code>文件 
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="dumpprivkey-diskcoinaddress">dumpprivkey "diskcoinaddress"</h3>
+<p>返回地址对应的私钥 
+- 请求参数:
+  - <code>diskcoinaddress</code>：必须，私钥对应的Diskcoin地址 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "dumpprivkey",
+        "params": ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy"]
+    }</code>
+- 响应:
+返回为私钥值 
+    <code>{
+        "result": "L2gBf1aQTmTBWDm2372tXHuPnEuAyS3G5bL1X7mWQgNTdhNpLr6B",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="dumpwallet-filename">dumpwallet "filename"</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>filename</code>：必须，文件路径</li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "dumpwallet",
+        "params": ["test"]
+    }</code></li>
+<li>响应:
+会在对应的路径下生成<code>test</code>文件
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="encryptwallet-passphrase">encryptwallet "passphrase"</h3>
+<p>用指定的密码加密钱包，该命令会关闭钱包服务 
+- 请求参数:
+  - <code>passphrase</code>：必须，加密钱包的密钥 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "encryptwallet",
+        "params": ["my pass phrase"]
+    }</code>
+- 响应:
+    <code>{
+        "result": "wallet encrypted; diskcoin server stopping, restart to run with encrypted wallet. The keypool has been flushed and a new HD seed was generated (if you are using HD). You need to make a new backup.",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getaccount-diskcoinaddress">getaccount "diskcoinaddress"</h3>
+<p>返回给定地址绑定的账户 
+- 请求参数:
+  - <code>diskcoinaddress</code>：必须，diskcoin地址 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getaccount",
+        "params": ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy"]
+    }</code>
+- 响应:
+    <code>{
+        "result": "",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getaccountaddress-account">getaccountaddress "account"</h3>
+<p>获取账户的当前收款地址 
+- 请求参数:
+  - <code>account</code>：必须，账户名，可设置为""来表示默认账户 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getaccountaddress",
+        "params": [""]
+    }</code>
+- 响应:
+    <code>{
+        "result": "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getaddressesbyaccount-account">getaddressesbyaccount "account"</h3>
+<p>获取账户下所有的地址 
+- 请求参数:
+  - <code>account</code>：必须，账户名 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getaddressesbyaccount",
+        "params": [""]
+    }</code>
+- 响应:
+返回和账户相关的diskcoin地址的列表 
+    <code>{
+        "result": [
+            "1DU8fmXyrbTtRjxKvKu63nDL1hLZH5bRin",
+            "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+            "1PdPq6rXijjDtHdPyewcdi6aVvQDteCPto",
+            "1BdpB1ptShqGwGuyn3BJ9Dy4ixoWRpwoqy"
+        ],
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getbalance-account-minconf-includewatchonly">getbalance ("account" minconf includeWatchonly)</h3>
+<p>获取账户的余额 
+- 请求参数:
+  - <code>account</code>：可选参数，选择的账户，<code>"*"</code>表示整个钱包，<code>""</code>表示默认账户 
+  - <code>minconf</code>：可选参数，默认为1，需要满足的确认次数 
+  - <code>includeWatchonly</code>：可选参数，默认为<code>false</code> 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getbalance",
+        "params": ["*", 5]
+    }</code>
+- 响应:
+    <code>{
+        "result": 0.5,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getnewaddress-account">getnewaddress ("account")</h3>
+<p>给账户生产一个新的收款地址 
+- 请求参数:
+  - <code>account</code>：可选参数，默认账户为<code>""</code> 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getnewaddress",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": "1DU8fmXyrbTtRjxKvKu63nDL1hLZH5bRin",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getrawchangeaddress">getrawchangeaddress</h3>
+<p>返回一个新的地址，用于<code>raw transactions</code>，不常用 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getrawchangeaddress",
+        "params": []
+    }</code>
+- 响应e:
+    <code>{
+        "result": "12hSQ349p3yU1gaFqch1t8pazNbJzJaM2f",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getreceivedbyaccount-account-minconf">getreceivedbyaccount "account" (minconf)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>account</code>：必须，默认为<code>""</code> </li>
+<li><code>minconf</code>：可选参数，默认为1，交易的确认次数 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getreceivedbyaccount",
+        "params": [""]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": 0.5,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="getreceivedbyaddress-diskcoinaddress-minconf">getreceivedbyaddress "diskcoinaddress" (minconf)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>diskcoinaddress</code>：必须，交易的Diskcoin地址 </li>
+<li><code>minconf</code>：可选参数，默认为1，交易的确认次数 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getreceivedbyaddress",
+        "params": ["1PdPq6rXijjDtHdPyewcdi6aVvQDteCPto"]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": 0,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="gettransaction-txid-includewatchonly">gettransaction "txid" (includeWatchonly)</h3>
+<p>获取钱包中某个交易的详细信息 
+- 请求参数:
+  - <code>txid</code>：必须，交易ID 
+  - <code>includeWatchonly</code>：可选参数，默认为<code>false</code><br />
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "gettransaction",
+        "params": ["53fac9b470e646c472948721552214b27bc75e9a0e19265acb5b53d8c7d51c0f"]
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "satoshi": 50000000,
+            "amount": 0.5,
+            "confirmations": 62,
+            "blockhash": "5c46d6c84f11fa3730ae82497ae1e26a230f99e561b231a0b3ee4ef0921599f2",
+            "blockindex": 2,
+            "blocktime": 1563347295,
+            "txid": "53fac9b470e646c472948721552214b27bc75e9a0e19265acb5b53d8c7d51c0f",
+            "walletconflicts": [],
+            "time": 1563346822,
+            "timereceived": 1563346822,
+            "details": [
+                {
+                    "account": "",
+                    "address": "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+                    "category": "receive",
+                    "satoshi": 50000000,
+                    "amount": 0.5,
+                    "label": "",
+                    "vout": 1
+                }
+            ],
+            "hex": "0100000001a8b39257eb3fd0ca72675693b137699f26b9dcdf947b77f43ac84c354feeec71010000004847304402200b8862001cf3d0b9b8e259b28a027c4f680f09f88e87d287b74716cd0a535244022035b35d054300ce19a031d35e36dee9a7c78da13193255096ff320c362dde273941feffffff029756a633000000001976a914e156d8f45865a44cc689b4ac5b63d0534be15f2188ac80f0fa02000000001976a914732c899c33b2354bd824758e37bfca00cae7be6788ac4d080000"
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getunconfirmedbalance">getunconfirmedbalance</h3>
+<p>获取服务器的所有未确认的余额 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getunconfirmedbalance",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": 0.5,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="getwalletinfo">getwalletinfo</h3>
+<p>获取钱包的一些状态信息 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "getwalletinfo",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "walletversion": 60000,
+            "balance": 0,
+            "unconfirmed_balance": 0.5,
+            "immature_balance": 0,
+            "txcount": 1,
+            "keypoololdest": 1563271172,
+            "keypoolsize": 10001,
+            "unlocked_until": 0,
+            "paytxfee": 0
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="importaddress-address-label-rescan-p2sh">importaddress "address" ("label" rescan p2sh)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>address</code>：必须，十六进制的<code>script</code>或者地址  </li>
+<li><code>lable</code>：可选参数，默认为<code>""</code></li>
+<li><code>rescan</code>：可选参数，默认为<code>true</code>，是否扫描钱包的交易 </li>
+<li><code>p2sh</code>：可选参数，默认为<code>false</code>，是否添加<code>P2SH</code> </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="importaddresses-rescan-no-rescan-address">importaddresses [rescan | no-rescan] "address"...</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>address</code>：必须</li>
+<li><code>rescan|no-rescan</code>：可选参数 </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="importprivatekeys-rescan-no-rescan-diskcoinprivatekey">importprivatekeys [rescan | no-rescan] "diskcoinprivatekey"...</h3>
+<p>添加私钥到钱包中 
+- 请求参数:
+  - <code>rescan|no-rescan</code>：可选参数，默认为<code>rescan</code> 
+   - <code>diskcoinprivatekey</code>：必须，私钥 (参考<code>dumpprivkey</code>) 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "importprivatekeys",
+        "params": ["no-rescan", "L2gBf1aQTmTBWDm2372tXHuPnEuAyS3G5bL1X7mWQgNTdhNpLr6B"]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="importprivkey-diskcoinprivkey-label-rescan">importprivkey "diskcoinprivkey" ("label" rescan)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>diskcoinprivatekey</code>：必须，私钥 (参考<code>dumpprivkey</code>) </li>
+<li><code>label</code>：可选参数，默认为<code>""</code>  </li>
+<li><code>rescan</code>：可选参数，默认为<code>true</code> </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "importprivkey",
+        "params": ["L2gBf1aQTmTBWDm2372tXHuPnEuAyS3G5bL1X7mWQgNTdhNpLr6B", "my label", false]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="importpubkey-pubkey-label-rescan">importpubkey "pubkey" ("label" rescan)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>pubkey</code>公钥 </li>
+<li><code>label</code>：可选参数，默认为<code>""</code> </li>
+<li><code>rescan</code>：可选参数，默认为<code>true</code> </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="importwallet-filename">importwallet "filename"</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>filename</code>：必须，钱包文件 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "importwallet",
+        "params": ["test"]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="keypoolrefill-newsize">keypoolrefill (newsize)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>newsize</code>：可选参数，默认100，新的<code>keypool size</code> </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "keypoolrefill",
+        "params": [10000]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="listaccounts-minconf-includewatchonly">listaccounts (minconf includeWatchonly)</h3>
+<p>列举所有的账户信息 
+- 请求参数:
+  - <code>minconf</code>：可选参数，默认为1，确认次数达到该值的交易 
+  - <code>includeWatchonly</code>：可选参数，默认为<code>false</code> 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listaccounts",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": {
+            "": 0,
+            "my label": 0.5
+        },
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="listaddressgroupings">listaddressgroupings</h3>
+<ul>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listaddressgroupings",
+        "params": []
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": [
+            [
+                [
+                    "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+                    0.5,
+                    "my label"
+                ]
+            ]
+        ],
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="validatechainhistory">validatechainhistory</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>hash</code>：必须，区块的hash值 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "validatechainhistory",
+        "params": []
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": "Chain is ok",
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="listlockunspent">listlockunspent</h3>
+<ul>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listlockunspent",
+        "params": []
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": [],
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="listminedblock-minconf-maxconf-address">listminedblock (minconf maxconf ["address",...])</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>minconf</code>：可选参数，默认为1 </li>
+<li><code>maxconf</code>：可选参数，默认为9999999 </li>
+<li><code>addresses</code>：地址列表 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listminedblock",
+        "params": [1, 5]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": [],
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="liststakein-inconf-maxconf-address">liststakein ( inconf maxconf  ["address",...]</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>minconf</code>：可选参数，默认为1 </li>
+<li><code>maxconf</code>：可选参数，默认为</li>
+<li><code>addresses</code>：地址列表 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "liststakein",
+        "params": [1, 9999, ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy"]]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": [],
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="liststakeout-inconf-maxconf-address">liststakeout ( inconf maxconf  ["address",...]</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>minconf</code>：可选参数，默认为1 </li>
+<li><code>maxconf</code>：可选参数，默认为9999999 </li>
+<li><code>addresses</code>：地址列表  </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "liststakeout",
+        "params": [1, 9999, ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy"]]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": [],
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="listreceivedbyaccount-minconf-includeempty-includewatchonly">listreceivedbyaccount (minconf includeempty includeWatchonly)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>minconf</code>：可选参数，默认为1 </li>
+<li><code>includeempty</code>：可选参数，默认为<code>false</code>，是否包含没有任何收款的账户 </li>
+<li><code>includeWatchonly</code>：可选参数，默认为<code>false</code>，是否包含<code>watchonly</code>地址（参考<code>importaddress</code>）</li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listreceivedbyaccount",
+        "params": [1, true]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": [
+            {
+                "account": "",
+                "satoshi": 0,
+                "amount": 0,
+                "confirmations": 0
+            },
+            {
+                "account": "my label",
+                "satoshi": 50000000,
+                "amount": 0.5,
+                "confirmations": 66
+            }
+        ],
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="listreceivedbyaddress-minconf-includeempty-includewatchonly">listreceivedbyaddress (minconf includeempty includeWatchonly)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>minconf</code>：可选参数，默认为1 </li>
+<li><code>includeempty</code>：可选参数，默认为<code>false</code>，是否包含没有任何收款的账户 </li>
+<li><code>includeWatchonly</code>：可选参数，默认为<code>false</code>，是否包含<code>watchonly</code>地址（参考<code>importaddress</code>）</li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listreceivedbyaddress",
+        "params": [1, true]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": [
+            {
+                "address": "1DU8fmXyrbTtRjxKvKu63nDL1hLZH5bRin",
+                "account": "",
+                "satoshi": 0,
+                "amount": 0,
+                "confirmations": 0,
+                "label": "",
+                "txids": []
+            },
+            {
+                "address": "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+                "account": "my label",
+                "satoshi": 50000000,
+                "amount": 0.5,
+                "confirmations": 66,
+                "label": "my label",
+                "txids": [
+                    "53fac9b470e646c472948721552214b27bc75e9a0e19265acb5b53d8c7d51c0f"
+                ]
+            },
+            {
+                "address": "1PdPq6rXijjDtHdPyewcdi6aVvQDteCPto",
+                "account": "",
+                "satoshi": 0,
+                "amount": 0,
+                "confirmations": 0,
+                "label": "",
+                "txids": []
+            },
+            {
+                "address": "1BdpB1ptShqGwGuyn3BJ9Dy4ixoWRpwoqy",
+                "account": "",
+                "satoshi": 0,
+                "amount": 0,
+                "confirmations": 0,
+                "label": "",
+                "txids": []
+            }
+        ],
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="listsinceblock-blockhash-target-confirmations-includewatchonly">listsinceblock ("blockhash" target-confirmations includeWatchonly)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>blockhash</code>：可选参数，区块<code>hash</code> </li>
+<li><code>target-confirmations</code>：可选参数，确认数，大于等于1  </li>
+<li><code>includeWatchonly</code>：可选参数，默认为<code>false</code>，是否包含<code>watchonly</code>地址（参考<code>importaddress</code>） </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listsinceblock",
+        "params": []
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": {
+            "transactions": [
+                {
+                    "account": "my label",
+                    "address": "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+                    "category": "receive",
+                    "satoshi": 50000000,
+                    "amount": 0.5,
+                    "label": "my label",
+                    "vout": 1,
+                    "confirmations": 66,
+                    "blockhash": "5c46d6c84f11fa3730ae82497ae1e26a230f99e561b231a0b3ee4ef0921599f2",
+                    "blockindex": 2,
+                    "blocktime": 1563347295,
+                    "txid": "53fac9b470e646c472948721552214b27bc75e9a0e19265acb5b53d8c7d51c0f",
+                    "walletconflicts": [],
+                    "time": 1563346822,
+                    "timereceived": 1563346822
+                }
+            ],
+            "lastblock": "6e6d1c2b0539650d9937691d8dd431c65595a4d7c3229b4f47dd4f786defe3f5"
+        },
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="listtransactions-account-count-from-includewatchonly">listtransactions ("account" count from includeWatchonly)</h3>
+<p>列举账户的交易信息 
+- 请求参数:
+  - <code>account</code>：可选参数，账户名，必须为<code>"*"</code>
+  - <code>count</code>：可选参数，默认为10，交易的数量 
+  - <code>from</code>：可选参数，默认为0，需要略过的交易数 
+  - <code>includeWatchonly</code>：可选参数，默认为<code>false</code>，是否包含<code>watchonly</code>地址（参考<code>importaddress</code>）
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listtransactions",
+        "params": ["*", 10]
+    }</code>
+- 响应:
+    <code>{
+        "result": [
+            {
+                "account": "my label",
+                "address": "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+                "category": "receive",
+                "satoshi": 50000000,
+                "amount": 0.5,
+                "label": "my label",
+                "vout": 1,
+                "confirmations": 66,
+                "blockhash": "5c46d6c84f11fa3730ae82497ae1e26a230f99e561b231a0b3ee4ef0921599f2",
+                "blockindex": 2,
+                "blocktime": 1563347295,
+                "txid": "53fac9b470e646c472948721552214b27bc75e9a0e19265acb5b53d8c7d51c0f",
+                "walletconflicts": [],
+                "time": 1563346822,
+                "timereceived": 1563346822
+            }
+        ],
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="listtransactionsfrom-account-count-from-includewatchonly">listtransactionsfrom ("account" count from includeWatchonly)</h3>
+<p>列举账户的交易信息 
+- 请求参数:
+  - <code>account</code>：可选参数，账户名，必须为<code>"*"</code>
+  - <code>count</code>：可选参数，默认为10，交易的数量 
+  - <code>from</code>：可选参数，默认为0，需要略过的交易数 
+  - <code>includeWatchonly</code>：可选参数，默认为<code>false</code>，是否包含<code>watchonly</code>地址（参考<code>importaddress</code>）
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listtransactionsfrom",
+        "params": ["*", 10, 0]
+    }</code>
+- 响应:
+    <code>{
+        "result": [
+            {
+                "account": "my label",
+                "address": "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+                "category": "receive",
+                "satoshi": 50000000,
+                "amount": 0.5,
+                "label": "my label",
+                "vout": 1,
+                "confirmations": 66,
+                "blockhash": "5c46d6c84f11fa3730ae82497ae1e26a230f99e561b231a0b3ee4ef0921599f2",
+                "blockindex": 2,
+                "blocktime": 1563347295,
+                "txid": "53fac9b470e646c472948721552214b27bc75e9a0e19265acb5b53d8c7d51c0f",
+                "walletconflicts": [],
+                "time": 1563346822,
+                "timereceived": 1563346822
+            }
+        ],
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="listunspent-minconf-maxconf-address">listunspent (minconf maxconf ["address",...])</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>minconf</code>：可选参数，默认为1 </li>
+<li><code>maxconf</code>：可选参数，默认为9999999 </li>
+<li><code>addresses</code>：地址列表 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "listunspent",
+        "params": []
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": [
+            {
+                "txid": "53fac9b470e646c472948721552214b27bc75e9a0e19265acb5b53d8c7d51c0f",
+                "vout": 1,
+                "address": "1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy",
+                "account": "my label",
+                "scriptPubKey": "76a914732c899c33b2354bd824758e37bfca00cae7be6788ac",
+                "satoshi": 50000000,
+                "amount": 0.5,
+                "confirmations": 66,
+                "spendable": true
+            }
+        ],
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="lockunspent-unlock-txidtxidvoutn">lockunspent unlock [{"txid":"txid","vout":n},...]</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>unlock</code>：必须，<code>true</code>表示解锁，<code>false</code>表示加锁 </li>
+<li><code>transactions</code>：必须，结构如下：
+    <code>[
+        {
+            "txid": "id",
+            "vout": n
+        },
+        ...
+    ]</code></li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="move-fromaccount-toaccount-amount-minconf-comment">move "fromaccount" "toaccount" amount (minconf "comment")</h3>
+<p>在账户之间转移货币 
+- 请求参数:
+  - <code>fromaccount</code>：必须，源账户 
+  - <code>toaccount</code>：必须，目的账户 
+  - <code>amount</code>：移动的数量 
+  - <code>minconf</code>：可选参数，默认为1，确认数 
+  - <code>comment</code>：可选参数，评论信息
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "move",
+        "params": ["my label", "", 0.1, 1, "my label转移0.1到默认账户"]
+    }</code>
+- 响应:
+    <code>{
+        "result": true,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="staketo-diskcoinaddress-amount">staketo "diskcoinaddress" amount</h3>
+<p>抵押到指定地址
+- 请求参数:
+  - <code>diskcoinaddress</code>：必须，Diskcoin地址
+  - <code>amount</code>：必须，抵押的数量 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "staketo",
+        "params": ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy", 0.1]
+    }</code>
+- 响应:
+返回值为交易ID 
+    <code>{
+        "result": "522fa001190e4d5cdec0f3bead4dd0987dc5b80481b4d24585f99538115177e9",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="removeprunedfunds-txid">removeprunedfunds "txid"</h3>
+<p>从钱包中删除某个交易 
+- 请求参数:
+  - <code>txid</code>：必须，交易ID<br />
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "removeprunedfunds",
+        "params": ["522fa001190e4d5cdec0f3bead4dd0987dc5b80481b4d24585f99538115177e9"]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="sendfrom-fromaccount-todiskcoinaddress-amount-minconf-comment-comment-to">sendfrom "fromaccount" "todiskcoinaddress" amount (minconf "comment" "comment-to")</h3>
+<p>从账户发送币到指定地址，需要用<code>walletpassphrase</code>设置<code>passphrase</code> 
+- 请求参数:
+  - <code>fromaccount</code>：必须，源账户 
+  - <code>todiskcoinaddress</code>：必须，目的地址 
+  - <code>amount</code>：必须，发送的数量 
+  - <code>minconf</code>：可选参数，默认为1，确认数 
+  - <code>comment</code>：可选参数，评论，不是交易的一部分，仅仅存在于钱包中 
+  - <code>comment-to</code>：可选参数，保存发送交易的对象的姓名或者组织名 
+- 请求:</p>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="sendmany-fromaccount-addressamount-minconf-comment-address">sendmany "fromaccount" {"address":amount,...} (minconf "comment" ["address",...])</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>fromaccount</code>：必须，源账户 </li>
+<li><code>amount</code>：必须，目的地址以及数量
+    <code>{
+        "address": amount,
+        ...
+    }</code></li>
+<li><code>minconf</code>：可选参数，默认为1，余额必须要满足的确认数 </li>
+<li><code>comment</code>：可选参数，评论，不是交易的一部分，仅仅存在于钱包中 </li>
+<li><code>subtractfeefromamount</code>：可选参数，地址列表 </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="sendtoaddress-diskcoinaddress-amount-comment-comment-to-subtractfeefromamount">sendtoaddress "diskcoinaddress" amount ("comment" "comment-to" subtractfeefromamount)</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>diskcoinaddress</code>：必须，目的地址 </li>
+<li><code>amount</code>：必须，需要发送的数量 </li>
+<li><code>comment</code>：可选参数，评论，不是交易的一部分，仅仅存在于钱包中 </li>
+<li><code>comment-to</code>：可选参数，保存发送交易的对象的姓名或者组织名 </li>
+<li><code>subtractfeefromamount</code>：可选参数，默认为<code>false</code> </li>
+<li>请求:</li>
+</ul>
+<pre><code></code></pre>
+
+<ul>
+<li>响应:</li>
+</ul>
+<pre><code></code></pre>
+
+<h3 id="setaccount-diskcoinaddress-account">setaccount "diskcoinaddress" "account"</h3>
+<p>将账户与地址关联
+- 请求参数:
+  - <code>diskcoinaddress</code>：必须，Diskcoin地址 
+  - <code>account</code>：必须，待关联的账户 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "setaccount",
+        "params": ["1BdpB1ptShqGwGuyn3BJ9Dy4ixoWRpwoqy", ""]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="settxfee-amount">settxfee amount</h3>
+<p>设置交易费 
+- 请求参数:
+  - <code>amount</code>：必须，交易费
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "settxfee",
+        "params": [0.1]
+    }</code>
+- 响应:
+    <code>{
+        "result": true,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="signdata-diskcoinaddress-msgformat-message">signdata "diskcoinaddress" "msgFormat" "message"</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>diskcoinaddress</code>：必须，Diskcoin地址 </li>
+<li><code>msgFormat</code>：必须，为<code>string</code>、<code>hex</code>或者<code>hash</code> </li>
+<li><code>message</code>：必须，创建签名用的信息 </li>
+<li><code>verbose</code>：可选参数，返回其他的一些附加信息 </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "signdata",
+        "params": ["1BdpB1ptShqGwGuyn3BJ9Dy4ixoWRpwoqy", "string", "my message", "verbose"]
+    }</code></li>
+<li>响应:
+返回值为签名信息 
+    <code>{
+        "result": {
+            "msghash": "ab1bdba540c9da66a96c42de0ab6a3466601145ba8eb216c7e7d76750fe338ea",
+            "signature": "3045022100F26EFF47D090F956E1CC5A112702F358D1BF2EAD0FCCD978EA44A643E9D08BBF0220460CA6A6FB265009A4A2F5A4B97361FACB9226EDDEC4DC67EA5B8DE220385DBA",
+            "pubkeyhash": "c54707cb3102df4c7a5345530fcfe70d379ca774",
+            "pubkey": "03D8B4CE80F25A9EB8BF94D6CB49F017E9ED66D0C70E0486E134D0ED0C81B0EC9F"
+        },
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+<h3 id="signmessage-diskcoinaddress-message">signmessage "diskcoinaddress" "message"</h3>
+<p>用地址的私钥给信息签名，需要用<code>walletpassphrase</code>设置<code>passphrase</code> 
+- 请求参数:
+  - <code>diskcoinaddress</code>：必须，diskcoin地址 
+  - <code>message</code>：必须，创建签名用的信息 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "signmessage",
+        "params": ["1BVz4apEjytvTKCHUU9TANQye1m7MCqZsy", "my message"]
+    }</code>
+- 响应:
+返回值为信息的签名
+    <code>{
+        "result": "IOMuqLnoFIVWUF94WaAKexX7lj6y09TxmJ09AMgKCsumYJiCK4psvegPIHZJWDKhPAzSTCoj/FkhdA0PN7GptJ8=",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="unstakee-txid">unstakee txid</h3>
+<p>解除抵押，<code>stake</code>命令返回值为<code>txid</code> 
+- 请求参数:
+  - <code>txid</code>：必须，交易ID 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "unstake",
+        "params": ["522fa001190e4d5cdec0f3bead4dd0987dc5b80481b4d24585f99538115177e9"]
+    }</code>
+- 响应:
+返回值为交易ID 
+    <code>{
+        "result": "fca427c96520435f4c9340b7bb116fd9e75bd91627a15c48246d80e187347fcc",
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="walletlock">walletlock</h3>
+<p>从内存中删除密钥，锁定钱包。如果后续有方法调用需要解锁，则需要先调用<code>walletpassphrase</code>方法
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "walletlock",
+        "params": []
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="walletpassphrase-passphrase-timeout">walletpassphrase "passphrase" timeout</h3>
+<p>将钱包密钥存储在内存中，并设置存活时间。这是进行跟私钥有关的交易时的前置条件。
+- 请求参数:
+  - <code>passphrase</code>：必须，钱包的<code>passphrase</code> 
+  - <code>timeout</code>：必须，密钥在内存中存活的时间 
+- 请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "walletpassphrase",
+        "params": ["my pass phrase", 120]
+    }</code>
+- 响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></p>
+<h3 id="walletpassphrasechange-oldpassphrase-newpassphrase">walletpassphrasechange "oldpassphrase" "newpassphrase"</h3>
+<ul>
+<li>请求参数:</li>
+<li><code>oldpassphrase</code>：必须，当前<code>passphrase</code> </li>
+<li><code>newpassphrase</code>：必须，新的<code>passphrase</code> </li>
+<li>请求:
+    <code>{
+        "jsonrpc": "1.0",
+        "id": "1",
+        "method": "walletpassphrasechange",
+        "params": ["my pass phrase", "new pass phrase"]
+    }</code></li>
+<li>响应:
+    <code>{
+        "result": null,
+        "error": null,
+        "id": "1"
+    }</code></li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../HowtoStakecn/" title="如何 Stake" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                如何 Stake
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../FAQcn/" title="常见问答" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                常见问答
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/harry1453" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
