@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://diskcoin.wiki/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/en/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/Mining/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/en/Mining/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/Staking/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/en/Staking/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/HowtoStake/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/en/HowtoStake/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/diskcoin_api/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/en/diskcoin_api/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/FAQ/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/en/FAQ/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/PoolSupportPlan/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/en/PoolSupportPlan/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/indexcn/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/cn/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/Miningcn/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/cn/Miningcn/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/Stakingcn/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/cn/Stakingcn/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/HowtoStakecn/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/cn/HowtoStakecn/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/diskcoin_apicn/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/cn/diskcoin_apicn/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/FAQcn/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/cn/FAQcn/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://diskcoin.wiki/PoolSupportPlancn/</loc>
-     <lastmod>2019-08-22</lastmod>
+     <loc>https://diskcoin.wiki/cn/PoolSupportPlancn/</loc>
+     <lastmod>2019-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
