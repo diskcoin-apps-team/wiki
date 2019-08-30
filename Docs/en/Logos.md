@@ -18,7 +18,7 @@ Download Diskcoin logos in PNG and EPS
 
 
 
-###Diskcoin Logo Horizontal
+###Diskcoin Horizontal Logo
 
 ![alt](image/DISCssmall.png)
 
