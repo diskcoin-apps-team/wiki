@@ -14,7 +14,7 @@ Download Diskcoin logos in PNG and EPS
 
 [Large(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logolarge.png)
 
-[Logo(EPS)](https://explorer.diskcoin.org/)
+[Logo(EPS)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logo.eps)
 
 
 
@@ -28,5 +28,5 @@ Download Diskcoin logos in PNG and EPS
 
 [Large(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISClarge.png)
 
-[Logo(EPS)](https://explorer.diskcoin.org/)
+[Logo(EPS)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISC.eps)
 
