@@ -2,7 +2,7 @@
 
 Download Diskcoin logos in PNG and EPS
 
-[Download All](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/)
+[Download All](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logos.zip)
 
 ###Diskcoin Logo
 
