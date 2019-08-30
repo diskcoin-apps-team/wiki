@@ -1,10 +1,24 @@
 ##Diskcoin Logos
 
-![alt](image/Diskcoinsmalllogo.png)
+![alt](image/DISCsmall.png)
 
-Download link: https://github.com/diskcoin-apps-team/wiki/tree/master/Docs/logosdownload
+[small(PNG)](https://explorer.diskcoin.org/)
 
-![alt](image/Diskcoinlargelogo.png)
+[medium(PNG)](https://explorer.diskcoin.org/)
 
-Download link: https://github.com/diskcoin-apps-team/wiki/tree/master/Docs/logosdownload
+[large(PNG)](https://explorer.diskcoin.org/)
+
+[Logo(EPS)](https://explorer.diskcoin.org/)
+
+
+
+![alt](image/logosmall.png)
+
+[small(PNG)](https://explorer.diskcoin.org/)
+
+[medium(PNG)](https://explorer.diskcoin.org/)
+
+[large(PNG)](https://explorer.diskcoin.org/)
+
+[Logo(EPS)](https://explorer.diskcoin.org/)
 
