@@ -8,13 +8,13 @@ Download Diskcoin logos in PNG and EPS
 
 ![alt](image/logossmall.png)
 
-[Small(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logosmall.png)
+[Small Logo (PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logosmall.png)
 
-[Medium(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logomedium.png)
+[Medium Logo (PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logomedium.png)
 
-[Large(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logolarge.png)
+[Large Logo (PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logolarge.png)
 
-[Logo(EPS)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logo.eps)
+[Logo (EPS)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logo.eps)
 
 
 
@@ -22,11 +22,11 @@ Download Diskcoin logos in PNG and EPS
 
 ![alt](image/DISCssmall.png)
 
-[Small(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISCsmall.png)
+[Small Logo (PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISCsmall.png)
 
-[Medium(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISCmedium.png)
+[Medium Logo (PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISCmedium.png)
 
-[Large(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISClarge.png)
+[Large Logo (PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISClarge.png)
 
 [Logo(EPS)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISC.eps)
 
