@@ -1,24 +1,26 @@
 ##Diskcoin Logos
 
-![alt](image/DISCsmall.png)
+![alt](image/logossmall.png)
 
-[small(PNG)](https://explorer.diskcoin.org/)
+[small(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logosmall.png)
 
-[medium(PNG)](https://explorer.diskcoin.org/)
+[medium(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logomedium.png)
 
-[large(PNG)](https://explorer.diskcoin.org/)
+[large(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logolarge.png)
+
+[Logo(EPS)](https://explorer.diskcoin.org/)
+
+
+
+![alt](image/DISCssmall.png)
+
+[small(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISCsmall.png)
+
+[medium(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISCmedium.png)
+
+[large(PNG)](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/DISClarge.png)
 
 [Logo(EPS)](https://explorer.diskcoin.org/)
 
 
-
-![alt](image/logosmall.png)
-
-[small(PNG)](https://explorer.diskcoin.org/)
-
-[medium(PNG)](https://explorer.diskcoin.org/)
-
-[large(PNG)](https://explorer.diskcoin.org/)
-
-[Logo(EPS)](https://explorer.diskcoin.org/)
 
