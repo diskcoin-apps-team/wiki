@@ -1,5 +1,5 @@
 ##如何抵押?
-从块高度1801开始,矿工需要在钱包作出相应的操作来进行Stake.Stake的Diskcoin越多,则收益越多.Stake要在下一个爆块后生效,unstake要在900个块确认后生效.
+从块高度1801开始, 矿工需要在钱包作出相应的操作来进行Stake. Stake的Diskcoin越多, 则收益越多. Stake要在下一个爆块后生效, unstake要在900个块确认后生效.
 
 ###Linux 系统:
 ####如何Stake:
@@ -29,15 +29,16 @@ liststakein (minconf maxconf  ["address",...])
 用"listStakein"命令去获得已Stake的txid
 
 
-###Windows/MacOS 系统(以MacOS系统为例,Windows系统操作同理)
+###Windows/MacOS 系统 (以MacOS系统为例, Windows系统操作同理)
 ####如何Stake:
-启动钱包,单击上方导航栏中的"Send",在"Stake to"中填写要Stake的地址,然后在"Amount"中填写要Stake的金额. 确保左下方是Stake to,单击"Send".
+启动钱包, 单击上方导航栏中的"Send", 在"Stake to"中填写要Stake的地址, 然后在"Amount"中填写要Stake的金额. 确保左下方是Stake to, 单击"Send".
 ![alt](image/Staketo.jpg)
 
 ####如何查看Staked记录:
-在上方导航栏"Transactions"的选项下找到Staked in的记录,如图所示:
+在上方导航栏"Transactions"的选项下找到Staked in的记录, 如图所示:
 ![alt](image/Transactions.jpg)
 
 ####如何取消Stake:
-选中需要取消的Stake记录,点击右键,选择"Unstake"
+选中需要取消的Stake记录, 点击右键, 选择"Unstake"
 ![alt](image/unstake.jpg)
+
