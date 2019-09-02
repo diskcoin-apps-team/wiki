@@ -4,7 +4,7 @@ To understand the Dynamic Equilibrium Staking rules, you need to know what the D
 
 ![alt](image/DC.png)
 
-If you want to check the Difficulty Cycle of the rewarded block, you could view it in the block explorer of the official website.
+If you want to check the Difficulty Cycle of the rewarded block, you could view it in the [explorer](https://explorer.diskcoin.org/).
 
 ![alt](image/ViewDC.jpg)
 
@@ -23,9 +23,9 @@ Since x is a Cooperative Factor, there follows a calculation formula:
 
 
 
-#### ex1800Minedblock: mined blocks during the last 1800 blocks (the current block not included) 
+ex1800Minedblock: mined blocks during the last 1800 blocks (the current block not included) 
 
-#### Difficulty Cycle (DC): the current block height lays in which difficulty cycle
+Difficulty Cycle (DC): the current block height lays in which difficulty cycle
 
 
 For example: 
