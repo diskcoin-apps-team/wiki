@@ -41,6 +41,7 @@
 ###安装Diskcoin钱包
 
 1. 钱包下载
+
 点击[钱包下载](https://github.com/diskcoin-apps-team/wiki/releases): 根据个人电脑系统选择适配的钱包下载, 如下图:
 ![alt](image/walletdownload.png)
 
@@ -124,4 +125,4 @@ MinerName = m1 #can be empty
 
 ![alt](image/order.jpg)
 
-下载安装包: https://github.com/diskcoin-apps-team/wiki/releases/latest
+下载安装包: <https://github.com/diskcoin-apps-team/wiki/releases/latest>
