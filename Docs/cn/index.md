@@ -21,10 +21,20 @@ Diskcoin采用CPoC (条件容量证明) 共识算法, 硬盘挖矿比CPUs, GPUs�
 
 [Diskcoin Whitepaper](https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf)
 
+
+
 ###服务工具
 [Wallet Download](https://diskcoin.org/wallet.html) 
 
 [Block Explorer](https://explorer.diskcoin.org/)
 
+[Diskcoin PID Generator](https://diskcoin.org/PidGenerator/)
+
+[Wallet](https://www.diskcoin.org/wallet)
+
+
+
 ###联系资讯
 [Reddit](https://www.reddit.com/r/DiskcoinOrg/) 丨 [Twitter](https://twitter.com/Diskcoinorg) 丨 [Bitcointalk](https://bitcointalk.org/index.php?topic=5154264.0) 丨 [Telegram](https://t.me/Diskcoinofficialgroup) 丨  [Discord](https://discord.gg/gQVEWG)
+
+
