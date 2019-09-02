@@ -35,7 +35,7 @@ Diskcoin uses the Conditioned Proof Of Capacity ( CPoC ) consensus algorithm to 
 
 There are many differences between Diskcoin and burstcoin. Diskcoin has No ICO / IPO, No premine, and one of the main differences is that Diskcoin uses CPoC ( Conditioned Proof Of Capacity ), which is based on PoC2 and adds the Staking mechanism. Miners who are involved in mining need Staking the corresponding Diskcoins to get the most benefit. The proportion of coins that need Staking is not simply fixed or decrease progressively.  
 For more details, you could check in our White Paper: 
-https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf
+<https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf>
 
 
 
@@ -76,7 +76,7 @@ At present, the global POC hashrate is around 2000p, and the hashrate less than 
 
 #### How can I generate a Diskcoin PID? 
 
-We provide a Diskcoin PID Generator here: https://diskcoin.org/PidGenerator/. You can click this link to generate a PID.
+We provide a Diskcoin PID Generator here: <https://diskcoin.org/PidGenerator/>. You can click this link to generate a PID.
 
 
 #### How to delete the data in Diskcoin-QT wallet?
@@ -104,7 +104,7 @@ rm -rf /data (data directory under the Diskcoin directory)
 #### What is Staking?
 
 Miners who are involved in mining need to Stake the corresponding Diskcoins to get the most benefits. In the absence of Staking, the miner can get 40% of the mining reward, and the others will be contributed to the Diskcoin Foundation to cover project development costs, promotion costs, and as a fund to support related ecological projects. If the Staking is sufficient, the miner will receive nearly 100% of the mining reward. 
-Please click the link: https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf, and you can get more details about Staking mechanism.
+Please click the link: <https://diskcoin.org/files/diskcoin-paper/Diskcoin.pdf>, and you can get more details about Staking mechanism.
 
 
 #### How to find the rewarded block lays in which Difficulty Cycle?
