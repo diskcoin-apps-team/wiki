@@ -36,6 +36,10 @@ Miners need to Stake the corresponding Diskcoins to get the most benefit. And th
 
 [Block Explorer](https://explorer.diskcoin.org/)
 
+[Diskcoin PID Generator](https://diskcoin.org/PidGenerator/)
+
+[Wallet](https://www.diskcoin.org/wallet)
+
 
 
 ### 5. Get Support
