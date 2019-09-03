@@ -115,7 +115,7 @@ cd diskcoin
 如下图所示, 钱包地址获取成功, 请保存好钱包地址.
 ![alt](image/paymentaddress.jpg)
 
-###开始挖矿
+##开始挖矿
 dcminer 要在Windows系统运行. 修改挖矿的配置文件: miner.conf
 
 ``` 
