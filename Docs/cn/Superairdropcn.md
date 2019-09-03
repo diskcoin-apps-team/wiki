@@ -19,10 +19,10 @@
 点击以下链接: <https://btchd.org/>
 
 选择"Explorer", 如下图所示:
-![alt](image/BHDexplorer.jpg)
+![alt](image/BHDexplorer.png)
 
 输入自己的PID, 点击"Search", 查看是否有过爆块, 如下图所示:
-![alt](image/BHDpidcn.jpg)
+![alt](image/BHDpidcn.png)
 
 如果有过爆块记录, Active Bind下面会显示过去的爆块记录, 如果没有爆过块, Active Bind下面则显示为空, 如下图所示:
 ![alt](image/activebindcn.jpg)
