@@ -150,9 +150,10 @@ Click on "receive", and then click on the "Request payment" to get the wallet ad
 ![alt](image/payment.jpg)
 
 Please keep your wallet confidential when you successfully get the wallet address. As the figure shows: 
+
 ![alt](image/paymentaddress.jpg)
 
-### Start mining
+## Start mining
 
 The dcminer needs to run in the windows environment.
 
