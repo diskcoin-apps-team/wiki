@@ -488,14 +488,55 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" title="开始挖矿" class="md-nav__link">
-    开始挖矿
+  <a href="#_3" title="钱包配置" class="md-nav__link">
+    钱包配置
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows钱包配置" class="md-nav__link">
+    Windows钱包配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" title="MacOS钱包配置" class="md-nav__link">
+    MacOS钱包配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" title="Linux系统钱包配置" class="md-nav__link">
+    Linux系统钱包配置
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="获取钱包地址" class="md-nav__link">
+    获取钱包地址
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="开始挖矿" class="md-nav__link">
+    开始挖矿
+  </a>
   
 </li>
       
@@ -660,14 +701,55 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" title="开始挖矿" class="md-nav__link">
-    开始挖矿
+  <a href="#_3" title="钱包配置" class="md-nav__link">
+    钱包配置
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows钱包配置" class="md-nav__link">
+    Windows钱包配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" title="MacOS钱包配置" class="md-nav__link">
+    MacOS钱包配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" title="Linux系统钱包配置" class="md-nav__link">
+    Linux系统钱包配置
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="获取钱包地址" class="md-nav__link">
+    获取钱包地址
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="开始挖矿" class="md-nav__link">
+    开始挖矿
+  </a>
   
 </li>
       
@@ -715,16 +797,11 @@
 挖矿支持系统: Windows系统
 挖矿软件: dcminer或ddProxy</p>
 <h3 id="diskcoin">安装Diskcoin钱包</h3>
-<ol>
-<li>钱包下载</li>
-</ol>
 <p>点击<a href="https://github.com/diskcoin-apps-team/wiki/releases">钱包下载</a>: 根据个人电脑系统选择适配的钱包下载, 如下图:
 <img alt="alt" src="../image/walletdownload.png" /></p>
-<ol>
-<li>钱包配置</li>
-</ol>
-<p>Windows钱包配置
-将钱包下载到Windows的电脑, 并解压. 如果之前安装过钱包, 不能正常同步数据. 请先删除之前的数据再安装.</p>
+<h3 id="_3">钱包配置</h3>
+<h4 id="windows">Windows钱包配置</h4>
+<p>将钱包下载到Windows的电脑, 并解压. 如果之前安装过钱包, 不能正常同步数据. 请先删除之前的数据再安装.</p>
 <p>调试文件
 文件"diskcoin.conf"默认不需要修改, 除非端口已经被占据.</p>
 <p>运行钱包
@@ -744,15 +821,15 @@ Window系统连接到Solo挖矿需要配置钱包.</p>
 <pre><code>你的钱包安装路径/diskcoin-qt.exe  -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
 </code></pre>
 
-<p>MacOS钱包配置
-MacOS系统与Windows系统同理, 但执行命令不同.</p>
+<h4 id="macos">MacOS钱包配置</h4>
+<p>MacOS系统与Windows系统同理, 但执行命令不同.</p>
 <p>MacOS的执行命令:</p>
 <pre><code>Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
 </code></pre>
 
 <p><img alt="alt" src="../image/MacOS.jpg" /></p>
-<p>Linux系统钱包配置
-请下载适合Linux系统版本的钱包, 将其复制粘贴到Linux系统并解压.</p>
+<h4 id="linux">Linux系统钱包配置</h4>
+<p>请下载适合Linux系统版本的钱包, 将其复制粘贴到Linux系统并解压.</p>
 <p>调试文件
 文件"diskcoin.conf"默认不需要修改, 除非端口已经被占据.
 cd diskcoin</p>
@@ -768,7 +845,14 @@ cd diskcoin</p>
 <p>如果两个值都相同, 表示节点数据已经同步, 可以开始挖矿了.</p>
 <p>出现如下图所示, 钱包正常启动, 就可以配置miner文件开始挖矿了.
 <img alt="alt" src="../image/wallet.png" /></p>
-<h3 id="_3">开始挖矿</h3>
+<h3 id="_4">获取钱包地址</h3>
+<p>打开钱包, 需要同步钱包, 如下图所示, 表示钱包正在同步中.
+<img alt="alt" src="../image/walletsyncingcn.png" /></p>
+<p>如下图所示, 点击"Receive"界面的"Request Payment", 获取钱包地址.
+<img alt="alt" src="../image/payment.jpg" /></p>
+<p>如下图所示, 钱包地址获取成功, 请保存好钱包地址.
+<img alt="alt" src="../image/paymentaddress.jpg" /></p>
+<h2 id="_5">开始挖矿</h2>
 <p>dcminer 要在Windows系统运行. 修改挖矿的配置文件: miner.conf</p>
 <pre><code>&quot;Server&quot; :&quot;127.0.0.1&quot;,
 &quot;Port&quot;: 63336,
