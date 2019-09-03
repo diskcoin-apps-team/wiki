@@ -40,14 +40,12 @@
 
 ###安装Diskcoin钱包
 
-1. 钱包下载
-
 点击[钱包下载](https://github.com/diskcoin-apps-team/wiki/releases): 根据个人电脑系统选择适配的钱包下载, 如下图:
 ![alt](image/walletdownload.png)
 
-2. 钱包配置
+###钱包配置
 
-Windows钱包配置
+####Windows钱包配置
 将钱包下载到Windows的电脑, 并解压. 如果之前安装过钱包, 不能正常同步数据. 请先删除之前的数据再安装.
 
 调试文件
@@ -76,7 +74,7 @@ Windows完整的启动命令应该是:
 你的钱包安装路径/diskcoin-qt.exe  -rpcallowip=127.0.0.1/32 -rpcbind=127.0.0.1
 ```
 
-MacOS钱包配置
+####MacOS钱包配置
 MacOS系统与Windows系统同理, 但执行命令不同.
 
 MacOS的执行命令:
@@ -85,7 +83,7 @@ Applications/Diskcoin-Qt.app/Contents/MacOS/Diskcoin-Qt -rpcallowip=127.0.0.1/32
 ```
 ![alt](image/MacOS.jpg)
 
-Linux系统钱包配置
+####Linux系统钱包配置
 请下载适合Linux系统版本的钱包, 将其复制粘贴到Linux系统并解压.
 
 调试文件
@@ -106,6 +104,16 @@ cd diskcoin
 
 出现如下图所示, 钱包正常启动, 就可以配置miner文件开始挖矿了.
 ![alt](image/wallet.png)
+
+###获取钱包地址
+打开钱包, 需要同步钱包, 如下图所示, 表示钱包正在同步中.
+![alt](image/walletsyncingcn.png)
+
+如下图所示, 点击"Receive"界面的"Request Payment", 获取钱包地址.
+![alt](image/payment.jpg)
+
+如下图所示, 钱包地址获取成功, 请保存好钱包地址.
+![alt](image/paymentaddress.jpg)
 
 ###开始挖矿
 dcminer 要在Windows系统运行. 修改挖矿的配置文件: miner.conf
