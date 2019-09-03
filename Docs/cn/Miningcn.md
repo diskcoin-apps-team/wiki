@@ -107,16 +107,6 @@ cd diskcoin
 出现如下图所示, 钱包正常启动, 就可以配置miner文件开始挖矿了.
 ![alt](image/wallet.png)
 
-3. 获取钱包地址
-打开钱包, 需要同步钱包, 如下图所示, 表示钱包正在同步中.
-
-
-如下图所示, 点击"Receive"界面的"Request Payment", 获取钱包地址.
-
-如下图所示, 钱包地址获取成功, 请保存好钱包地址.
-
-
-
 ###开始挖矿
 dcminer 要在Windows系统运行. 修改挖矿的配置文件: miner.conf
 
