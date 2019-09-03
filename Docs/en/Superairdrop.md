@@ -34,6 +34,7 @@ and enter your account ID in  "Report bug", as the figure shows:
 If your PID once got the reward, there shows a personal information and block reward record; if not, there shows the word "Sorry, we did not find what you’ve searched for". 
 As the figure show: 
 ![alt](image/record.jpg)
+![alt](image/norecord.jpg)
 
 ####Diskcoin block reward confirmation
 Please click on the link: <https://explorer.diskcoin.org/>
@@ -55,7 +56,7 @@ Then you can get to the burst wallet, and follow the steps show below:
 
 There shows a pops-up, copy the message in the right figure and paste it in the "Message" box in the left figure, and enter your Passphrase, then click on "Sign Message". As the figure shows: 
 
-![alt](image/signaturecn.jpg)
+![alt](image/signature.jpg)
 
 Then you can enter the "Verify Message Signature", there shows the Signature and PublicKey. As the figure shows: 
 ![alt](image/publickey.jpg)
