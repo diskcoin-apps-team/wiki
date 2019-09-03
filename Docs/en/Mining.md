@@ -141,6 +141,17 @@ If the wallet can be launched, the operation is successful and the miner file ca
 
 ![alt](image/wallet.png)
 
+###How to get the wallet address?
+
+When you open the wallet, it need some time to sync. As the figure shows:
+![alt](image/walletsyncing.png)
+
+Click on "receive", and then click on the "Request payment" to get the wallet address.
+![alt](image/payment.jpg)
+
+Please keep your wallet confidential when you successfully get the wallet address. As the figure shows: 
+![alt](image/paymentaddress.jpg)
+
 ### Start mining
 
 The dcminer needs to run in the windows environment.
