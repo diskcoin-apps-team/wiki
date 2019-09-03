@@ -2,7 +2,7 @@
 
 下载PNG格式与EPS格式的 Diskcoin Logos
 
-[全部下载](https://github.com/diskcoin-apps-team/wiki/blob/master/Docs/logosdownload/logos.zip)
+[全部下载](https://github.com/diskcoin-apps-team/wiki/raw/master/Docs/logosdownload/logos.zip)
 
 ###Diskcoin Logo
 
