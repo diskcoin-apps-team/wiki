@@ -34,7 +34,7 @@ and enter your account ID in  "Report bug", as the figure shows:
 If your PID once got the reward, there shows a personal information and block reward record; if not, there shows the word "Sorry, we did not find what you’ve searched for". 
 As the figure show: 
 ![alt](image/record.jpg)
-![alt](image/norecord.jpg)
+![alt](image/norecord.png)
 
 ####Diskcoin block reward confirmation
 Please click on the link: <https://explorer.diskcoin.org/>
