@@ -38,6 +38,7 @@
 
 跳转到下一界面后, 会出现个人信息和爆块记录, 爆块记录显示在页面的左下角, 如下图所示: 
 ![alt](image/recordcn.jpg)
+![alt](image/norecord.jpg)
 
 
 ####Diskcoin爆块确认
