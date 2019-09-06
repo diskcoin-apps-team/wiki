@@ -15,13 +15,11 @@ Airdrop requirement: install Diskcoin wallet
 Click on the "Explorer" via the link: <https://btchd.org/> as the figure shows:
 ![alt](image/BHDexplorer.png)
 
-Enter your PID in the search box. As the figure shows:
-![alt](image/BHDpid.png)
-
-If your PID once got the reward, there shows a record in "Active Bind"; if not, there shows empty in "Active Bind". As the figure show: 
+When the PID shows in block reward record is the same as your entered PID, it means that the PID you entered got block reward; Otherwise, the PID you entered did not get block reward.
+![alt](image/BHDpid.jpg)
 
 ![alt](image/activebind.jpg)
-![alt](image/noactivebind.jpg)
+
 
 ####Burst block reward confirmation 
 
