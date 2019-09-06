@@ -21,12 +21,11 @@
 选择"Explorer", 如下图所示:
 ![alt](image/BHDexplorer.png)
 
-输入自己的PID, 点击"Search", 查看是否有过爆块, 如下图所示:
-![alt](image/BHDpidcn.png)
+如下图所示, 爆块记录显示的PID与您输入的PID吻合, 说明您输入的PID有爆过块: 如果爆块记录显示的PID与您输入的PID不吻合, 则说明您输入的PID没有爆过块.
+![alt](image/BHDpidcn.jpg)
 
-如果有过爆块记录, Active Bind下面会显示过去的爆块记录, 如果没有爆过块, Active Bind下面则显示为空, 如下图所示:
 ![alt](image/activebindcn.jpg)
-![alt](image/noactivebindcn.png)
+
 
 
 ####Burst爆块确认
