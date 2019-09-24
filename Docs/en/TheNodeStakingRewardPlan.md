@@ -1,8 +1,8 @@
-## *The Node Staking Reward Plan*
+## **The Node Staking Reward Plan**
 
 In order to better stimulate the development of node ecology, Diskcoin Foundation will launch the Node Staking Reward Plan, all issued Diskcoin rewards will be distributed by the Foundation, and all miners are welcome to submit application for rewards.
 
-### *Participation in the Node Staking Reward Plan rules*
+### **Participation in the Node Staking Reward Plan rules**
 
 1. The Staking amount needs more than 1000DISC.
 
@@ -14,9 +14,9 @@ In order to better stimulate the development of node ecology, Diskcoin Foundatio
 
 5. Online submission of the Staking txid participating in the reward plan.
 
-### *Submitting Application:* <https://forms.gle/YUUh7yYLZF7b4cjS9>
+### **Submitting Application:** <https://forms.gle/YUUh7yYLZF7b4cjS9>
 
-### *FAQ*
+### **FAQ**
 
 #### What is the purpose of the plan?
 
