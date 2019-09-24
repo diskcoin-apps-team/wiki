@@ -60,7 +60,7 @@ The reward will be issued to the stake out address.
 
 #### 11. Where does the rewarded Diskcoin come from?
 
-all issued Diskcoin rewards will be distributed by the Diskcoin Foundation.
+All issued Diskcoin rewards will be distributed by the Diskcoin Foundation.
 
 #### 12. What is the relationship between the plan and the DES mechanism or pool Staking?
 
