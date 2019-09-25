@@ -69,5 +69,5 @@ The two are not directly related and do not affect each other. For miners, the e
 #### 13. What is the reward rate for the DC?
 
 The reward rate for the 16th DC is 2%. For example, if you Staked 1000 DISC in 16th DC and does not unstake until the 17th DC, the 16th DC reward is 1000*2% = 20 DISC.
-And the incentive rate is reduced by 10% for every five DC thereafter, that is, the reward rate for the 21st DC is 1.8%. For example, if you Staked 1000 DISC in 22st DC and does not unstake until the 22ed DC, the 21st DC reward is 18 DISC.
+And the incentive rate is reduced by 10% for every five DC thereafter, that is, the reward rate for the 21st DC is 1.8%. For example, if you Staked 1000 DISC in 21st DC and does not unstake until the 22ed DC, the 21st DC reward is 18 DISC.
 
