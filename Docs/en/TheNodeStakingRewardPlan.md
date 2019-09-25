@@ -10,7 +10,7 @@ In order to better stimulate the development of node ecology, Diskcoin Foundatio
 
 3. The reward plan will start from block height 27001.
 
-4. The reward of the DC (N-2) will be settled at the beginning of the DC (N). For example, Staking statistics start at block height 27001, settle after 30,600, and issue reward for the 16th difficulty cycle (height 27001~28800). Once unstaked before 30600, there is no reward.
+4. The reward of the DC (N-2) will be settled at the beginning of the DC (N). For example, Staking statistics start at block height 27001, settle after 30,600, and issue reward for the 16th DC (height 27001~28800). Once unstaked before 30600, there is no reward.
 
 5. Online submission of the Staking txid participating in the reward plan.
 
@@ -44,7 +44,7 @@ Each Staking needs more than 1000 DISC.
 
 #### 6. How long does it take to get a reward?
 
-The Staking needs to last for at least 2 DC to receive a reward. The reward of the DC (N-2) will be settled at the beginning of the DC (N). For example, Staking statistics start at block height 27001, settle after 30,600, and issue reward for the 16th difficulty cycle (height 27001~28800). Once unstaked before 30600, there is no reward.
+The Staking needs to last for at least 2 DC to receive a reward. The reward of the DC (N-2) will be settled at the beginning of the DC (N). For example, Staking statistics start at block height 27001, settle after 30,600, and issue reward for the 16th DC (height 27001~28800). Once unstaked before 30600, there is no reward.
 
 #### 7. I am mining in the pool. Can I get the reward for the plan?
 
