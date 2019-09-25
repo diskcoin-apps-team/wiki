@@ -14,6 +14,10 @@ In order to better stimulate the development of node ecology, Diskcoin Foundatio
 
 5. Online submission of the Staking txid participating in the reward plan.
 
+6. The reward will be issued to the stake out address.
+
+7. The reward rate for the 16th DC is 2%. For example, if you Staked 1000 DISC in 16th DC and does not unstake until the end of 17th DC, the 16th DC reward is 1000*2% = 20 DISC. And the incentive rate is reduced by 10% for every five DC thereafter, that is, the reward rate for the 21st DC is 1.8%. For example, if you Staked 1000 DISC in 21st DC and does not unstake until the end of 22nd DC, the 21st DC reward is 18 DISC.
+
 ### **Submitting Application:** <https://forms.gle/YUUh7yYLZF7b4cjS9>
 
 ### **FAQ**
