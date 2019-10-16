@@ -35,6 +35,6 @@ Diskcoin采用CPoC (条件容量证明) 共识算法, 硬盘挖矿比CPUs, GPUs�
 
 
 ###联系资讯
-[Reddit](https://www.reddit.com/r/DiskcoinOrg/) 丨 [Twitter](https://twitter.com/Diskcoinorg) 丨 [Bitcointalk](https://bitcointalk.org/index.php?topic=5154264.0) 丨 [Telegram](https://t.me/Diskcoinofficialgroup) 丨  [Discord](https://discord.gg/gQVEWG)
+[Reddit](https://www.reddit.com/r/DiskcoinOrg/) 丨 [Twitter](https://twitter.com/Diskcoinorg) 丨 [Bitcointalk](https://bitcointalk.org/index.php?topic=5154264.0) 丨 [Telegram](https://t.me/Diskcoinofficialgroup) 丨  [Discord](https://discordapp.com/invite/d54EGkW)
 
 
