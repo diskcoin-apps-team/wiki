@@ -36,11 +36,11 @@ Online submission of the Staked txid participating in the reward plan.
 
 #### 4. The more Diskcoin I Staked, the more rewards I will get? Or as long as the Staked amount more than 1000 DISC?
 
-Each Staking needs more than 1000 DISC. The more Diskcoin you Staked, the more rewards you will get.
+Each Staking needs at least 1000 DISC. The more Diskcoin you Staked, the more rewards you will get.
 
 #### 5. Can Staked amount add up to more than 1000 DISC to get rewards?
 
-Each Staking needs more than 1000 DISC.
+Each Staking needs at least 1000 DISC.
 
 #### 6. How long does it take to get a reward?
 
