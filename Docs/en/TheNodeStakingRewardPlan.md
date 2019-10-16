@@ -4,7 +4,7 @@ In order to better stimulate the development of node ecology, Diskcoin Foundatio
 
 ### **Participation in the Node Staking Reward Plan rules**
 
-1. The Staking amount needs at least 1000DISC.
+1. The Staked amount needs at least 1000DISC.
 
 2. The settlement time of the reward is after the start of the new DC.
 
@@ -12,7 +12,7 @@ In order to better stimulate the development of node ecology, Diskcoin Foundatio
 
 4. The reward of the DC (N-2) will be settled at the beginning of the DC (N). For example, Staking statistics start at block height 27001, settle after 30,600, and issue reward for the 16th DC (height 27001~28800). Once unstaked before 30600, there is no reward.
 
-5. Online submission of the Staking txid participating in the reward plan.
+5. Online submission of the Staked txid participating in the reward plan.
 
 6. The reward will be issued to the stake out address.
 
@@ -40,7 +40,7 @@ Each Staking needs at least 1000 DISC. The more Diskcoin you Staked, the more re
 
 #### 5. Can Staked amount add up to more than 1000 DISC to get rewards?
 
-Each Staking needs at least 1000 DISC.
+Each Staked amount needs at least 1000 DISC.
 
 #### 6. How long does it take to get a reward?
 
