@@ -1,6 +1,6 @@
 ## **The Node Staking Reward Plan**
 
-In order to better stimulate the development of node ecology, Diskcoin Foundation will launch the Node Staking Reward Plan, all issued Diskcoin rewards will be distributed by the Foundation, and all miners are welcome to submit application for rewards.
+In order to better stimulate the development of node ecology, Diskcoin Foundation has launched the Node Staking Reward Plan, all issued Diskcoin rewards will be distributed by the Foundation, and all miners are welcome to submit application for rewards.
 
 ### **Participation in the Node Staking Reward Plan rules**
 
