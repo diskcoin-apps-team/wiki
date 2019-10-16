@@ -4,7 +4,7 @@ In order to better stimulate the development of node ecology, Diskcoin Foundatio
 
 ### **Participation in the Node Staking Reward Plan rules**
 
-1. The Staking amount needs more than 1000DISC.
+1. The Staking amount needs at least 1000DISC.
 
 2. The settlement time of the reward is after the start of the new DC.
 
