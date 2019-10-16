@@ -18,13 +18,13 @@ In order to better stimulate the development of node ecology, Diskcoin Foundatio
 
 7. The reward rate for the 16th DC is 2%. For example, if you Staked 1000 DISC in 16th DC and does not unstake until the end of 17th DC, the 16th DC reward is 1000*2% = 20 DISC. And the incentive rate is reduced by 10% for every five DC thereafter, that is, the reward rate for the 21st DC is 1.8%. For example, if you Staked 1000 DISC in 21st DC and does not unstake until the end of 22nd DC, the 21st DC reward is 18 DISC.
 
-### **Submitting Application:** <https://forms.gle/YUUh7yYLZF7b4cjS9>
+### **Submitting Application:** <https://www.diskcoin.org/staker>
 
 ### **FAQ**
 
 #### 1. What is the purpose of the plan?
 
-We hope that more nodes will be able to participate in the ecosystem. For example, if you have a wallet, you can launch a Staking financial plan for your users.
+We hope that more nodes will be able to participate in the ecosystem. For example, pools can launch a Staking financial plan for its users.
 
 #### 2. Who is the Node Staking Reward Plan mainly for?
 
